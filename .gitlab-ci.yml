@@ -20,7 +20,7 @@ variables:
 test:
   stage: test
   script:
-    - python3 -m minimal_example.py  # This will discover and run tests in your project
+    - python3 -m minimal_example  # This will discover and run tests in your project
 
 #deploy:
 #  stage: deploy
