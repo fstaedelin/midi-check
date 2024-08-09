@@ -1,6 +1,6 @@
-from Logger_printing import LoggerPrintingMixin
+from JARVIS.jarvis_printing import JarvisPrintingMixin
 
-class LoggerUtilitiesMixin(LoggerPrintingMixin):
+class JarvisUtilitiesMixin(JarvisPrintingMixin):
     """
     Mixin class for various utility functions used by the Logger class.
     """

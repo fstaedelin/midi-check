@@ -1,6 +1,6 @@
-from LoggerUtilities import LoggerUtilitiesMixin
+from JARVIS.jarvis_utilities import JarvisUtilitiesMixin
 
-class Logger(LoggerUtilitiesMixin):
+class JARVIS(JarvisUtilitiesMixin):
     def __init__(self, level="WARNING"):
         """
         Initialize the Logger with a default logging level.

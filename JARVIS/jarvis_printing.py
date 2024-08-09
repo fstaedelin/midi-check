@@ -1,4 +1,4 @@
-class LoggerPrintingMixin:
+class JarvisPrintingMixin:
     def _printIn(self, fn_name):
         """
         Increase indentation level and print entering message.
