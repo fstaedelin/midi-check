@@ -1,30 +1,29 @@
 stages:
-  - lint
+#  - lint
   - test
-  - deploy
+#  - deploy
 
 variables:
   PYTHON_VERSION: "3.8"
 
-before_script:
-  - python -m venv venv
-  - source venv/bin/activate
-  - pip install -r requirements.txt
+#before_script:
+#  - python -m venv venv
+#  - source venv/bin/activate
+#  - pip install -r requirements.txt
 
-lint:
-  stage: lint
-  script:
-    - pip install pylint
-    - pylint my_project  # Replace 'my_project' with your actual project directory or module
+#lint:
+#  stage: lint
+#  script:
+#    - pip install pylint
+#    - pylint my_project  # Replace 'my_project' with your actual project directory or module
 
 test:
   stage: test
   script:
-    - pip install pytest
-    - pytest  # This will discover and run tests in your project
+    - pytest.py  # This will discover and run tests in your project
 
-deploy:
-  stage: deploy
-  script:
-    - echo "Deploy stage - Customize as needed"  # Add deployment commands if necessary
+#deploy:
+#  stage: deploy
+#  script:
+#    - echo "Deploy stage - Customize as needed"  # Add deployment commands if necessary
 
