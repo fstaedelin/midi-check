@@ -1,93 +1,114 @@
-# JARVIS
+Python Logger Utility
 
+A flexible and customizable logging utility for Python applications. This logger allows you to log messages at different levels, navigate contexts, manage tests, and format log messages with different styles.
+Features
 
+    Contextual Logging: Navigate between different contexts and manage hierarchical logging.
+    Customizable Levels: Support for various log levels like DEBUG, WARNING, ERROR, and SUCCESS.
+    Message Formatting: Different formatting styles for log messages based on their levels.
+    Testing Framework: Add and trigger tests with automatic callbacks for success and failure scenarios.
+    Log Management: Store and manage log messages and test results.
 
-## Getting started
+Installation
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+To use the Logger utility, you need Python 3.6 or later. You can include this project as a dependency in your own Python projects. If you have a Git repository, you can clone it and use it directly.
+Clone the Repository
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+bash
 
-## Add your files
+git clone https://gitlab.com/your-username/your-repository.git
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+Install Dependencies
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/codes214740/python/jarvis.git
-git branch -M main
-git push -uf origin main
-```
+Navigate to the project directory and install any required dependencies (if specified in a requirements.txt file).
 
-## Integrate with your tools
+bash
 
-- [ ] [Set up project integrations](https://gitlab.com/codes214740/python/jarvis/-/settings/integrations)
+cd your-repository
+pip install -r requirements.txt
 
-## Collaborate with your team
+Usage
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Here’s a brief guide on how to use the Logger utility:
+Basic Example
 
-## Test and Deploy
+python
 
-Use the built-in continuous integration in GitLab.
+from your_module import Logger
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+# Create a Logger instance
+logger = Logger(level="DEBUG")
 
-***
+# Log messages at different levels
+logger.Debug("This is a debug message")
+logger.Warning("This is a warning message")
+logger.Error("This is an error message")
 
-# Editing this README
+# Navigate to a new context and log messages
+logger.Navigate("my_context")
+logger.Log("This is a message in my_context", level="INFO")
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+# Add and trigger tests
+def sample_test_fn(val):
+    return val > 0
 
-## Suggestions for a good README
+test = logger.AddTest(test_fn=sample_test_fn, result_key=True, name="positive_test")
+logger.TriggerTest(test, 10)  # Test should pass
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+# Print all log messages
+logger.WriteLog()
 
-## Name
-Choose a self-explaining name for your project.
+Advanced Usage
+Navigating Contexts
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+You can navigate through different contexts using the Navigate method. This helps in managing logs and tests within specific contexts.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+python
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+logger.Navigate("context1")
+logger.Log("Message in context1", level="INFO")
+logger.Navigate("parent")  # Return to the previous context
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Adding Tests
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Add tests to your logger with automatic naming and callback functions for success and failure scenarios.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+python
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+def success_callback():
+    return "Test passed!"
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+def failure_callback():
+    return "Test failed!"
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+test = logger.AddTest(
+    test_fn=lambda x: x == 10,
+    callback_true=success_callback,
+    callback_false=failure_callback,
+    name="equality_test"
+)
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Project Structure
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+    logger.py: Contains the Logger class and its related methods.
+    utils.py: Contains utility classes and functions used by the Logger.
+    tests/: Directory containing unit tests for the Logger.
+    requirements.txt: File listing the dependencies required for the project.
 
-## License
-For open source projects, say how it is licensed.
+Contributing
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+We welcome contributions to the project. If you want to contribute:
+
+    Fork the repository.
+    Create a feature branch (git checkout -b feature-branch).
+    Commit your changes (git commit -am 'Add new feature').
+    Push to the branch (git push origin feature-branch).
+    Create a new Pull Request on GitLab.
+
+Please make sure to update tests and documentation as appropriate.
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+Contact
+
+For any questions or issues, please contact your-email@example.com.
