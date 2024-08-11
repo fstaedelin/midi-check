@@ -1,5 +1,10 @@
 <map id="jarvis_utilities.JarvisUtilitiesMixin._trigger_messages" name="jarvis_utilities.JarvisUtilitiesMixin._trigger_messages">
+<<<<<<< HEAD
 <area shape="rect" id="Node000001" title="Triggers success or failure messages based on the result of a test." alt="" coords="5,5,189,45"/>
 <area shape="rect" id="Node000002" href="$classjarvis__printing_1_1JarvisPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f" title="Formats a log message based on its level and other parameters." alt="" coords="237,5,423,45"/>
+=======
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,189,45"/>
+<area shape="rect" id="Node000002" href="$classjarvis__printing_1_1JarvisPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f" title=" " alt="" coords="237,5,423,45"/>
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,224,23,224,28,190,28"/>
 </map>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtest__helpers_1_1Event" xml:lang="en-US">
+<title>test_helpers.Event Class Reference</title>
+<indexterm><primary>test_helpers.Event</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtest__helpers_1_1Event_1ae94ffd22a2d755e0fce430542c0117f2">__init__</link> (self, event_id, <link linkend="_classtest__helpers_1_1Event_1aa689a2e7a9dd5990b209446bd4afdb9d">handled</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classtest__helpers_1_1Event_1aa689a2e7a9dd5990b209446bd4afdb9d">handled</link> = False</para>
+</listitem>
+            <listitem><para><link linkend="_classtest__helpers_1_1Event_1a370dac3e1471b3e01c7de98fef8c3366">id</link> = event_id</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtest__helpers_1_1Event_1ae94ffd22a2d755e0fce430542c0117f2"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>test_helpers.Event</secondary></indexterm>
+<indexterm><primary>test_helpers.Event</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>test_helpers.Event.__init__ ( self,  event_id,  handled)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classtest__helpers_1_1Event_1aa689a2e7a9dd5990b209446bd4afdb9d"/><section>
+    <title>handled</title>
+<indexterm><primary>handled</primary><secondary>test_helpers.Event</secondary></indexterm>
+<indexterm><primary>test_helpers.Event</primary><secondary>handled</secondary></indexterm>
+<para><computeroutput>bool test_helpers.Event.handled = False</computeroutput></para></section>
+<anchor xml:id="_classtest__helpers_1_1Event_1a370dac3e1471b3e01c7de98fef8c3366"/><section>
+    <title>id</title>
+<indexterm><primary>id</primary><secondary>test_helpers.Event</secondary></indexterm>
+<indexterm><primary>test_helpers.Event</primary><secondary>id</secondary></indexterm>
+<para><computeroutput>test_helpers.Event.id = event_id</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+tests/<link linkend="_test__helpers_8py">test_helpers.py</link></section>
+</section>

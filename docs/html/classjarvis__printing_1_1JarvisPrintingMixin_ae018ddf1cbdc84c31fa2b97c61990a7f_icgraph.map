@@ -1,4 +1,5 @@
 <map id="jarvis_printing.JarvisPrintingMixin._format_message" name="jarvis_printing.JarvisPrintingMixin._format_message">
+<<<<<<< HEAD
 <area shape="rect" id="Node000001" title="Formats a log message based on its level and other parameters." alt="" coords="460,88,645,128"/>
 <area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a1e933474919f97beb650adebf6ba5513" title="Triggers success or failure messages based on the result of a test." alt="" coords="228,5,412,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="483,86,411,60,378,48,379,43,413,55,484,81"/>
@@ -18,5 +19,26 @@
 <area shape="rect" id="Node000009" href="$classjarvis_1_1JARVIS.html#a11ece9fa16c0a5a3d55fc3ef5f4f22ec" title="Log an error message." alt="" coords="24,169,161,194"/>
 <area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="241,184,162,184,162,179,241,179"/>
 <area shape="rect" id="Node000010" href="$classjarvis_1_1JARVIS.html#a6c0d7b07134d9e4e547fd06f5f5eee15" title="Log a warning message." alt="" coords="15,218,171,243"/>
+=======
+<area shape="rect" id="Node000001" title=" " alt="" coords="460,88,645,128"/>
+<area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a1e933474919f97beb650adebf6ba5513" title=" " alt="" coords="228,5,412,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="483,86,411,60,378,48,379,43,413,55,484,81"/>
+<area shape="rect" id="Node000004" href="$classjarvis_1_1JARVIS.html#a3e7426a263dabc9aa3f62182afdb949d" title=" " alt="" coords="237,70,403,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="446,99,403,94,403,89,447,94"/>
+<area shape="rect" id="Node000006" href="$classjarvis_1_1JARVIS.html#a411998cc9fec9c144deb5d5ba96b931e" title=" " alt="" coords="241,119,399,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="446,122,400,126,399,121,446,116"/>
+<area shape="rect" id="Node000007" href="$classjarvis_1_1JARVIS.html#a24cb1572ef996dbbe06669780ac076cf" title=" " alt="" coords="255,169,385,194"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="484,135,413,159,370,171,368,166,411,153,482,130"/>
+<area shape="rect" id="Node000003" href="$classjarvis_1_1JARVIS.html#a2444145876c9d99aaac5b583737e2c8b" title=" " alt="" coords="5,13,180,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,28,180,28,180,23,215,23"/>
+<area shape="rect" id="Node000005" href="$classjarvis_1_1JARVIS.html#af12de11c965f255440924df2baf5946a" title=" " alt="" coords="14,70,171,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,85,172,85,172,80,223,80"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="247,119,151,98,153,93,248,114"/>
+<area shape="rect" id="Node000008" href="$classjarvis_1_1JARVIS.html#a922459758e5ed3674a4aedfee450e1c5" title=" " alt="" coords="19,119,166,145"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="247,168,151,147,153,142,248,163"/>
+<area shape="rect" id="Node000009" href="$classjarvis_1_1JARVIS.html#a11ece9fa16c0a5a3d55fc3ef5f4f22ec" title=" " alt="" coords="24,169,161,194"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="241,184,162,184,162,179,241,179"/>
+<area shape="rect" id="Node000010" href="$classjarvis_1_1JARVIS.html#a6c0d7b07134d9e4e547fd06f5f5eee15" title=" " alt="" coords="15,218,171,243"/>
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 <area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="248,200,153,221,151,215,247,194"/>
 </map>

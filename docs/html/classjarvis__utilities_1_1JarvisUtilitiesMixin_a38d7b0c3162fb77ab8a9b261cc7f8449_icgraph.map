@@ -1,5 +1,10 @@
 <map id="jarvis_utilities.JarvisUtilitiesMixin._autonameTests" name="jarvis_utilities.JarvisUtilitiesMixin._autonameTests">
+<<<<<<< HEAD
 <area shape="rect" id="Node000001" title="Automatically generates a unique name for a new test." alt="" coords="211,5,395,45"/>
 <area shape="rect" id="Node000002" href="$classjarvis_1_1JARVIS.html#af12de11c965f255440924df2baf5946a" title="Add a new test to the current context." alt="" coords="5,13,163,38"/>
+=======
+<area shape="rect" id="Node000001" title=" " alt="" coords="211,5,395,45"/>
+<area shape="rect" id="Node000002" href="$classjarvis_1_1JARVIS.html#af12de11c965f255440924df2baf5946a" title=" " alt="" coords="5,13,163,38"/>
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,28,163,28,163,23,197,23"/>
 </map>

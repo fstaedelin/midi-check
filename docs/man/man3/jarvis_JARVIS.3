@@ -1,0 +1,245 @@
+.TH "jarvis.JARVIS" 3 "JARVIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+jarvis.JARVIS
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits JarvisUtilitiesMixin\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__init__\fP (self, \fBlevel\fP='WARNING')"
+.br
+.ti -1c
+.RI "\fBAddTest\fP (self, test_fn=lambda:False, result_key=True, callback_true=None, callback_false=None, name='test')"
+.br
+.ti -1c
+.RI "\fBCb_False\fP (self, message, \fBlevel\fP='FAIL')"
+.br
+.ti -1c
+.RI "\fBCb_True\fP (self, message, \fBlevel\fP='SUCCESS')"
+.br
+.ti -1c
+.RI "\fBDebug\fP (self, message)"
+.br
+.ti -1c
+.RI "\fBError\fP (self, message)"
+.br
+.ti -1c
+.RI "\fBLog\fP (self, message, \fBlevel\fP)"
+.br
+.ti -1c
+.RI "\fBNavigate\fP (self, destination='children')"
+.br
+.ti -1c
+.RI "\fBTriggerTest\fP (self, test, val)"
+.br
+.ti -1c
+.RI "\fBWarning\fP (self, message)"
+.br
+.ti -1c
+.RI "\fBWriteLog\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "dict \fBcontexts\fP = {}"
+.br
+.ti -1c
+.RI "list \fBcurrent_path\fP = []"
+.br
+.ti -1c
+.RI "\fBlevel\fP = level"
+.br
+.ti -1c
+.RI "dict \fBlevels\fP"
+.br
+.ti -1c
+.RI "list \fBmsg_log\fP = []"
+.br
+.ti -1c
+.RI "int \fBprint_lvl\fP = \-1"
+.br
+.ti -1c
+.RI "list \fBtests\fP = []"
+.br
+.ti -1c
+.RI "int \fBunnamed_tests\fP = 0"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "jarvis\&.JARVIS\&.__init__ ( self,  level = \fR'WARNING'\fP)"
+
+.PP
+.nf
+Initialize the Logger with a default logging level\&.
+
+:param level: Default logging level, defaults to 'WARNING'\&.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "jarvis\&.JARVIS\&.AddTest ( self,  test_fn = \fRlambda: False\fP,  result_key = \fRTrue\fP,  callback_true = \fRNone\fP,  callback_false = \fRNone\fP,  name = \fR'test'\fP)"
+
+.PP
+.nf
+Add a new test to the current context\&.
+
+:param test_fn: The test function to evaluate\&.
+:param result_key: Expected result key for the test\&.
+:param callback_true: Callback function if the test passes\&.
+:param callback_false: Callback function if the test fails\&.
+:param name: Name of the test\&.
+:return: The newly added test object\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.Cb_False ( self,  message,  level = \fR'FAIL'\fP)"
+
+.PP
+.nf
+Generate a failure callback message\&.
+
+:param message: The message to format\&.
+:param level: The logging level, defaults to 'FAIL'\&.
+:return: The formatted message\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.Cb_True ( self,  message,  level = \fR'SUCCESS'\fP)"
+
+.PP
+.nf
+Generate a success callback message\&.
+
+:param message: The message to format\&.
+:param level: The logging level, defaults to 'SUCCESS'\&.
+:return: The formatted message\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.Debug ( self,  message)"
+
+.PP
+.nf
+Log a debug message\&.
+
+:param message: The debug message to log\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.Error ( self,  message)"
+
+.PP
+.nf
+Log an error message\&.
+
+:param message: The error message to log\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.Log ( self,  message,  level)"
+
+.PP
+.nf
+Log a message at the given level\&.
+
+:param message: The message to log\&.
+:param level: The level at which to log the message\&.
+:return: The formatted message\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.Navigate ( self,  destination = \fR'children'\fP)"
+
+.PP
+.nf
+Navigate to a different context\&.
+
+:param destination: The context to navigate to\&. Defaults to 'children'\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.TriggerTest ( self,  test,  val)"
+
+.PP
+.nf
+Trigger a specific test\&.
+
+:param test: The test object to trigger\&.
+:param val: The value to pass to the test function\&.
+:return: The test object after execution\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.Warning ( self,  message)"
+
+.PP
+.nf
+Log a warning message\&.
+
+:param message: The warning message to log\&.
+
+.fi
+.PP
+ 
+.SS "jarvis\&.JARVIS\&.WriteLog ( self)"
+
+.PP
+.nf
+Print all the log entries stored in `msg_log`\&.
+
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "dict jarvis\&.JARVIS\&.contexts = {}"
+
+.SS "jarvis\&.JARVIS\&.current_path = []"
+
+.SS "jarvis\&.JARVIS\&.level = level"
+
+.SS "dict jarvis\&.JARVIS\&.levels"
+\fBInitial value:\fP
+.nf
+=  {
+            "INFO": 0,
+            "DEBUG": 10,
+            "FAIL": 15,
+            "SUCCESS": 15,
+            "WARNING": 20,
+            "ERROR": 30
+        }
+.PP
+.fi
+
+.SS "list jarvis\&.JARVIS\&.msg_log = []"
+
+.SS "int jarvis\&.JARVIS\&.print_lvl = \-1"
+
+.SS "list jarvis\&.JARVIS\&.tests = []"
+
+.SS "int jarvis\&.JARVIS\&.unnamed_tests = 0"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for JARVIS from the source code\&.

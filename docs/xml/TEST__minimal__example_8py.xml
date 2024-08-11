@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="TEST__minimal__example_8py" kind="file" language="Python">
+    <compoundname>TEST_minimal_example.py</compoundname>
+    <innernamespace refid="namespaceTEST__minimal__example">TEST_minimal_example</innernamespace>
+    <innernamespace refid="namespacetests_1_1test__helpers">tests::test_helpers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceTEST__minimal__example" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacetests_1_1test__helpers" kindref="compound">tests.test_helpers</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespaceTEST__minimal__example_1ad7c08c29f38fc5fdf9e71b5236804f59" refkind="member"><highlight class="normal">event1<sp/>=<sp/>Event(230,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;GOING<sp/>TO<sp/>INITIALIZATION&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;INIT&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;Initializing<sp/>...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#logger._print_contexts()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">event1<sp/>=<sp/>Event(125,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;ADDING<sp/>AND<sp/>TRIGGERING<sp/>HANDLING<sp/>TESTS&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11" refid="namespaceTEST__minimal__example_1ab272371dea8b2da5305bf1f25a8b72e4" refkind="member"><highlight class="normal">test_handled<sp/>=<sp/>jarvis.AddTest(</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>test_fn=</highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>x:<sp/>x,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Event<sp/>handled&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">jarvis.TriggerTest(test_handled,<sp/>event1.handled)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;Processor&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;ADDING<sp/>ID_TESTS&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespaceTEST__minimal__example_1ad1e96a1c6cb47c0ddb64f02e268dbc1a" refkind="member"><highlight class="normal">ID_SUP_100<sp/>=<sp/>jarvis.AddTest(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>test_fn=is_more_100[</highlight><highlight class="stringliteral">&quot;test_fn&quot;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Event<sp/>id<sp/>&gt;100&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28" refid="namespaceTEST__minimal__example_1a6a06ea33a44d29d65fcdd3351b4351e3" refkind="member"><highlight class="normal">ID_SUP_150<sp/>=<sp/>jarvis.AddTest(</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>test_fn=is_more_150[</highlight><highlight class="stringliteral">&quot;test_fn&quot;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Event<sp/>id<sp/>&gt;150&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;TRIGGERING<sp/>ID_TESTS&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">jarvis.TriggerTest(ID_SUP_100,<sp/>event1.id)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">jarvis.TriggerTest(ID_SUP_150,<sp/>event1.id)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;Parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;NAVIGATING<sp/>TO<sp/>PROCESSOR&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">jarvis.Warning(</highlight><highlight class="stringliteral">&quot;event<sp/>changed<sp/>!!&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">event1<sp/>=<sp/>Event(1110,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;TRIGGERING<sp/>ID_TESTS<sp/>again&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">jarvis.TriggerTest(ID_SUP_100,<sp/>event1.id)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">jarvis.TriggerTest(ID_SUP_150,<sp/>event1.id)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;mapping&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;testing&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57" refid="namespaceTEST__minimal__example_1abbc91b0bb17a63d058c8c4fa97b5e440" refkind="member"><highlight class="normal">event1.handled<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">jarvis.TriggerTest(test_handled,<sp/>event1.handled)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">jarvis.WriteLog()</highlight></codeline>
+    </programlisting>
+    <location file="tests/TEST_minimal_example.py"/>
+  </compounddef>
+</doxygen>

@@ -1076,7 +1076,12 @@ EXCLUDE                = docs \
                          Doxyfile \
                          README.md \
                          .git \
+<<<<<<< HEAD
                          scraps
+=======
+                         scraps \
+                         utility
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
@@ -2169,7 +2174,11 @@ LATEX_EMOJI_DIRECTORY  =
 # readers/editors.
 # The default value is: NO.
 
+<<<<<<< HEAD
 GENERATE_RTF           = NO
+=======
+GENERATE_RTF           = YES
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 
 # The RTF_OUTPUT tag is used to specify where the RTF docs will be put. If a
 # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
@@ -2232,7 +2241,11 @@ RTF_EXTRA_FILES        =
 # classes and files.
 # The default value is: NO.
 
+<<<<<<< HEAD
 GENERATE_MAN           = NO
+=======
+GENERATE_MAN           = YES
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 
 # The MAN_OUTPUT tag is used to specify where the man pages will be put. If a
 # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
@@ -2276,7 +2289,11 @@ MAN_LINKS              = NO
 # captures the structure of the code including all documentation.
 # The default value is: NO.
 
+<<<<<<< HEAD
 GENERATE_XML           = NO
+=======
+GENERATE_XML           = YES
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 
 # The XML_OUTPUT tag is used to specify where the XML pages will be put. If a
 # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
@@ -2310,7 +2327,11 @@ XML_NS_MEMB_FILE_SCOPE = NO
 # that can be used to generate PDF.
 # The default value is: NO.
 
+<<<<<<< HEAD
 GENERATE_DOCBOOK       = NO
+=======
+GENERATE_DOCBOOK       = YES
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 
 # The DOCBOOK_OUTPUT tag is used to specify where the Docbook pages will be put.
 # If a relative path is entered the value of OUTPUT_DIRECTORY will be put in

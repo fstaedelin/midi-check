@@ -1,6 +1,10 @@
 var searchData=
 [
+<<<<<<< HEAD
   ['_5f_5finit_5f_5f_0',['__init__',['../classjarvis_1_1JARVIS.html#a0b9e05f4731aa1c92207e5b5099599bc',1,'jarvis.JARVIS.__init__()'],['../classtest__helpers_1_1Event.html#ae6d7a4baaa4507d72f874fa76ec49e27',1,'test_helpers.Event.__init__()']]],
+=======
+  ['_5f_5finit_5f_5f_0',['__init__',['../classjarvis_1_1JARVIS.html#a0b9e05f4731aa1c92207e5b5099599bc',1,'jarvis.JARVIS.__init__()'],['../classtest__helpers_1_1Event.html#ae94ffd22a2d755e0fce430542c0117f2',1,'test_helpers.Event.__init__()']]],
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
   ['_5fautoname_1',['_autoname',['../classjarvis__utilities_1_1JarvisUtilitiesMixin.html#ac5012310a549de2aa464e8a613f1011b',1,'jarvis_utilities::JarvisUtilitiesMixin']]],
   ['_5fautonametests_2',['_autonameTests',['../classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a38d7b0c3162fb77ab8a9b261cc7f8449',1,'jarvis_utilities::JarvisUtilitiesMixin']]],
   ['_5fformat_5fmessage_3',['_format_message',['../classjarvis__printing_1_1JarvisPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f',1,'jarvis_printing::JarvisPrintingMixin']]],

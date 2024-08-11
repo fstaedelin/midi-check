@@ -1,7 +1,14 @@
 <map id="jarvis_utilities.JarvisUtilitiesMixin._set_new_context" name="jarvis_utilities.JarvisUtilitiesMixin._set_new_context">
+<<<<<<< HEAD
 <area shape="rect" id="Node000001" title="Sets a new context in the logger&#39;s hierarchy." alt="" coords="5,5,189,45"/>
 <area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#ac5012310a549de2aa464e8a613f1011b" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="237,5,421,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,223,23,223,28,190,28"/>
 <area shape="rect" id="Node000003" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title="Retrieves the current context based on the current path." alt="" coords="469,5,653,45"/>
+=======
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,189,45"/>
+<area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#ac5012310a549de2aa464e8a613f1011b" title=" " alt="" coords="237,5,421,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,223,23,223,28,190,28"/>
+<area shape="rect" id="Node000003" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title=" " alt="" coords="469,5,653,45"/>
+>>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="422,23,455,23,455,28,422,28"/>
 </map>

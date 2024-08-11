@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classtest__helpers_1_1Event" kind="class" language="Python" prot="public">
+    <compoundname>test_helpers::Event</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtest__helpers_1_1Event_1aa689a2e7a9dd5990b209446bd4afdb9d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool test_helpers.Event::handled</definition>
+        <argsstring></argsstring>
+        <name>handled</name>
+        <qualifiedname>test_helpers.Event.handled</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/test_helpers.py" line="8" column="1" bodyfile="tests/test_helpers.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtest__helpers_1_1Event_1a370dac3e1471b3e01c7de98fef8c3366" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test_helpers.Event::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>test_helpers.Event.id</qualifiedname>
+        <initializer>=  event_id</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/test_helpers.py" line="7" column="1" bodyfile="tests/test_helpers.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest__helpers_1_1Event_1ae94ffd22a2d755e0fce430542c0117f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test_helpers.Event.__init__</definition>
+        <argsstring>(self, event_id, handled)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>test_helpers.Event.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event_id</type>
+          <defname>event_id</defname>
+        </param>
+        <param>
+          <type><ref refid="classtest__helpers_1_1Event_1aa689a2e7a9dd5990b209446bd4afdb9d" kindref="member">handled</ref></type>
+          <defname>handled</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/test_helpers.py" line="6" column="1" bodyfile="tests/test_helpers.py" bodystart="6" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/test_helpers.py" line="5" column="1" bodyfile="tests/test_helpers.py" bodystart="5" bodyend="9"/>
+    <listofallmembers>
+      <member refid="classtest__helpers_1_1Event_1ae94ffd22a2d755e0fce430542c0117f2" prot="public" virt="non-virtual"><scope>test_helpers::Event</scope><name>__init__</name></member>
+      <member refid="classtest__helpers_1_1Event_1aa689a2e7a9dd5990b209446bd4afdb9d" prot="public" virt="non-virtual"><scope>test_helpers::Event</scope><name>handled</name></member>
+      <member refid="classtest__helpers_1_1Event_1a370dac3e1471b3e01c7de98fef8c3366" prot="public" virt="non-virtual"><scope>test_helpers::Event</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacelaunch__tests" kind="namespace" language="Python">
+    <compoundname>launch_tests</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelaunch__tests_1a71cf60e3f479a004617aaf4d2467b762" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>launch_tests.testLib</definition>
+        <argsstring></argsstring>
+        <name>testLib</name>
+        <qualifiedname>launch_tests.testLib</qualifiedname>
+        <initializer>=  <ref refid="namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab" kindref="member">importTests</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="launch_tests.py" line="42" column="1" bodyfile="launch_tests.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>launch_tests._importHelp</definition>
+        <argsstring>(folder)</argsstring>
+        <name>_importHelp</name>
+        <qualifiedname>launch_tests._importHelp</qualifiedname>
+        <param>
+          <type>folder</type>
+          <defname>folder</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Imports all modules from a specific folder whose names contain &apos;TEST&apos;.
+
+:param folder: The JARVIS/folder you want imported.
+:return: A dictionary where keys are module names and values are the imported modules.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="launch_tests.py" line="8" column="1" bodyfile="launch_tests.py" bodystart="8" bodyend="41"/>
+        <referencedby refid="namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab" compoundref="launch__tests_8py" startline="5" endline="7">importTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>launch_tests.importTests</definition>
+        <argsstring>()</argsstring>
+        <name>importTests</name>
+        <qualifiedname>launch_tests.importTests</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="launch_tests.py" line="5" column="1" bodyfile="launch_tests.py" bodystart="5" bodyend="7"/>
+        <references refid="namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374" compoundref="launch__tests_8py" startline="8" endline="41">_importHelp</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="launch_tests.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
