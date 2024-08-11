@@ -1,0 +1,19 @@
+<map id="jarvis_utilities.JarvisUtilitiesMixin._autoname" name="jarvis_utilities.JarvisUtilitiesMixin._autoname">
+<area shape="rect" id="Node000001" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="856,22,1040,62"/>
+<area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a6dace0d393d836d916e11b10bf70e7ae" title="Sets a new context in the logger&#39;s hierarchy." alt="" coords="624,22,808,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="842,45,808,45,808,39,842,39"/>
+<area shape="rect" id="Node000003" href="$classjarvis_1_1JARVIS.html#af12de11c965f255440924df2baf5946a" title="Add a new test to the current context." alt="" coords="209,5,367,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="610,24,576,19,495,17,415,19,367,20,367,14,415,14,495,11,576,14,611,18"/>
+<area shape="rect" id="Node000004" href="$classjarvis_1_1JARVIS.html#a24cb1572ef996dbbe06669780ac076cf" title="Log a message at a specified level." alt="" coords="223,55,353,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="611,66,576,70,458,75,354,73,354,68,458,70,576,65,610,60"/>
+<area shape="rect" id="Node000008" href="$classjarvis_1_1JARVIS.html#a7bbd76a4fc37948be7e54aee4f1ec95a" title="Navigate to a different context within the logger." alt="" coords="415,29,576,55"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="610,45,576,45,576,39,610,39"/>
+<area shape="rect" id="Node000005" href="$classjarvis_1_1JARVIS.html#a922459758e5ed3674a4aedfee450e1c5" title="Log a debug message." alt="" coords="10,5,157,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,54,136,33,137,28,222,49"/>
+<area shape="rect" id="Node000006" href="$classjarvis_1_1JARVIS.html#a11ece9fa16c0a5a3d55fc3ef5f4f22ec" title="Log an error message." alt="" coords="15,55,152,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="209,70,152,70,152,65,209,65"/>
+<area shape="rect" id="Node000007" href="$classjarvis_1_1JARVIS.html#a6c0d7b07134d9e4e547fd06f5f5eee15" title="Log a warning message." alt="" coords="5,104,161,129"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="222,86,137,107,136,101,221,81"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="401,34,367,30,367,24,401,28"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="401,56,354,62,354,57,401,51"/>
+</map>

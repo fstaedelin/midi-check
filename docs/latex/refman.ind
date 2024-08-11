@@ -1,0 +1,227 @@
+\begin{theindex}
+
+  \item {\_\_init\_\_}
+    \subitem {jarvis.JARVIS}, \hyperpage{20}
+    \subitem {test\_helpers.Event}, \hyperpage{16}
+  \item {\_autoname}
+    \subitem {jarvis\_utilities.JarvisUtilitiesMixin}, \hyperpage{34}
+  \item {\_autonameTests}
+    \subitem {jarvis\_utilities.JarvisUtilitiesMixin}, \hyperpage{35}
+  \item {\_format\_message}
+    \subitem {jarvis\_printing.JarvisPrintingMixin}, \hyperpage{29}
+  \item {\_get\_current\_context}
+    \subitem {jarvis\_utilities.JarvisUtilitiesMixin}, \hyperpage{36}
+  \item {\_importHelp}
+    \subitem {launch\_tests}, \hyperpage{10}
+  \item {\_print}
+    \subitem {jarvis\_printing.JarvisPrintingMixin}, \hyperpage{30}
+  \item {\_printIn}
+    \subitem {jarvis\_printing.JarvisPrintingMixin}, \hyperpage{31}
+  \item {\_printOut}
+    \subitem {jarvis\_printing.JarvisPrintingMixin}, \hyperpage{32}
+  \item {\_print\_contexts}
+    \subitem {jarvis\_printing.JarvisPrintingMixin}, \hyperpage{31}
+  \item {\_set\_new\_context}
+    \subitem {jarvis\_utilities.JarvisUtilitiesMixin}, \hyperpage{37}
+  \item {\_trigger\_messages}
+    \subitem {jarvis\_utilities.JarvisUtilitiesMixin}, \hyperpage{38}
+
+  \indexspace
+
+  \item {AddTest}
+    \subitem {jarvis.JARVIS}, \hyperpage{21}
+
+  \indexspace
+
+  \item {Cb\_False}
+    \subitem {jarvis.JARVIS}, \hyperpage{21}
+  \item {Cb\_True}
+    \subitem {jarvis.JARVIS}, \hyperpage{22}
+  \item {channel}
+    \subitem {test\_helpers.Event}, \hyperpage{17}
+  \item {contexts}
+    \subitem {jarvis.JARVIS}, \hyperpage{28}
+    \subitem {jarvis\_printing.JarvisPrintingMixin}, \hyperpage{32}
+    \subitem {jarvis\_utilities.JarvisUtilitiesMixin}, \hyperpage{39}
+  \item {current\_path}
+    \subitem {jarvis.JARVIS}, \hyperpage{28}
+    \subitem {jarvis\_printing.JarvisPrintingMixin}, \hyperpage{32}
+    \subitem {jarvis\_utilities.JarvisUtilitiesMixin}, \hyperpage{39}
+
+  \indexspace
+
+  \item {data}
+    \subitem {test\_helpers.Event}, \hyperpage{17}
+  \item {Debug}
+    \subitem {jarvis.JARVIS}, \hyperpage{23}
+
+  \indexspace
+
+  \item {Error}
+    \subitem {jarvis.JARVIS}, \hyperpage{24}
+  \item {event1}
+    \subitem {TEST\_GPT\_example}, \hyperpage{11}
+    \subitem {TEST\_minimal\_example}, \hyperpage{13}
+
+  \indexspace
+
+  \item {handled}
+    \subitem {TEST\_GPT\_example}, \hyperpage{11}
+    \subitem {test\_helpers.Event}, \hyperpage{17}
+    \subitem {TEST\_minimal\_example}, \hyperpage{13}
+
+  \indexspace
+
+  \item {id}
+    \subitem {test\_helpers.Event}, \hyperpage{18}
+  \item {ID\_SUP\_100}
+    \subitem {TEST\_GPT\_example}, \hyperpage{11}
+    \subitem {TEST\_minimal\_example}, \hyperpage{13}
+  \item {ID\_SUP\_150}
+    \subitem {TEST\_GPT\_example}, \hyperpage{11}
+    \subitem {TEST\_minimal\_example}, \hyperpage{13}
+  \item {importTests}
+    \subitem {launch\_tests}, \hyperpage{10}
+  \item {is\_more\_100}
+    \subitem {test\_helpers}, \hyperpage{12}
+  \item {is\_more\_150}
+    \subitem {test\_helpers}, \hyperpage{12}
+
+  \indexspace
+
+  \item {JARVIS}, \hyperpage{9}
+  \item {jarvis}, \hyperpage{9}
+    \subitem {test\_helpers}, \hyperpage{12}
+  \item {jarvis.JARVIS}, \hyperpage{18}
+    \subitem {\_\_init\_\_}, \hyperpage{20}
+    \subitem {AddTest}, \hyperpage{21}
+    \subitem {Cb\_False}, \hyperpage{21}
+    \subitem {Cb\_True}, \hyperpage{22}
+    \subitem {contexts}, \hyperpage{28}
+    \subitem {current\_path}, \hyperpage{28}
+    \subitem {Debug}, \hyperpage{23}
+    \subitem {Error}, \hyperpage{24}
+    \subitem {level}, \hyperpage{28}
+    \subitem {levels}, \hyperpage{28}
+    \subitem {Log}, \hyperpage{24}
+    \subitem {msg\_log}, \hyperpage{28}
+    \subitem {Navigate}, \hyperpage{25}
+    \subitem {print\_lvl}, \hyperpage{28}
+    \subitem {tests}, \hyperpage{28}
+    \subitem {TriggerTest}, \hyperpage{26}
+    \subitem {unnamed\_tests}, \hyperpage{29}
+    \subitem {Warning}, \hyperpage{27}
+    \subitem {WriteLog}, \hyperpage{27}
+  \item {JARVIS/jarvis.py}, \hyperpage{41}
+  \item {JARVIS/jarvis\_printing.py}, \hyperpage{41}
+  \item {JARVIS/jarvis\_utilities.py}, \hyperpage{41}
+  \item {jarvis\_printing}, \hyperpage{9}
+  \item {jarvis\_printing.JarvisPrintingMixin}, \hyperpage{29}
+    \subitem {\_format\_message}, \hyperpage{29}
+    \subitem {\_print}, \hyperpage{30}
+    \subitem {\_printIn}, \hyperpage{31}
+    \subitem {\_printOut}, \hyperpage{32}
+    \subitem {\_print\_contexts}, \hyperpage{31}
+    \subitem {contexts}, \hyperpage{32}
+    \subitem {current\_path}, \hyperpage{32}
+  \item {jarvis\_utilities}, \hyperpage{10}
+  \item {jarvis\_utilities.JarvisUtilitiesMixin}, \hyperpage{33}
+    \subitem {\_autoname}, \hyperpage{34}
+    \subitem {\_autonameTests}, \hyperpage{35}
+    \subitem {\_get\_current\_context}, \hyperpage{36}
+    \subitem {\_set\_new\_context}, \hyperpage{37}
+    \subitem {\_trigger\_messages}, \hyperpage{38}
+    \subitem {contexts}, \hyperpage{39}
+    \subitem {current\_path}, \hyperpage{39}
+
+  \indexspace
+
+  \item {launch\_tests}, \hyperpage{10}
+    \subitem {\_importHelp}, \hyperpage{10}
+    \subitem {importTests}, \hyperpage{10}
+    \subitem {testLib}, \hyperpage{11}
+  \item {launch\_tests.py}, \hyperpage{42}
+  \item {level}
+    \subitem {jarvis.JARVIS}, \hyperpage{28}
+  \item {levels}
+    \subitem {jarvis.JARVIS}, \hyperpage{28}
+  \item {Log}
+    \subitem {jarvis.JARVIS}, \hyperpage{24}
+
+  \indexspace
+
+  \item {mark\_handled}
+    \subitem {test\_helpers.Event}, \hyperpage{17}
+  \item {msg\_log}
+    \subitem {jarvis.JARVIS}, \hyperpage{28}
+
+  \indexspace
+
+  \item {Navigate}
+    \subitem {jarvis.JARVIS}, \hyperpage{25}
+
+  \indexspace
+
+  \item {print\_lvl}
+    \subitem {jarvis.JARVIS}, \hyperpage{28}
+
+  \indexspace
+
+  \item {set\_event\_details}
+    \subitem {test\_helpers.Event}, \hyperpage{17}
+
+  \indexspace
+
+  \item {TEST\_GPT\_example}, \hyperpage{11}
+    \subitem {event1}, \hyperpage{11}
+    \subitem {handled}, \hyperpage{11}
+    \subitem {ID\_SUP\_100}, \hyperpage{11}
+    \subitem {ID\_SUP\_150}, \hyperpage{11}
+    \subitem {test\_handled}, \hyperpage{11}
+  \item {test\_handled}
+    \subitem {TEST\_GPT\_example}, \hyperpage{11}
+    \subitem {TEST\_minimal\_example}, \hyperpage{13}
+  \item {test\_helpers}, \hyperpage{12}
+    \subitem {is\_more\_100}, \hyperpage{12}
+    \subitem {is\_more\_150}, \hyperpage{12}
+    \subitem {jarvis}, \hyperpage{12}
+  \item {test\_helpers.Event}, \hyperpage{15}
+    \subitem {\_\_init\_\_}, \hyperpage{16}
+    \subitem {channel}, \hyperpage{17}
+    \subitem {data}, \hyperpage{17}
+    \subitem {handled}, \hyperpage{17}
+    \subitem {id}, \hyperpage{18}
+    \subitem {mark\_handled}, \hyperpage{17}
+    \subitem {set\_event\_details}, \hyperpage{17}
+    \subitem {type}, \hyperpage{18}
+  \item {TEST\_minimal\_example}, \hyperpage{13}
+    \subitem {event1}, \hyperpage{13}
+    \subitem {handled}, \hyperpage{13}
+    \subitem {ID\_SUP\_100}, \hyperpage{13}
+    \subitem {ID\_SUP\_150}, \hyperpage{13}
+    \subitem {test\_handled}, \hyperpage{13}
+  \item {testLib}
+    \subitem {launch\_tests}, \hyperpage{11}
+  \item {tests}
+    \subitem {jarvis.JARVIS}, \hyperpage{28}
+  \item {tests/TEST\_GPT\_example.py}, \hyperpage{42}
+  \item {tests/test\_helpers.py}, \hyperpage{42}
+  \item {tests/TEST\_minimal\_example.py}, \hyperpage{43}
+  \item {TriggerTest}
+    \subitem {jarvis.JARVIS}, \hyperpage{26}
+  \item {type}
+    \subitem {test\_helpers.Event}, \hyperpage{18}
+
+  \indexspace
+
+  \item {unnamed\_tests}
+    \subitem {jarvis.JARVIS}, \hyperpage{29}
+
+  \indexspace
+
+  \item {Warning}
+    \subitem {jarvis.JARVIS}, \hyperpage{27}
+  \item {WriteLog}
+    \subitem {jarvis.JARVIS}, \hyperpage{27}
+
+\end{theindex}

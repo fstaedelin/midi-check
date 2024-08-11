@@ -1,0 +1,288 @@
+\doxysection{jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin Class Reference}
+\hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin}{}\label{classjarvis__utilities_1_1JarvisUtilitiesMixin}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+
+
+Mixin class providing utility functions for the Logger class.  
+
+
+
+
+Inheritance diagram for jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjarvis__utilities_1_1JarvisUtilitiesMixin_a0e277eeccefab64c5e8f0f64b1926baf}{contexts}}
+\item 
+\# If no current path, initialize the root context \mbox{\hyperlink{classjarvis__utilities_1_1JarvisUtilitiesMixin_a2fb7c0327e9f1c226116fc6fa9e0c38d}{current\+\_\+path}} = context.\+get(part, context)
+\item 
+dict \mbox{\hyperlink{classjarvis__utilities_1_1JarvisUtilitiesMixin_a3dddb42b2b5f98e8441725a98d412837}{current\+\_\+path}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjarvis__utilities_1_1JarvisUtilitiesMixin_ac5012310a549de2aa464e8a613f1011b}{\+\_\+autoname}} (self, name="{}children"{}, parent="{}"{})
+\begin{DoxyCompactList}\small\item\em Automatically generates a name for a new context to avoid conflicts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classjarvis__utilities_1_1JarvisUtilitiesMixin_a38d7b0c3162fb77ab8a9b261cc7f8449}{\+\_\+autoname\+Tests}} (self, name="{}test"{}, parent="{}TESTS"{})
+\begin{DoxyCompactList}\small\item\em Automatically generates a unique name for a new test. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classjarvis__utilities_1_1JarvisUtilitiesMixin_a383b850245894c7aacdad6751105bbba}{\+\_\+get\+\_\+current\+\_\+context}} (self)
+\begin{DoxyCompactList}\small\item\em Retrieves the current context based on the current path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classjarvis__utilities_1_1JarvisUtilitiesMixin_a6dace0d393d836d916e11b10bf70e7ae}{\+\_\+set\+\_\+new\+\_\+context}} (self, name="{}children"{}, parent=None)
+\begin{DoxyCompactList}\small\item\em Sets a new context in the logger\textquotesingle{}s hierarchy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classjarvis__utilities_1_1JarvisUtilitiesMixin_a1e933474919f97beb650adebf6ba5513}{\+\_\+trigger\+\_\+messages}} (self, result, test)
+\begin{DoxyCompactList}\small\item\em Triggers success or failure messages based on the result of a test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mixin class providing utility functions for the Logger class. 
+
+The \doxylink{classjarvis__utilities_1_1JarvisUtilitiesMixin}{Jarvis\+Utilities\+Mixin} class extends the Jarvis\+Printing\+Mixin class and includes several utility functions that manage logging contexts, handle automatic naming of contexts and tests, and trigger messages based on the outcomes of tests. These utilities are designed to work seamlessly with the logging system in \doxylink{namespaceJARVIS}{JARVIS}.
+
+\begin{DoxyVerb}Mixin class for various utility functions used by the Logger class.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin_ac5012310a549de2aa464e8a613f1011b}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}!\_autoname@{\_autoname}}
+\index{\_autoname@{\_autoname}!jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+\doxysubsubsection{\texorpdfstring{\_autoname()}{\_autoname()}}
+{\footnotesize\ttfamily \label{classjarvis__utilities_1_1JarvisUtilitiesMixin_ac5012310a549de2aa464e8a613f1011b} 
+jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin.\+\_\+autoname (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{ = {\ttfamily "{}children"{}}, }\item[{}]{parent}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Automatically generates a name for a new context to avoid conflicts. 
+
+This method generates a name for a new context, ensuring that it does not overwrite existing contexts with the same name. It appends a number to the name if a conflict is detected, making it unique within the parent context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The desired context name (defaults to "{}children"{}). \\
+\hline
+{\em parent} & The parent context name (defaults to an empty string). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The auto-\/generated name.
+\end{DoxyReturn}
+\begin{DoxyVerb}Automatically name the context to avoid overwriting existing contexts.
+
+:param name: The desired context name.
+:param parent: The parent context name, defaults to an empty string.
+:return: The auto-generated name.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_ac5012310a549de2aa464e8a613f1011b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_ac5012310a549de2aa464e8a613f1011b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin_a38d7b0c3162fb77ab8a9b261cc7f8449}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}!\_autonameTests@{\_autonameTests}}
+\index{\_autonameTests@{\_autonameTests}!jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+\doxysubsubsection{\texorpdfstring{\_autonameTests()}{\_autonameTests()}}
+{\footnotesize\ttfamily \label{classjarvis__utilities_1_1JarvisUtilitiesMixin_a38d7b0c3162fb77ab8a9b261cc7f8449} 
+jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin.\+\_\+autoname\+Tests (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{ = {\ttfamily "{}test"{}}, }\item[{}]{parent}{ = {\ttfamily "{}TESTS"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Automatically generates a unique name for a new test. 
+
+This method automatically names a new test within a specific parent context (by default, the "{}\+TESTS"{} context). It ensures that the test name is unique by appending a number if necessary, which prevents overwriting existing tests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The desired test name (defaults to "{}test"{}). \\
+\hline
+{\em parent} & The parent context name (defaults to "{}\+TESTS"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The auto-\/generated test name.
+\end{DoxyReturn}
+\begin{DoxyVerb}Automatically name the test to avoid overwriting existing tests.
+
+:param name: The desired test name.
+:param parent: The parent context name, defaults to "TESTS".
+:return: The auto-generated test name.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_a38d7b0c3162fb77ab8a9b261cc7f8449_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_a38d7b0c3162fb77ab8a9b261cc7f8449_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin_a383b850245894c7aacdad6751105bbba}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}!\_get\_current\_context@{\_get\_current\_context}}
+\index{\_get\_current\_context@{\_get\_current\_context}!jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_current\_context()}{\_get\_current\_context()}}
+{\footnotesize\ttfamily \label{classjarvis__utilities_1_1JarvisUtilitiesMixin_a383b850245894c7aacdad6751105bbba} 
+jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin.\+\_\+get\+\_\+current\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Retrieves the current context based on the current path. 
+
+This method navigates the hierarchy of contexts according to the current path and returns the dictionary representing the current context. It allows for easy access to the current working context within the logger.
+
+\begin{DoxyReturn}{Returns}
+The current context dictionary.
+\end{DoxyReturn}
+\begin{DoxyVerb}Get the current context based on the current path.
+
+:return: The current context dictionary.
+\end{DoxyVerb}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_a383b850245894c7aacdad6751105bbba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin_a6dace0d393d836d916e11b10bf70e7ae}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}!\_set\_new\_context@{\_set\_new\_context}}
+\index{\_set\_new\_context@{\_set\_new\_context}!jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+\doxysubsubsection{\texorpdfstring{\_set\_new\_context()}{\_set\_new\_context()}}
+{\footnotesize\ttfamily \label{classjarvis__utilities_1_1JarvisUtilitiesMixin_a6dace0d393d836d916e11b10bf70e7ae} 
+jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin.\+\_\+set\+\_\+new\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{ = {\ttfamily "{}children"{}}, }\item[{}]{parent}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sets a new context in the logger\textquotesingle{}s hierarchy. 
+
+This method creates and sets a new context within the logging hierarchy. It can either initialize a root context if none exists, or it navigates the existing hierarchy to add a new sub-\/context. The new context is named either as specified or automatically to avoid conflicts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the new context (defaults to "{}children"{}). \\
+\hline
+{\em parent} & The parent context in which to create the new context (defaults to None). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyVerb}Set a new context in the logger's hierarchy.
+
+:param name: The name of the new context.
+:param parent: The parent context, defaults to None.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_a6dace0d393d836d916e11b10bf70e7ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_a6dace0d393d836d916e11b10bf70e7ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin_a1e933474919f97beb650adebf6ba5513}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}!\_trigger\_messages@{\_trigger\_messages}}
+\index{\_trigger\_messages@{\_trigger\_messages}!jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+\doxysubsubsection{\texorpdfstring{\_trigger\_messages()}{\_trigger\_messages()}}
+{\footnotesize\ttfamily \label{classjarvis__utilities_1_1JarvisUtilitiesMixin_a1e933474919f97beb650adebf6ba5513} 
+jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin.\+\_\+trigger\+\_\+messages (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{result}{, }\item[{}]{test}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Triggers success or failure messages based on the result of a test. 
+
+This method appends appropriate success or failure messages to the log, depending on the outcome of a test. It also handles the callback functions associated with the test, which are triggered when a test passes or fails. The method ensures that the correct sequence of messages is logged, providing clear feedback on the test\textquotesingle{}s status.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result of the test (True for success, False for failure). \\
+\hline
+{\em test} & The test object containing information about the test and callbacks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyVerb}Trigger success or failure messages based on the test result.
+
+:param result: The result of the test (True/False).
+:param test: The test object.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_a1e933474919f97beb650adebf6ba5513_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classjarvis__utilities_1_1JarvisUtilitiesMixin_a1e933474919f97beb650adebf6ba5513_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin_a0e277eeccefab64c5e8f0f64b1926baf}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}!contexts@{contexts}}
+\index{contexts@{contexts}!jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+\doxysubsubsection{\texorpdfstring{contexts}{contexts}}
+{\footnotesize\ttfamily \label{classjarvis__utilities_1_1JarvisUtilitiesMixin_a0e277eeccefab64c5e8f0f64b1926baf} 
+jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin.\+contexts}
+
+\Hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin_a2fb7c0327e9f1c226116fc6fa9e0c38d}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}!current\_path@{current\_path}}
+\index{current\_path@{current\_path}!jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+\doxysubsubsection{\texorpdfstring{current\_path}{current\_path}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classjarvis__utilities_1_1JarvisUtilitiesMixin_a2fb7c0327e9f1c226116fc6fa9e0c38d} 
+jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin.\+current\+\_\+path = context.\+get(part, context)}
+
+\Hypertarget{classjarvis__utilities_1_1JarvisUtilitiesMixin_a3dddb42b2b5f98e8441725a98d412837}\index{jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}!current\_path@{current\_path}}
+\index{current\_path@{current\_path}!jarvis\_utilities.JarvisUtilitiesMixin@{jarvis\_utilities.JarvisUtilitiesMixin}}
+\doxysubsubsection{\texorpdfstring{current\_path}{current\_path}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classjarvis__utilities_1_1JarvisUtilitiesMixin_a3dddb42b2b5f98e8441725a98d412837} 
+dict jarvis\+\_\+utilities.\+Jarvis\+Utilities\+Mixin.\+current\+\_\+path = \{\}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+JARVIS/\mbox{\hyperlink{jarvis__utilities_8py}{jarvis\+\_\+utilities.\+py}}\end{DoxyCompactItemize}

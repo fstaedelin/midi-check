@@ -1,6 +1,30 @@
-from JARVIS.jarvis_utilities import JarvisUtilitiesMixin
+##
+# @package JARVIS
+# JARVIS is a logging package designed to help developers manage complex logging scenarios.
+# It provides various utilities for logging messages at different levels, managing contexts,
+# and testing functionality. This module defines the main JARVIS class, which integrates all
+# the utility functions and logging capabilities into a single, easy-to-use interface.
 
+from jarvis_utilities import JarvisUtilitiesMixin
+
+##
+# @brief Main class for the JARVIS logging system.
+#
+# The JARVIS class extends JarvisUtilitiesMixin, incorporating a variety of logging and
+# utility functions. This class provides methods for logging messages at different levels,
+# navigating between contexts, adding and triggering tests, and generating callback messages.
+# The class is designed to be the central point of interaction for the JARVIS logging system.
 class JARVIS(JarvisUtilitiesMixin):
+    
+    ##
+    # @brief Initializes the JARVIS logger with a default logging level.
+    #
+    # This constructor sets up the initial state of the JARVIS logger, including
+    # the logging level, context hierarchy, and test management. It also initializes
+    # internal variables that track indentation levels, logging contexts, and the log itself.
+    #
+    # @param level The default logging level (defaults to "WARNING").
+    #
     def __init__(self, level="WARNING"):
         """
         Initialize the Logger with a default logging level.
@@ -23,6 +47,15 @@ class JARVIS(JarvisUtilitiesMixin):
         self.unnamed_tests = 0  # Counter for unnamed tests
         self.current_path = []  # Path to the current context
         
+    ##
+    # @brief Navigate to a different context within the logger.
+    #
+    # This method allows the user to move between different contexts within the
+    # logging hierarchy. It can navigate to a child context or move up to the
+    # parent context. If the destination context does not exist, it creates a new one.
+    #
+    # @param destination The context to navigate to (defaults to "children").
+    #
     def Navigate(self, destination="children"):
         """
         Navigate to a different context.
@@ -40,6 +73,12 @@ class JARVIS(JarvisUtilitiesMixin):
                 self._set_new_context(destination)
             self.current_path.append(destination)  # Move to the new or existing context
 
+    ##
+    # @brief Print all the log entries stored in `msg_log`.
+    #
+    # This method iterates over all log entries stored in the `msg_log` list and
+    # prints them. This provides a simple way to output the entire log to the console.
+    #
     def WriteLog(self):
         """
         Print all the log entries stored in `msg_log`.
@@ -47,6 +86,17 @@ class JARVIS(JarvisUtilitiesMixin):
         for entry in self.msg_log:
             print(entry)
             
+    ##
+    # @brief Log a message at a specified level.
+    #
+    # This method logs a message at the given level by navigating to the appropriate
+    # context, formatting the message, and storing it in the current context. It also
+    # returns the formatted message.
+    #
+    # @param message The message to log.
+    # @param level The level at which to log the message.
+    # @return The formatted message.
+    #
     def Log(self, message, level):
         """
         Log a message at the given level.
@@ -66,6 +116,14 @@ class JARVIS(JarvisUtilitiesMixin):
 
         return formatted_message
 
+    ##
+    # @brief Log a debug message.
+    #
+    # This method logs a message at the "DEBUG" level, which is typically used
+    # for detailed debugging information that may not be required during normal operation.
+    #
+    # @param message The debug message to log.
+    #
     def Debug(self, message):
         """
         Log a debug message.
@@ -74,6 +132,15 @@ class JARVIS(JarvisUtilitiesMixin):
         """
         self.Log(message, "DEBUG")
 
+    ##
+    # @brief Log a warning message.
+    #
+    # This method logs a message at the "WARNING" level, which is typically used
+    # for logging potentially harmful situations or important notices that require
+    # attention.
+    #
+    # @param message The warning message to log.
+    #
     def Warning(self, message):
         """
         Log a warning message.
@@ -82,6 +149,14 @@ class JARVIS(JarvisUtilitiesMixin):
         """
         self.Log(message, "WARNING")
 
+    ##
+    # @brief Log an error message.
+    #
+    # This method logs a message at the "ERROR" level, which is typically used
+    # for logging serious issues that might cause the application to behave unexpectedly.
+    #
+    # @param message The error message to log.
+    #
     def Error(self, message):
         """
         Log an error message.
@@ -90,6 +165,21 @@ class JARVIS(JarvisUtilitiesMixin):
         """
         self.Log(message, "ERROR")
 
+    ##
+    # @brief Add a new test to the current context.
+    #
+    # This method adds a new test to the current context within the logging hierarchy.
+    # The test is defined by a test function, expected result, and optional callback
+    # functions for handling success and failure. The test is automatically named to
+    # avoid conflicts, and the method returns the test object.
+    #
+    # @param test_fn The test function to evaluate (defaults to a lambda returning False).
+    # @param result_key Expected result key for the test (defaults to True).
+    # @param callback_true Callback function if the test passes (defaults to a success message).
+    # @param callback_false Callback function if the test fails (defaults to a failure message).
+    # @param name Name of the test (defaults to "test").
+    # @return The newly added test object.
+    #
     def AddTest(self, 
             test_fn=lambda: False,
             result_key=True, 
@@ -137,6 +227,17 @@ class JARVIS(JarvisUtilitiesMixin):
 
         return newTest  # Optionally return the test object if needed elsewhere
 
+    ##
+    # @brief Trigger a specific test.
+    #
+    # This method triggers a specific test by executing the test function with the
+    # provided value. It then logs appropriate success or failure messages based
+    # on the test result and updates the test's status.
+    #
+    # @param test The test object to trigger.
+    # @param val The value to pass to the test function.
+    # @return The test object after execution.
+    #
     def TriggerTest(self, test, val):
         """
         Trigger a specific test.
@@ -154,6 +255,16 @@ class JARVIS(JarvisUtilitiesMixin):
         test["triggered"] = True
         return test
 
+    ##
+    # @brief Generate a success callback message.
+    #
+    # This method generates a callback message indicating that a test has passed.
+    # The message is formatted with a "SUCCESS" level by default.
+    #
+    # @param message The message to format.
+    # @param level The logging level (defaults to "SUCCESS").
+    # @return The formatted message.
+    #
     def Cb_True(self, message, level="SUCCESS"):
         """
         Generate a success callback message.
@@ -165,6 +276,16 @@ class JARVIS(JarvisUtilitiesMixin):
         formatted_message = self._format_message(level, message, ignore=True)
         return formatted_message
     
+    ##
+    # @brief Generate a failure callback message.
+    #
+    # This method generates a callback message indicating that a test has failed.
+    # The message is formatted with a "FAIL" level by default.
+    #
+    # @param message The message to format.
+    # @param level The logging level (defaults to "FAIL").
+    # @return The formatted message.
+    #
     def Cb_False(self, message, level="FAIL"):
         """
         Generate a failure callback message.
@@ -175,3 +296,4 @@ class JARVIS(JarvisUtilitiesMixin):
         """
         formatted_message = self._format_message(level, message, ignore=True)
         return formatted_message
+
