@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacelaunch__tests" xml:lang="en-US">
+<title>launch_tests Namespace Reference</title>
+<indexterm><primary>launch_tests</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374">_importHelp</link> (folder)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab">importTests</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacelaunch__tests_1a71cf60e3f479a004617aaf4d2467b762">testLib</link> = <link linkend="_namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab">importTests</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374"/><section>
+    <title>_importHelp()</title>
+<indexterm><primary>_importHelp</primary><secondary>launch_tests</secondary></indexterm>
+<indexterm><primary>launch_tests</primary><secondary>_importHelp</secondary></indexterm>
+<para><computeroutput>launch_tests._importHelp ( folder)<computeroutput>[protected]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Imports all modules from a specific folder whose names contain &apos;TEST&apos;.
+
+:param folder: The JARVIS/folder you want imported.
+:return: A dictionary where keys are module names and values are the imported modules.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacelaunch__tests_a8771b8b3d451ad0b33480d9ae73c1374_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab"/><section>
+    <title>importTests()</title>
+<indexterm><primary>importTests</primary><secondary>launch_tests</secondary></indexterm>
+<indexterm><primary>launch_tests</primary><secondary>importTests</secondary></indexterm>
+<para><computeroutput>launch_tests.importTests ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacelaunch__tests_a2d924b5e780336fa61ddb2e76cfa4eab_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacelaunch__tests_1a71cf60e3f479a004617aaf4d2467b762"/><section>
+    <title>testLib</title>
+<indexterm><primary>testLib</primary><secondary>launch_tests</secondary></indexterm>
+<indexterm><primary>launch_tests</primary><secondary>testLib</secondary></indexterm>
+<para><computeroutput>launch_tests.testLib = <link linkend="_namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab">importTests</link>()</computeroutput></para></section>
+</section>
+</section>

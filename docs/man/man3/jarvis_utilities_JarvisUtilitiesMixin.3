@@ -1,0 +1,127 @@
+.TH "jarvis_utilities.JarvisUtilitiesMixin" 3 "JARVIS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+jarvis_utilities.JarvisUtilitiesMixin
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits JarvisPrintingMixin\&.
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcontexts\fP"
+.br
+.ti -1c
+.RI "# If no current path, initialize the root context \fBcurrent_path\fP = context\&.get(part, context)"
+.br
+.ti -1c
+.RI "dict \fBcurrent_path\fP = {}"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB_autoname\fP (self, name='children', parent='')"
+.br
+.ti -1c
+.RI "\fB_autonameTests\fP (self, name='test', parent='TESTS')"
+.br
+.ti -1c
+.RI "\fB_get_current_context\fP (self)"
+.br
+.ti -1c
+.RI "\fB_set_new_context\fP (self, name='children', parent=None)"
+.br
+.ti -1c
+.RI "\fB_trigger_messages\fP (self, result, test)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Mixin class for various utility functions used by the Logger class\&.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "jarvis_utilities\&.JarvisUtilitiesMixin\&._autoname ( self,  name = \fR'children'\fP,  parent = \fR''\fP)\fR [protected]\fP"
+
+.PP
+.nf
+Automatically name the context to avoid overwriting existing contexts\&.
+
+:param name: The desired context name\&.
+:param parent: The parent context name, defaults to an empty string\&.
+:return: The auto-generated name\&.
+
+.fi
+.PP
+ 
+.SS "jarvis_utilities\&.JarvisUtilitiesMixin\&._autonameTests ( self,  name = \fR'test'\fP,  parent = \fR'TESTS'\fP)\fR [protected]\fP"
+
+.PP
+.nf
+Automatically name the test to avoid overwriting existing tests\&.
+
+:param name: The desired test name\&.
+:param parent: The parent context name, defaults to 'TESTS'\&.
+:return: The auto-generated test name\&.
+
+.fi
+.PP
+ 
+.SS "jarvis_utilities\&.JarvisUtilitiesMixin\&._get_current_context ( self)\fR [protected]\fP"
+
+.PP
+.nf
+Get the current context based on the current path\&.
+
+:return: The current context dictionary\&.
+
+.fi
+.PP
+ 
+.SS "jarvis_utilities\&.JarvisUtilitiesMixin\&._set_new_context ( self,  name = \fR'children'\fP,  parent = \fRNone\fP)\fR [protected]\fP"
+
+.PP
+.nf
+Set a new context in the logger's hierarchy\&.
+
+:param name: The name of the new context\&.
+:param parent: The parent context, defaults to None\&.
+
+.fi
+.PP
+ 
+.SS "jarvis_utilities\&.JarvisUtilitiesMixin\&._trigger_messages ( self,  result,  test)\fR [protected]\fP"
+
+.PP
+.nf
+Trigger success or failure messages based on the test result\&.
+
+:param result: The result of the test (True/False)\&.
+:param test: The test object\&.
+
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "jarvis_utilities\&.JarvisUtilitiesMixin\&.contexts"
+
+.SS "jarvis_utilities\&.JarvisUtilitiesMixin\&.current_path = context\&.get(part, context)"
+
+.SS "dict jarvis_utilities\&.JarvisUtilitiesMixin\&.current_path = {}"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for JARVIS from the source code\&.

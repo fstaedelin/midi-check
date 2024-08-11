@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacetest__helpers" kind="namespace" language="Python">
+    <compoundname>test_helpers</compoundname>
+    <innerclass refid="classtest__helpers_1_1Event" prot="public">test_helpers::Event</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetest__helpers_1a8cda8c35b53480367492f49f6238e2ca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test_helpers.is_more_100</definition>
+        <argsstring></argsstring>
+        <name>is_more_100</name>
+        <qualifiedname>test_helpers.is_more_100</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=lambda x: True if x &gt; 100 else False,
+    name = &quot;&gt;100&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/test_helpers.py" line="10" column="1" bodyfile="tests/test_helpers.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest__helpers_1a34b38daf48ee1048959407b4433dae8e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test_helpers.is_more_150</definition>
+        <argsstring></argsstring>
+        <name>is_more_150</name>
+        <qualifiedname>test_helpers.is_more_150</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=lambda x: True if x &gt; 150 else False,
+    name = &quot;&gt;150&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/test_helpers.py" line="15" column="1" bodyfile="tests/test_helpers.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest__helpers_1a8babde849ddfcdf75143938087231646" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test_helpers.jarvis</definition>
+        <argsstring></argsstring>
+        <name>jarvis</name>
+        <qualifiedname>test_helpers.jarvis</qualifiedname>
+        <initializer>=  JARVIS(&quot;INFO&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/test_helpers.py" line="3" column="1" bodyfile="tests/test_helpers.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/test_helpers.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

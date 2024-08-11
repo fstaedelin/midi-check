@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classjarvis_1_1JARVIS" xml:lang="en-US">
+<title>jarvis.JARVIS Class Reference</title>
+<indexterm><primary>jarvis.JARVIS</primary></indexterm>
+Inheritance diagram for jarvis.JARVIS:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for jarvis.JARVIS:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a0b9e05f4731aa1c92207e5b5099599bc">__init__</link> (self, <link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link>=&quot;WARNING&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a">AddTest</link> (self, test_fn=lambda:False, result_key=True, callback_true=None, callback_false=None, name=&quot;test&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a3e7426a263dabc9aa3f62182afdb949d">Cb_False</link> (self, message, <link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link>=&quot;FAIL&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a411998cc9fec9c144deb5d5ba96b931e">Cb_True</link> (self, message, <link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link>=&quot;SUCCESS&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a922459758e5ed3674a4aedfee450e1c5">Debug</link> (self, message)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a11ece9fa16c0a5a3d55fc3ef5f4f22ec">Error</link> (self, message)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf">Log</link> (self, message, <link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a">Navigate</link> (self, destination=&quot;children&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a2444145876c9d99aaac5b583737e2c8b">TriggerTest</link> (self, test, val)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a6c0d7b07134d9e4e547fd06f5f5eee15">Warning</link> (self, message)</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1afb1719dc14c9e960e46de2add6221b3f">WriteLog</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_classjarvis_1_1JARVIS_1a5b5d3d7a57acfc39a99c44aee31a5adb">contexts</link> = {}</para>
+</listitem>
+            <listitem><para>list <link linkend="_classjarvis_1_1JARVIS_1a7a12fe08ec496214cab7dfecf2b4925c">current_path</link> = []</para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link> = level</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classjarvis_1_1JARVIS_1ac2d94946d6cf0b69c7f45ff5c3bf3d11">levels</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_classjarvis_1_1JARVIS_1a13da5016a641f83f6e6d1dcd2616dc94">msg_log</link> = []</para>
+</listitem>
+            <listitem><para>int <link linkend="_classjarvis_1_1JARVIS_1a100f573fb29349b5f53bba148cb45fc3">print_lvl</link> = -1</para>
+</listitem>
+            <listitem><para>list <link linkend="_classjarvis_1_1JARVIS_1a458afde40bcfa08a21beb1ed9c3b6b72">tests</link> = []</para>
+</listitem>
+            <listitem><para>int <link linkend="_classjarvis_1_1JARVIS_1a18b5f817907450771336d91feb9787b5">unnamed_tests</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a0b9e05f4731aa1c92207e5b5099599bc"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.__init__ ( self,  level = <computeroutput>&quot;WARNING&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Initialize the Logger with a default logging level.
+
+:param level: Default logging level, defaults to &quot;WARNING&quot;.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a"/><section>
+    <title>AddTest()</title>
+<indexterm><primary>AddTest</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>AddTest</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.AddTest ( self,  test_fn = <computeroutput>lambda:&#160;False</computeroutput>
+,  result_key = <computeroutput>True</computeroutput>
+,  callback_true = <computeroutput>None</computeroutput>
+,  callback_false = <computeroutput>None</computeroutput>
+,  name = <computeroutput>&quot;test&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Add a new test to the current context.
+
+:param test_fn: The test function to evaluate.
+:param result_key: Expected result key for the test.
+:param callback_true: Callback function if the test passes.
+:param callback_false: Callback function if the test fails.
+:param name: Name of the test.
+:return: The newly added test object.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_af12de11c965f255440924df2baf5946a_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a3e7426a263dabc9aa3f62182afdb949d"/><section>
+    <title>Cb_False()</title>
+<indexterm><primary>Cb_False</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>Cb_False</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.Cb_False ( self,  message,  level = <computeroutput>&quot;FAIL&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Generate a failure callback message.
+
+:param message: The message to format.
+:param level: The logging level, defaults to &quot;FAIL&quot;.
+:return: The formatted message.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a3e7426a263dabc9aa3f62182afdb949d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a3e7426a263dabc9aa3f62182afdb949d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a411998cc9fec9c144deb5d5ba96b931e"/><section>
+    <title>Cb_True()</title>
+<indexterm><primary>Cb_True</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>Cb_True</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.Cb_True ( self,  message,  level = <computeroutput>&quot;SUCCESS&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Generate a success callback message.
+
+:param message: The message to format.
+:param level: The logging level, defaults to &quot;SUCCESS&quot;.
+:return: The formatted message.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a411998cc9fec9c144deb5d5ba96b931e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a411998cc9fec9c144deb5d5ba96b931e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a922459758e5ed3674a4aedfee450e1c5"/><section>
+    <title>Debug()</title>
+<indexterm><primary>Debug</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>Debug</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.Debug ( self,  message)</computeroutput></para>
+<para><literallayout><computeroutput>Log a debug message.
+
+:param message: The debug message to log.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a922459758e5ed3674a4aedfee450e1c5_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a11ece9fa16c0a5a3d55fc3ef5f4f22ec"/><section>
+    <title>Error()</title>
+<indexterm><primary>Error</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>Error</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.Error ( self,  message)</computeroutput></para>
+<para><literallayout><computeroutput>Log an error message.
+
+:param message: The error message to log.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a11ece9fa16c0a5a3d55fc3ef5f4f22ec_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf"/><section>
+    <title>Log()</title>
+<indexterm><primary>Log</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>Log</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.Log ( self,  message,  level)</computeroutput></para>
+<para><literallayout><computeroutput>Log a message at the given level.
+
+:param message: The message to log.
+:param level: The level at which to log the message.
+:return: The formatted message.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a24cb1572ef996dbbe06669780ac076cf_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a24cb1572ef996dbbe06669780ac076cf_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a"/><section>
+    <title>Navigate()</title>
+<indexterm><primary>Navigate</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>Navigate</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.Navigate ( self,  destination = <computeroutput>&quot;children&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Navigate to a different context.
+
+:param destination: The context to navigate to. Defaults to &quot;children&quot;.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a7bbd76a4fc37948be7e54aee4f1ec95a_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a7bbd76a4fc37948be7e54aee4f1ec95a_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a2444145876c9d99aaac5b583737e2c8b"/><section>
+    <title>TriggerTest()</title>
+<indexterm><primary>TriggerTest</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>TriggerTest</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.TriggerTest ( self,  test,  val)</computeroutput></para>
+<para><literallayout><computeroutput>Trigger a specific test.
+
+:param test: The test object to trigger.
+:param val: The value to pass to the test function.
+:return: The test object after execution.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a2444145876c9d99aaac5b583737e2c8b_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a6c0d7b07134d9e4e547fd06f5f5eee15"/><section>
+    <title>Warning()</title>
+<indexterm><primary>Warning</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>Warning</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.Warning ( self,  message)</computeroutput></para>
+<para><literallayout><computeroutput>Log a warning message.
+
+:param message: The warning message to log.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classjarvis_1_1JARVIS_a6c0d7b07134d9e4e547fd06f5f5eee15_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1afb1719dc14c9e960e46de2add6221b3f"/><section>
+    <title>WriteLog()</title>
+<indexterm><primary>WriteLog</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>WriteLog</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.WriteLog ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Print all the log entries stored in `msg_log`.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a5b5d3d7a57acfc39a99c44aee31a5adb"/><section>
+    <title>contexts</title>
+<indexterm><primary>contexts</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>contexts</secondary></indexterm>
+<para><computeroutput>dict jarvis.JARVIS.contexts = {}</computeroutput></para></section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a7a12fe08ec496214cab7dfecf2b4925c"/><section>
+    <title>current_path</title>
+<indexterm><primary>current_path</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>current_path</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.current_path = []</computeroutput></para></section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d"/><section>
+    <title>level</title>
+<indexterm><primary>level</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>level</secondary></indexterm>
+<para><computeroutput>jarvis.JARVIS.level = level</computeroutput></para></section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1ac2d94946d6cf0b69c7f45ff5c3bf3d11"/><section>
+    <title>levels</title>
+<indexterm><primary>levels</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>levels</secondary></indexterm>
+<para><computeroutput>dict jarvis.JARVIS.levels</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;INFO&quot;</emphasis>:&#32;0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;DEBUG&quot;</emphasis>:&#32;10,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;FAIL&quot;</emphasis>:&#32;15,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;SUCCESS&quot;</emphasis>:&#32;15,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;WARNING&quot;</emphasis>:&#32;20,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;ERROR&quot;</emphasis>:&#32;30
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+</programlisting></section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a13da5016a641f83f6e6d1dcd2616dc94"/><section>
+    <title>msg_log</title>
+<indexterm><primary>msg_log</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>msg_log</secondary></indexterm>
+<para><computeroutput>list jarvis.JARVIS.msg_log = []</computeroutput></para></section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a100f573fb29349b5f53bba148cb45fc3"/><section>
+    <title>print_lvl</title>
+<indexterm><primary>print_lvl</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>print_lvl</secondary></indexterm>
+<para><computeroutput>int jarvis.JARVIS.print_lvl = -1</computeroutput></para></section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a458afde40bcfa08a21beb1ed9c3b6b72"/><section>
+    <title>tests</title>
+<indexterm><primary>tests</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>tests</secondary></indexterm>
+<para><computeroutput>list jarvis.JARVIS.tests = []</computeroutput></para></section>
+<anchor xml:id="_classjarvis_1_1JARVIS_1a18b5f817907450771336d91feb9787b5"/><section>
+    <title>unnamed_tests</title>
+<indexterm><primary>unnamed_tests</primary><secondary>jarvis.JARVIS</secondary></indexterm>
+<indexterm><primary>jarvis.JARVIS</primary><secondary>unnamed_tests</secondary></indexterm>
+<para><computeroutput>int jarvis.JARVIS.unnamed_tests = 0</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+JARVIS/<link linkend="_jarvis_8py">jarvis.py</link></section>
+</section>
