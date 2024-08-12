@@ -56,7 +56,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     #
     # @param destination The context to navigate to (defaults to "children").
     #
-    def Navigate(self, destination="children", logging = False):
+    def Navigate(self, destination="children", logging=False):
         """
         Navigate to a different context.
 
@@ -64,16 +64,19 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         """
         if destination == "parent":
             if len(self.current_path) > 0:  # Move to the parent context
-                if not logging: self.Debug("Moving to parent folder", True)
+                if not logging: 
+                    self.Debug("Moving to parent folder", True)
                 self.current_path.pop()
             else:
                 print("Cannot Navigate to parent, root has no parents")
         else:
             # Create a new context if the destination doesn't exist
             if destination not in self._get_current_context():
-                if not logging: self.Warning("Destination does not exist, creating nested context: "+destination, True)
+                if not logging: 
+                    self.Warning("Destination does not exist, creating nested context: "+destination, True)
                 self._set_new_context(destination)
-            if not logging: self.Debug("Moving to: "+ destination, True)
+            if not logging: 
+                self.Debug("Moving to: " + destination, True)
             self.current_path.append(destination)  # Move to the new or existing context
 
     ##
