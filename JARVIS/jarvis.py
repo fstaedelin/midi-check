@@ -5,7 +5,7 @@
 # and testing functionality. This module defines the main JARVIS class, which integrates all
 # the utility functions and logging capabilities into a single, easy-to-use interface.
 
-from jarvis_utilities import JarvisUtilitiesMixin
+from JARVIS.jarvis_utilities import JarvisUtilitiesMixin
 
 ##
 # @brief Main class for the JARVIS logging system.
@@ -65,13 +65,16 @@ class JARVIS(JarvisUtilitiesMixin):
         if destination == "parent":
             if len(self.current_path) > 0:  # Move to the parent context
                 self.current_path.pop()
+                self._print("Moving to parent folder")
             else:
                 print("Cannot Navigate to parent, root has no parents")
         else:
             # Create a new context if the destination doesn't exist
             if destination not in self._get_current_context():
+                self._print("Destination does not exist, creating nested context: "+destination)
                 self._set_new_context(destination)
             self.current_path.append(destination)  # Move to the new or existing context
+            self._print("Moving to "+destination)
 
     ##
     # @brief Print all the log entries stored in `msg_log`.
@@ -224,7 +227,7 @@ class JARVIS(JarvisUtilitiesMixin):
         self._get_current_context()[name] = newTest
         self.tests.append(newTest)
         self.Navigate("parent")  # Return to the previous context
-
+        self.Debug("Created test: "+name)
         return newTest  # Optionally return the test object if needed elsewhere
 
     ##

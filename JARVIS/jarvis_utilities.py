@@ -6,7 +6,7 @@
 # and manipulate logging contexts, handle naming conventions, and trigger 
 # appropriate log messages based on test results.
 
-from jarvis_printing import JarvisPrintingMixin
+from JARVIS.jarvis_printing import JarvisPrintingMixin
 
 ##
 # @brief Mixin class providing utility functions for the Logger class.
@@ -152,23 +152,19 @@ class JarvisUtilitiesMixin(JarvisPrintingMixin):
         :param test: The test object.
         """
         if result:
-            self.msg_log.append(self._format_message("SUCCESS", "----------------", ignore=True))
             if test["triggered"] and not test["passed"]:
-                self.msg_log.append(test["callback_false"])
+                self.msg_log.append(self._format_message("SUCCESS", test["name"]+" was Failed, now is:", ignore=True))
             elif test["triggered"]:
-                self.msg_log.append(test["callback_true"])
+                self.msg_log.append(self._format_message("SUCCESS", test["name"]+" was Passed, still is:", ignore=True))
             
             self.msg_log.append(test["callback_true"])
-            self.msg_log.append(self._format_message("SUCCESS", "----------------", ignore=True))
             test["passed"] = True
         else:
-            self.msg_log.append(self._format_message("FAIL", "----------------"))
             if test["triggered"] and not test["passed"]:
-                self.msg_log.append(test["callback_false"])
+                self.msg_log.append(self._format_message("FAIL", test["name"]+" was Failed, now is:", ignore=True))
             elif test["triggered"]:
-                self.msg_log.append(test["callback_true"])
+                self.msg_log.append(self._format_message("FAIL", test["name"]+" was Passed, still is:", ignore=True))
             
             self.msg_log.append(test["callback_false"])
-            self.msg_log.append(self._format_message("FAIL", "----------------", ignore=True))
             test["passed"] = False
 

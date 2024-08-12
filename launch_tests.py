@@ -2,12 +2,6 @@ import os
 import glob
 import importlib.util
 
-def importTests():
-    # Import all test modules from the 'tests' folder that start with 'TEST_'.
-    #
-    # @return A dictionary where keys are module names and values are the imported modules.
-    return _importHelp("tests")
-
 def _importHelp(folder):
     # Helper function to import all modules from a specific folder whose names contain 'TEST'.
     #
@@ -18,7 +12,7 @@ def _importHelp(folder):
     folder_path = os.path.abspath(folder)
     
     # Find all .py files in the folder that which name starts with 'TEST_'
-    pattern = os.path.join(folder_path, 'TEST_.py')
+    pattern = os.path.join(folder_path, 'TEST_*.py')
     module_files = glob.glob(pattern)
     
     imported_modules = {}
@@ -44,7 +38,7 @@ def _importHelp(folder):
     return imported_modules
 
 # Imports all files starting with 'TEST_' in the 'tests' folder
-testLib = importTests()
+testLib = _importHelp("tests/")
 
 # Launches all tests by simply referencing them
 for _, test in testLib.items():
