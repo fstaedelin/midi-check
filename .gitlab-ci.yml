@@ -6,10 +6,10 @@ stages:
 variables:
   PYTHON_VERSION: "3.8"
 
-#before_script:
-#  - python -m venv venv
-#  - source venv/bin/activate
-#  - pip install -r requirements.txt
+before_script:
+  - python -m venv venv
+  - source venv/bin/activate
+  - pip install -r requirements.txt
 
 #lint:
 #  stage: lint
@@ -20,7 +20,7 @@ variables:
 test:
   stage: test
   script:
-    - python3 -m tests/launch_tests  # This will discover and run tests in your project
+    - pytest --maxfail=1 --disable-warnings -q  # Run tests and stop after the first failure, disable warnings, and be quiet
 
 #deploy:
 #  stage: deploy
