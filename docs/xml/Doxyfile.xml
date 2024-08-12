@@ -190,8 +190,8 @@
     <value><![CDATA[Doxyfile]]></value>
     <value><![CDATA[README.md]]></value>
     <value><![CDATA[.git]]></value>
-    <value><![CDATA[scraps]]></value>
-    <value><![CDATA[utility]]></value>
+    <value><![CDATA[<<<<<<<]]></value>
+    <value><![CDATA[HEAD]]></value>
   </option>
   <option  id='EXCLUDE_SYMLINKS' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXCLUDE_PATTERNS' default='yes' type='stringlist'>

@@ -6,6 +6,8 @@
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classtest__helpers_1_1Event">test_helpers.Event</link></para>
+
+<para>Represents a MIDI event. </para>
 </listitem>
         </itemizedlist>
 </simplesect>

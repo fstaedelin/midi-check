@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_c83c9fcee52ddc713c66ce63e5dd29e2" kind="dir">
+    <compoundname>scraps</compoundname>
+    <innerfile refid="__get__values__from__path_8py">_get_values_from_path.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scraps/"/>
+  </compounddef>
+</doxygen>

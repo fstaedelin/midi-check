@@ -2,7 +2,8 @@
 .ad l
 .nh
 .SH NAME
-test_helpers.Event
+test_helpers.Event \- Represents a MIDI event\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -10,28 +11,91 @@ test_helpers.Event
 
 .in +1c
 .ti -1c
-.RI "\fB__init__\fP (self, event_id, \fBhandled\fP)"
+.RI "\fB__init__\fP (self, event_id, \fBhandled\fP=False)"
 .br
+.RI "Initializes a new instance of the \fBEvent\fP class\&. "
+.ti -1c
+.RI "\fBmark_handled\fP (self)"
+.br
+.RI "Marks the event as handled\&. "
+.ti -1c
+.RI "\fBset_event_details\fP (self, event_type, \fBchannel\fP, \fBdata\fP)"
+.br
+.RI "Set the MIDI event details\&. "
 .in -1c
 .SS "Public Attributes"
 
 .in +1c
 .ti -1c
-.RI "bool \fBhandled\fP = False"
+.RI "\fBchannel\fP = None"
+.br
+.ti -1c
+.RI "list \fBdata\fP = []"
+.br
+.ti -1c
+.RI "bool \fBhandled\fP = handled"
 .br
 .ti -1c
 .RI "\fBid\fP = event_id"
 .br
+.ti -1c
+.RI "\fBtype\fP = None"
+.br
 .in -1c
+.SH "Detailed Description"
+.PP 
+Represents a MIDI event\&. 
+
+The \fBEvent\fP class encapsulates data related to MIDI events\&. This includes the event ID, whether the event has been handled, and potentially other MIDI-specific information such as the type of event (e\&.g\&., Note On, Note Off), the channel number, and additional data bytes (e\&.g\&., note number, velocity)\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "test_helpers\&.Event\&.__init__ ( self,  event_id,  handled)"
+.SS "test_helpers\&.Event\&.__init__ ( self,  event_id,  handled = \fRFalse\fP)"
+
+.PP
+Initializes a new instance of the \fBEvent\fP class\&. The constructor initializes the event with an ID and a handled status\&. The handled attribute is set to False by default, indicating that the event has not yet been processed\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIevent_id\fP The unique identifier for the event\&. 
+.br
+\fIhandled\fP A boolean indicating whether the event has been handled (default is False)\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "test_helpers\&.Event\&.mark_handled ( self)"
+
+.PP
+Marks the event as handled\&. This method updates the handled attribute to True, indicating that the event has been processed\&. 
+.SS "test_helpers\&.Event\&.set_event_details ( self,  event_type,  channel,  data)"
+
+.PP
+Set the MIDI event details\&. This method allows setting the type, channel, and data bytes of the MIDI event\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIevent_type\fP The type of MIDI event (e\&.g\&., 'Note On', 'Control Change')\&. 
+.br
+\fIchannel\fP The MIDI channel number (0-15)\&. 
+.br
+\fIdata\fP A list of data bytes associated with the event\&. 
+.RE
+.PP
 
 .SH "Member Data Documentation"
 .PP 
-.SS "bool test_helpers\&.Event\&.handled = False"
+.SS "test_helpers\&.Event\&.channel = None"
+
+.SS "list test_helpers\&.Event\&.data = []"
+
+.SS "bool test_helpers\&.Event\&.handled = handled"
 
 .SS "test_helpers\&.Event\&.id = event_id"
+
+.SS "test_helpers\&.Event\&.type = None"
 
 
 .SH "Author"

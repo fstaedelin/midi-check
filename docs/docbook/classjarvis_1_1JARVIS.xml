@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classjarvis_1_1JARVIS" xml:lang="en-US">
 <title>jarvis.JARVIS Class Reference</title>
 <indexterm><primary>jarvis.JARVIS</primary></indexterm>
+<para>
+
+<para>Main class for the <link linkend="_classjarvis_1_1JARVIS">JARVIS</link> logging system. </para>
+ 
+</para>
 Inheritance diagram for jarvis.JARVIS:<para>
     <informalfigure>
         <mediaobject>
@@ -24,26 +29,48 @@ Collaboration diagram for jarvis.JARVIS:<para>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a0b9e05f4731aa1c92207e5b5099599bc">__init__</link> (self, <link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link>=&quot;WARNING&quot;)</para>
+
+<para>Initializes the <link linkend="_classjarvis_1_1JARVIS">JARVIS</link> logger with a default logging level. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a">AddTest</link> (self, test_fn=lambda:False, result_key=True, callback_true=None, callback_false=None, name=&quot;test&quot;)</para>
+
+<para>Add a new test to the current context. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a3e7426a263dabc9aa3f62182afdb949d">Cb_False</link> (self, message, <link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link>=&quot;FAIL&quot;)</para>
+
+<para>Generate a failure callback message. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a411998cc9fec9c144deb5d5ba96b931e">Cb_True</link> (self, message, <link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link>=&quot;SUCCESS&quot;)</para>
+
+<para>Generate a success callback message. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a922459758e5ed3674a4aedfee450e1c5">Debug</link> (self, message)</para>
+
+<para>Log a debug message. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a11ece9fa16c0a5a3d55fc3ef5f4f22ec">Error</link> (self, message)</para>
+
+<para>Log an error message. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf">Log</link> (self, message, <link linkend="_classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d">level</link>)</para>
+
+<para>Log a message at a specified level. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a">Navigate</link> (self, destination=&quot;children&quot;)</para>
+
+<para>Navigate to a different context within the logger. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a2444145876c9d99aaac5b583737e2c8b">TriggerTest</link> (self, test, val)</para>
+
+<para>Trigger a specific test. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1a6c0d7b07134d9e4e547fd06f5f5eee15">Warning</link> (self, message)</para>
+
+<para>Log a warning message. </para>
 </listitem>
             <listitem><para><link linkend="_classjarvis_1_1JARVIS_1afb1719dc14c9e960e46de2add6221b3f">WriteLog</link> (self)</para>
+
+<para>Print all the log entries stored in <computeroutput>msg_log</computeroutput>. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -68,6 +95,76 @@ Collaboration diagram for jarvis.JARVIS:<para>
 </listitem>
         </itemizedlist>
 </simplesect>
+Public Attributes inherited from <link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin">jarvis_utilities.JarvisUtilitiesMixin</link>        <itemizedlist>
+            <listitem><para><link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin_1a0e277eeccefab64c5e8f0f64b1926baf">contexts</link></para>
+</listitem>
+            <listitem><para># If no current path, initialize the root context <link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin_1a2fb7c0327e9f1c226116fc6fa9e0c38d">current_path</link> = context.get(part, context)</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin_1a3dddb42b2b5f98e8441725a98d412837">current_path</link> = {}</para>
+</listitem>
+        </itemizedlist>
+Public Attributes inherited from <link linkend="_classjarvis__printing_1_1JarvisPrintingMixin">jarvis_printing.JarvisPrintingMixin</link>        <itemizedlist>
+            <listitem><para><link linkend="_classjarvis__printing_1_1JarvisPrintingMixin_1af8b527e964c79984cd75f1c73146d74a">contexts</link></para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__printing_1_1JarvisPrintingMixin_1ac4c2e7dd28f977f8ac118b78d08924a1">current_path</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Member Functions inherited from <link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin">jarvis_utilities.JarvisUtilitiesMixin</link>        <itemizedlist>
+            <listitem><para><link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin_1ac5012310a549de2aa464e8a613f1011b">_autoname</link> (self, name=&quot;children&quot;, parent=&quot;&quot;)</para>
+
+<para>Automatically generates a name for a new context to avoid conflicts. </para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin_1a38d7b0c3162fb77ab8a9b261cc7f8449">_autonameTests</link> (self, name=&quot;test&quot;, parent=&quot;TESTS&quot;)</para>
+
+<para>Automatically generates a unique name for a new test. </para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba">_get_current_context</link> (self)</para>
+
+<para>Retrieves the current context based on the current path. </para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin_1a6dace0d393d836d916e11b10bf70e7ae">_set_new_context</link> (self, name=&quot;children&quot;, parent=None)</para>
+
+<para>Sets a new context in the logger&apos;s hierarchy. </para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin_1a1e933474919f97beb650adebf6ba5513">_trigger_messages</link> (self, result, test)</para>
+
+<para>Triggers success or failure messages based on the result of a test. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_classjarvis__printing_1_1JarvisPrintingMixin">jarvis_printing.JarvisPrintingMixin</link>        <itemizedlist>
+            <listitem><para><link linkend="_classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f">_format_message</link> (self, level, message, name=&quot;&quot;, ignore=False)</para>
+
+<para>Formats a log message based on its level and other parameters. </para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__printing_1_1JarvisPrintingMixin_1a356afa42e6f5c601c2017bff1aa5ca85">_print</link> (self, name, val=&quot;&quot;)</para>
+
+<para>Prints a debug message with the current indentation level. </para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__printing_1_1JarvisPrintingMixin_1abcf4b4d01f4d05eb5809a31a3319e51e">_print_contexts</link> (self)</para>
+
+<para>Prints the current state of contexts for debugging purposes. </para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__printing_1_1JarvisPrintingMixin_1ae25c5deeae73a2bfc65f6b05656d39b7">_printIn</link> (self, fn_name)</para>
+
+<para>Increases indentation level and prints entering/exiting messages. </para>
+</listitem>
+            <listitem><para><link linkend="_classjarvis__printing_1_1JarvisPrintingMixin_1a88ba37c91cf9237f17cd4ad913cc3323">_printOut</link> (self, fn_name)</para>
+
+<para>Decreases indentation level and prints an exiting message. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Main class for the <link linkend="_classjarvis_1_1JARVIS">JARVIS</link> logging system. </para>
+
+
+
+<para>The <link linkend="_classjarvis_1_1JARVIS">JARVIS</link> class extends JarvisUtilitiesMixin, incorporating a variety of logging and utility functions. This class provides methods for logging messages at different levels, navigating between contexts, adding and triggering tests, and generating callback messages. The class is designed to be the central point of interaction for the <link linkend="_classjarvis_1_1JARVIS">JARVIS</link> logging system. </para>
+</section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
 <anchor xml:id="_classjarvis_1_1JARVIS_1a0b9e05f4731aa1c92207e5b5099599bc"/><section>
@@ -75,8 +172,34 @@ Collaboration diagram for jarvis.JARVIS:<para>
 <indexterm><primary>__init__</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>__init__</secondary></indexterm>
 <para><computeroutput>jarvis.JARVIS.__init__ ( self,  level = <computeroutput>&quot;WARNING&quot;</computeroutput>
-)</computeroutput></para>
-<para><literallayout><computeroutput>Initialize the Logger with a default logging level.
+)</computeroutput></para><para>
+
+<para>Initializes the <link linkend="_classjarvis_1_1JARVIS">JARVIS</link> logger with a default logging level. </para>
+</para>
+
+<para>This constructor sets up the initial state of the <link linkend="_classjarvis_1_1JARVIS">JARVIS</link> logger, including the logging level, context hierarchy, and test management. It also initializes internal variables that track indentation levels, logging contexts, and the log itself.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>level</entry><entry>
+<para>The default logging level (defaults to &quot;WARNING&quot;).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <literallayout><computeroutput>Initialize the Logger with a default logging level.
 
 :param level: Default logging level, defaults to &quot;WARNING&quot;.
 </computeroutput></literallayout> </para>
@@ -93,8 +216,58 @@ Collaboration diagram for jarvis.JARVIS:<para>
 ,  callback_true = <computeroutput>None</computeroutput>
 ,  callback_false = <computeroutput>None</computeroutput>
 ,  name = <computeroutput>&quot;test&quot;</computeroutput>
-)</computeroutput></para>
-<para><literallayout><computeroutput>Add a new test to the current context.
+)</computeroutput></para><para>
+
+<para>Add a new test to the current context. </para>
+</para>
+
+<para>This method adds a new test to the current context within the logging hierarchy. The test is defined by a test function, expected result, and optional callback functions for handling success and failure. The test is automatically named to avoid conflicts, and the method returns the test object.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>test_fn</entry><entry>
+<para>The test function to evaluate (defaults to a lambda returning False). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>result_key</entry><entry>
+<para>Expected result key for the test (defaults to True). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>callback_true</entry><entry>
+<para>Callback function if the test passes (defaults to a success message). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>callback_false</entry><entry>
+<para>Callback function if the test fails (defaults to a failure message). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para>Name of the test (defaults to &quot;test&quot;). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The newly added test object.</para>
+</formalpara>
+<literallayout><computeroutput>Add a new test to the current context.
 
 :param test_fn: The test function to evaluate.
 :param result_key: Expected result key for the test.
@@ -118,8 +291,43 @@ Here is the call graph for this function:<para>
 <indexterm><primary>Cb_False</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>Cb_False</secondary></indexterm>
 <para><computeroutput>jarvis.JARVIS.Cb_False ( self,  message,  level = <computeroutput>&quot;FAIL&quot;</computeroutput>
-)</computeroutput></para>
-<para><literallayout><computeroutput>Generate a failure callback message.
+)</computeroutput></para><para>
+
+<para>Generate a failure callback message. </para>
+</para>
+
+<para>This method generates a callback message indicating that a test has failed. The message is formatted with a &quot;FAIL&quot; level by default.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The message to format. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>level</entry><entry>
+<para>The logging level (defaults to &quot;FAIL&quot;). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The formatted message.</para>
+</formalpara>
+<literallayout><computeroutput>Generate a failure callback message.
 
 :param message: The message to format.
 :param level: The logging level, defaults to &quot;FAIL&quot;.
@@ -149,8 +357,43 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>Cb_True</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>Cb_True</secondary></indexterm>
 <para><computeroutput>jarvis.JARVIS.Cb_True ( self,  message,  level = <computeroutput>&quot;SUCCESS&quot;</computeroutput>
-)</computeroutput></para>
-<para><literallayout><computeroutput>Generate a success callback message.
+)</computeroutput></para><para>
+
+<para>Generate a success callback message. </para>
+</para>
+
+<para>This method generates a callback message indicating that a test has passed. The message is formatted with a &quot;SUCCESS&quot; level by default.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The message to format. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>level</entry><entry>
+<para>The logging level (defaults to &quot;SUCCESS&quot;). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The formatted message.</para>
+</formalpara>
+<literallayout><computeroutput>Generate a success callback message.
 
 :param message: The message to format.
 :param level: The logging level, defaults to &quot;SUCCESS&quot;.
@@ -179,8 +422,34 @@ Here is the caller graph for this function:<para>
     <title>Debug()</title>
 <indexterm><primary>Debug</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>Debug</secondary></indexterm>
-<para><computeroutput>jarvis.JARVIS.Debug ( self,  message)</computeroutput></para>
-<para><literallayout><computeroutput>Log a debug message.
+<para><computeroutput>jarvis.JARVIS.Debug ( self,  message)</computeroutput></para><para>
+
+<para>Log a debug message. </para>
+</para>
+
+<para>This method logs a message at the &quot;DEBUG&quot; level, which is typically used for detailed debugging information that may not be required during normal operation.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The debug message to log.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <literallayout><computeroutput>Log a debug message.
 
 :param message: The debug message to log.
 </computeroutput></literallayout> </para>
@@ -198,8 +467,34 @@ Here is the call graph for this function:<para>
     <title>Error()</title>
 <indexterm><primary>Error</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>Error</secondary></indexterm>
-<para><computeroutput>jarvis.JARVIS.Error ( self,  message)</computeroutput></para>
-<para><literallayout><computeroutput>Log an error message.
+<para><computeroutput>jarvis.JARVIS.Error ( self,  message)</computeroutput></para><para>
+
+<para>Log an error message. </para>
+</para>
+
+<para>This method logs a message at the &quot;ERROR&quot; level, which is typically used for logging serious issues that might cause the application to behave unexpectedly.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The error message to log.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <literallayout><computeroutput>Log an error message.
 
 :param message: The error message to log.
 </computeroutput></literallayout> </para>
@@ -217,8 +512,43 @@ Here is the call graph for this function:<para>
     <title>Log()</title>
 <indexterm><primary>Log</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>Log</secondary></indexterm>
-<para><computeroutput>jarvis.JARVIS.Log ( self,  message,  level)</computeroutput></para>
-<para><literallayout><computeroutput>Log a message at the given level.
+<para><computeroutput>jarvis.JARVIS.Log ( self,  message,  level)</computeroutput></para><para>
+
+<para>Log a message at a specified level. </para>
+</para>
+
+<para>This method logs a message at the given level by navigating to the appropriate context, formatting the message, and storing it in the current context. It also returns the formatted message.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The message to log. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>level</entry><entry>
+<para>The level at which to log the message. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The formatted message.</para>
+</formalpara>
+<literallayout><computeroutput>Log a message at the given level.
 
 :param message: The message to log.
 :param level: The level at which to log the message.
@@ -248,8 +578,34 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>Navigate</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>Navigate</secondary></indexterm>
 <para><computeroutput>jarvis.JARVIS.Navigate ( self,  destination = <computeroutput>&quot;children&quot;</computeroutput>
-)</computeroutput></para>
-<para><literallayout><computeroutput>Navigate to a different context.
+)</computeroutput></para><para>
+
+<para>Navigate to a different context within the logger. </para>
+</para>
+
+<para>This method allows the user to move between different contexts within the logging hierarchy. It can navigate to a child context or move up to the parent context. If the destination context does not exist, it creates a new one.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>destination</entry><entry>
+<para>The context to navigate to (defaults to &quot;children&quot;).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <literallayout><computeroutput>Navigate to a different context.
 
 :param destination: The context to navigate to. Defaults to &quot;children&quot;.
 </computeroutput></literallayout> </para>
@@ -276,8 +632,43 @@ Here is the caller graph for this function:<para>
     <title>TriggerTest()</title>
 <indexterm><primary>TriggerTest</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>TriggerTest</secondary></indexterm>
-<para><computeroutput>jarvis.JARVIS.TriggerTest ( self,  test,  val)</computeroutput></para>
-<para><literallayout><computeroutput>Trigger a specific test.
+<para><computeroutput>jarvis.JARVIS.TriggerTest ( self,  test,  val)</computeroutput></para><para>
+
+<para>Trigger a specific test. </para>
+</para>
+
+<para>This method triggers a specific test by executing the test function with the provided value. It then logs appropriate success or failure messages based on the test result and updates the test&apos;s status.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>test</entry><entry>
+<para>The test object to trigger. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>val</entry><entry>
+<para>The value to pass to the test function. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The test object after execution.</para>
+</formalpara>
+<literallayout><computeroutput>Trigger a specific test.
 
 :param test: The test object to trigger.
 :param val: The value to pass to the test function.
@@ -297,8 +688,34 @@ Here is the call graph for this function:<para>
     <title>Warning()</title>
 <indexterm><primary>Warning</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>Warning</secondary></indexterm>
-<para><computeroutput>jarvis.JARVIS.Warning ( self,  message)</computeroutput></para>
-<para><literallayout><computeroutput>Log a warning message.
+<para><computeroutput>jarvis.JARVIS.Warning ( self,  message)</computeroutput></para><para>
+
+<para>Log a warning message. </para>
+</para>
+
+<para>This method logs a message at the &quot;WARNING&quot; level, which is typically used for logging potentially harmful situations or important notices that require attention.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The warning message to log.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <literallayout><computeroutput>Log a warning message.
 
 :param message: The warning message to log.
 </computeroutput></literallayout> </para>
@@ -316,7 +733,13 @@ Here is the call graph for this function:<para>
     <title>WriteLog()</title>
 <indexterm><primary>WriteLog</primary><secondary>jarvis.JARVIS</secondary></indexterm>
 <indexterm><primary>jarvis.JARVIS</primary><secondary>WriteLog</secondary></indexterm>
-<para><computeroutput>jarvis.JARVIS.WriteLog ( self)</computeroutput></para>
+<para><computeroutput>jarvis.JARVIS.WriteLog ( self)</computeroutput></para><para>
+
+<para>Print all the log entries stored in <computeroutput>msg_log</computeroutput>. </para>
+</para>
+
+<para>This method iterates over all log entries stored in the <computeroutput>msg_log</computeroutput> list and prints them. This provides a simple way to output the entire log to the console.</para>
+
 <para><literallayout><computeroutput>Print all the log entries stored in `msg_log`.
 </computeroutput></literallayout> </para>
 </section>

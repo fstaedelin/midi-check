@@ -6,12 +6,18 @@
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin">jarvis_utilities.JarvisUtilitiesMixin</link></para>
+
+<para>Mixin class providing utility functions for the Logger class. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Namespaces    </title>
         <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceJARVIS">JARVIS</link></para>
+
+<para><link linkend="_namespaceJARVIS">JARVIS</link> is a logging package designed to help developers manage complex logging scenarios. </para>
+</listitem>
             <listitem><para>namespace <link linkend="_namespacejarvis__utilities">jarvis_utilities</link></para>
 </listitem>
         </itemizedlist>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace__get__values__from__path" xml:lang="en-US">
+<title>_get_values_from_path Namespace Reference</title>
+<indexterm><primary>_get_values_from_path</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace__get__values__from__path_1a3126f53b0bf608c3abd8591fc79c8935">get_value_from_path</link> (data_dict, path)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace__get__values__from__path_1a3126f53b0bf608c3abd8591fc79c8935"/><section>
+    <title>get_value_from_path()</title>
+<indexterm><primary>get_value_from_path</primary><secondary>_get_values_from_path</secondary></indexterm>
+<indexterm><primary>_get_values_from_path</primary><secondary>get_value_from_path</secondary></indexterm>
+<para><computeroutput>_get_values_from_path.get_value_from_path ( data_dict,  path)</computeroutput></para>
+<para><literallayout><computeroutput>Iterates through the keys of a dictionary based on the provided path list.
+
+:param data_dict: The dictionary to traverse.
+:param path: A list of strings representing the path to traverse in the dictionary.
+:return: The value found at the end of the path, or None if the path is invalid.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

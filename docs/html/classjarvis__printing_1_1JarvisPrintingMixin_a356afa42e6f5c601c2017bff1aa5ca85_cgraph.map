@@ -1,10 +1,5 @@
 <map id="jarvis_printing.JarvisPrintingMixin._print" name="jarvis_printing.JarvisPrintingMixin._print">
-<<<<<<< HEAD
 <area shape="rect" id="Node000001" title="Prints a debug message with the current indentation level." alt="" coords="5,5,191,45"/>
 <area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title="Retrieves the current context based on the current path." alt="" coords="239,5,423,45"/>
-=======
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,191,45"/>
-<area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title=" " alt="" coords="239,5,423,45"/>
->>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,23,225,23,225,28,191,28"/>
 </map>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="launch_tests.py" line="42" column="1" bodyfile="launch_tests.py" bodystart="42" bodyend="-1"/>
+        <location file="launch_tests.py" line="81" column="1" bodyfile="launch_tests.py" bodystart="81" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -28,7 +28,6 @@
         <qualifiedname>launch_tests._importHelp</qualifiedname>
         <param>
           <type>folder</type>
-          <defname>folder</defname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -41,8 +40,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="launch_tests.py" line="8" column="1" bodyfile="launch_tests.py" bodystart="8" bodyend="41"/>
-        <referencedby refid="namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab" compoundref="launch__tests_8py" startline="5" endline="7">importTests</referencedby>
+        <location file="launch_tests.py" line="12" column="1" bodyfile="launch_tests.py" bodystart="12" bodyend="40"/>
+        <references refid="namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374" compoundref="launch__tests_8py" startline="12" endline="40">_importHelp</references>
+        <referencedby refid="namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374" compoundref="launch__tests_8py" startline="12" endline="40">_importHelp</referencedby>
+        <referencedby refid="namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab" compoundref="launch__tests_8py" startline="5" endline="11">importTests</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -56,8 +57,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="launch_tests.py" line="5" column="1" bodyfile="launch_tests.py" bodystart="5" bodyend="7"/>
-        <references refid="namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374" compoundref="launch__tests_8py" startline="8" endline="41">_importHelp</references>
+        <location file="launch_tests.py" line="5" column="1" bodyfile="launch_tests.py" bodystart="5" bodyend="11"/>
+        <references refid="namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374" compoundref="launch__tests_8py" startline="12" endline="40">_importHelp</references>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -12,6 +12,7 @@ test_helpers
 .ti -1c
 .RI "class \fBEvent\fP"
 .br
+.RI "Represents a MIDI event\&. "
 .in -1c
 .SS "Variables"
 
@@ -32,8 +33,9 @@ test_helpers
 \fBInitial value:\fP
 .nf
 1 =  jarvis\&.AddTest(
-2     test_fn=lambda x: True if x > 100 else False,
-3     name = ">100")
+2     test_fn=lambda x: x > 100,
+3     name=">100"
+4 )
 .PP
 .fi
 
@@ -41,8 +43,8 @@ test_helpers
 \fBInitial value:\fP
 .nf
 1 =  jarvis\&.AddTest(
-2     test_fn=lambda x: True if x > 150 else False,
-3     name = ">150"
+2     test_fn=lambda x: x > 150,
+3     name=">150"
 4 )
 .PP
 .fi

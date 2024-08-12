@@ -1,9 +1,7 @@
 <map id="jarvis_utilities.JarvisUtilitiesMixin" name="jarvis_utilities.JarvisUtilitiesMixin">
-<<<<<<< HEAD
-<area shape="rect" id="Node000001" title="Mixin class providing utility functions for the Logger class." alt="" coords="5,79,189,119"/>
-=======
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,189,119"/>
->>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
-<area shape="rect" id="Node000002" title=" " alt="" coords="31,5,163,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,44,100,79,95,79,95,44"/>
+<area shape="rect" id="Node000001" title="Mixin class providing utility functions for the Logger class." alt="" coords="6,93,190,133"/>
+<area shape="rect" id="Node000003" href="$classjarvis_1_1JARVIS.html" title="Main class for the JARVIS logging system." alt="" coords="45,181,151,207"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,147,101,181,95,181,95,147"/>
+<area shape="rect" id="Node000002" href="$classjarvis__printing_1_1JarvisPrintingMixin.html" title=" " alt="" coords="5,5,191,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,59,101,93,95,93,95,59"/>
 </map>

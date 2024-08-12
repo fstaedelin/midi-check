@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="tests/TEST_minimal_example.py" line="1" column="1"/>
+    <location file="tests/TEST_GPT_custom.py" line="1" column="1"/>
   </compounddef>
 </doxygen>

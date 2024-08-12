@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespaceTEST__GPT__custom" kind="namespace" language="Python">
+    <compoundname>TEST_GPT_custom</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceTEST__GPT__custom_1afeda068359a52a0a70679c86f850bf0a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_custom.event1</definition>
+        <argsstring></argsstring>
+        <name>event1</name>
+        <qualifiedname>TEST_GPT_custom.event1</qualifiedname>
+        <initializer>=  Event(230, False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_custom.py" line="4" column="1" bodyfile="tests/TEST_GPT_custom.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__custom_1adc07a6265c8b73c940bc07a7dabf5424" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_custom.event2</definition>
+        <argsstring></argsstring>
+        <name>event2</name>
+        <qualifiedname>TEST_GPT_custom.event2</qualifiedname>
+        <initializer>=  Event(50, True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_custom.py" line="5" column="1" bodyfile="tests/TEST_GPT_custom.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__custom_1ad2ceb3094c626bc881a7bc03b28082fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_custom.handled</definition>
+        <argsstring></argsstring>
+        <name>handled</name>
+        <qualifiedname>TEST_GPT_custom.handled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_custom.py" line="67" column="1" bodyfile="tests/TEST_GPT_custom.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__custom_1ae80d4dc6ef82d6b04999e7b10fa4eec3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_custom.test_event_handled</definition>
+        <argsstring></argsstring>
+        <name>test_event_handled</name>
+        <qualifiedname>TEST_GPT_custom.test_event_handled</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=lambda event: event.handled,
+    name=&quot;Event handled&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_custom.py" line="14" column="1" bodyfile="tests/TEST_GPT_custom.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__custom_1a7e973c18fa7e41d54d0b7a49e843f370" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_custom.test_event_id_gt_100</definition>
+        <argsstring></argsstring>
+        <name>test_event_id_gt_100</name>
+        <qualifiedname>TEST_GPT_custom.test_event_id_gt_100</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=lambda event: event.id &gt; 100,
+    name=&quot;Event ID &gt; 100&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_custom.py" line="19" column="1" bodyfile="tests/TEST_GPT_custom.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__custom_1a9f8b1e0c7d9cfd613fb9e15c0ec953d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_custom.test_event_id_gt_150</definition>
+        <argsstring></argsstring>
+        <name>test_event_id_gt_150</name>
+        <qualifiedname>TEST_GPT_custom.test_event_id_gt_150</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=lambda event: event.id &gt; 150,
+    name=&quot;Event ID &gt; 150&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_custom.py" line="41" column="1" bodyfile="tests/TEST_GPT_custom.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__custom_1a441910e72726735081e32d0522051dee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_custom.test_event_id_lt_100</definition>
+        <argsstring></argsstring>
+        <name>test_event_id_lt_100</name>
+        <qualifiedname>TEST_GPT_custom.test_event_id_lt_100</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=lambda event: event.id &lt; 100,
+    name=&quot;Event ID &lt; 100&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_custom.py" line="24" column="1" bodyfile="tests/TEST_GPT_custom.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/TEST_GPT_custom.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

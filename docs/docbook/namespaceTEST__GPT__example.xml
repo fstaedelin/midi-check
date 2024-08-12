@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceTEST__GPT__example" xml:lang="en-US">
+<title>TEST_GPT_example Namespace Reference</title>
+<indexterm><primary>TEST_GPT_example</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceTEST__GPT__example_1ae1c6300f7c0634752f2c52489633a04f">event1</link> = Event(230, False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceTEST__GPT__example_1a1b4e1666e6296c2e7160d9ea0bbccd01">handled</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceTEST__GPT__example_1a84f4e0714e0376e9c1962a86b31251bd">ID_SUP_100</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceTEST__GPT__example_1a06529d3e176b6a8e0401d1f2a1b7663e">ID_SUP_150</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceTEST__GPT__example_1a9ff904fb31dc0fc7c6debde80557537c">test_handled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceTEST__GPT__example_1ae1c6300f7c0634752f2c52489633a04f"/><section>
+    <title>event1</title>
+<indexterm><primary>event1</primary><secondary>TEST_GPT_example</secondary></indexterm>
+<indexterm><primary>TEST_GPT_example</primary><secondary>event1</secondary></indexterm>
+<para><computeroutput>TEST_GPT_example.event1 = Event(230, False)</computeroutput></para></section>
+<anchor xml:id="_namespaceTEST__GPT__example_1a1b4e1666e6296c2e7160d9ea0bbccd01"/><section>
+    <title>handled</title>
+<indexterm><primary>handled</primary><secondary>TEST_GPT_example</secondary></indexterm>
+<indexterm><primary>TEST_GPT_example</primary><secondary>handled</secondary></indexterm>
+<para><computeroutput>TEST_GPT_example.handled</computeroutput></para></section>
+<anchor xml:id="_namespaceTEST__GPT__example_1a84f4e0714e0376e9c1962a86b31251bd"/><section>
+    <title>ID_SUP_100</title>
+<indexterm><primary>ID_SUP_100</primary><secondary>TEST_GPT_example</secondary></indexterm>
+<indexterm><primary>TEST_GPT_example</primary><secondary>ID_SUP_100</secondary></indexterm>
+<para><computeroutput>TEST_GPT_example.ID_SUP_100</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;jarvis.AddTest(
+2 &#32;&#32;&#32;&#32;test_fn=is_more_100[<emphasis role="stringliteral">&quot;test_fn&quot;</emphasis>],
+3 &#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Event&#32;id&#32;&gt;100&quot;</emphasis>
+4 )
+</programlisting></section>
+<anchor xml:id="_namespaceTEST__GPT__example_1a06529d3e176b6a8e0401d1f2a1b7663e"/><section>
+    <title>ID_SUP_150</title>
+<indexterm><primary>ID_SUP_150</primary><secondary>TEST_GPT_example</secondary></indexterm>
+<indexterm><primary>TEST_GPT_example</primary><secondary>ID_SUP_150</secondary></indexterm>
+<para><computeroutput>TEST_GPT_example.ID_SUP_150</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;jarvis.AddTest(
+2 &#32;&#32;&#32;&#32;test_fn=is_more_150[<emphasis role="stringliteral">&quot;test_fn&quot;</emphasis>],
+3 &#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Event&#32;id&#32;&gt;150&quot;</emphasis>
+4 )
+</programlisting></section>
+<anchor xml:id="_namespaceTEST__GPT__example_1a9ff904fb31dc0fc7c6debde80557537c"/><section>
+    <title>test_handled</title>
+<indexterm><primary>test_handled</primary><secondary>TEST_GPT_example</secondary></indexterm>
+<indexterm><primary>TEST_GPT_example</primary><secondary>test_handled</secondary></indexterm>
+<para><computeroutput>TEST_GPT_example.test_handled</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;jarvis.AddTest(
+2 &#32;&#32;&#32;&#32;test_fn=<emphasis role="keyword">lambda</emphasis>&#32;x:&#32;x,
+3 &#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Event&#32;handled&quot;</emphasis>
+4 )
+</programlisting></section>
+</section>
+</section>

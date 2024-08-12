@@ -6,6 +6,8 @@
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classjarvis_1_1JARVIS">JARVIS</link></para>
+
+<para>Main class for the <link linkend="_classjarvis_1_1JARVIS">JARVIS</link> logging system. </para>
 </listitem>
         </itemizedlist>
 </simplesect>

@@ -24,6 +24,7 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
+{text:"Related Pages",url:"pages.html"},
 {text:"Packages",url:"namespaces.html",children:[
 {text:"Package List",url:"namespaces.html"},
 {text:"Package Members",url:"namespacemembers.html",children:[
@@ -47,10 +48,7 @@ var menudata={children:[
 {text:"m",url:"functions.html#index_m"},
 {text:"n",url:"functions.html#index_n"},
 {text:"p",url:"functions.html#index_p"},
-<<<<<<< HEAD
 {text:"s",url:"functions.html#index_s"},
-=======
->>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 {text:"t",url:"functions.html#index_t"},
 {text:"u",url:"functions.html#index_u"},
 {text:"w",url:"functions.html#index_w"}]},

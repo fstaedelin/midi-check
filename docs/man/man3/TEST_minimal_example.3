@@ -15,11 +15,9 @@ TEST_minimal_example
 .ti -1c
 .RI "\fBhandled\fP"
 .br
-.RI "Debug\&. "
 .ti -1c
 .RI "\fBID_SUP_100\fP"
 .br
-.RI "Need to initiate and TriggerTest tests in same context for now\&. "
 .ti -1c
 .RI "\fBID_SUP_150\fP"
 .br
@@ -33,26 +31,22 @@ TEST_minimal_example
 
 .SS "TEST_minimal_example\&.handled"
 
-.PP
-Debug\&. 
 .SS "TEST_minimal_example\&.ID_SUP_100"
 \fBInitial value:\fP
 .nf
 1 =  jarvis\&.AddTest(
 2     test_fn=is_more_100["test_fn"],
-3     name = "Event id >100"
+3     name="Event id >100"
 4 )
 .PP
 .fi
 
-.PP
-Need to initiate and TriggerTest tests in same context for now\&. 
 .SS "TEST_minimal_example\&.ID_SUP_150"
 \fBInitial value:\fP
 .nf
 1 =  jarvis\&.AddTest(
 2     test_fn=is_more_150["test_fn"],
-3     name = "Event id >150"    
+3     name="Event id >150"
 4 )
 .PP
 .fi
@@ -62,7 +56,7 @@ Need to initiate and TriggerTest tests in same context for now\&.
 .nf
 1 =  jarvis\&.AddTest(
 2     test_fn=lambda x: x,
-3     name = "Event handled"
+3     name="Event handled"
 4 )
 .PP
 .fi

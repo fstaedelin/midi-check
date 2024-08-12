@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="TEST__GPT__example_8py" kind="file" language="Python">
+    <compoundname>TEST_GPT_example.py</compoundname>
+    <innernamespace refid="namespaceTEST__GPT__example">TEST_GPT_example</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceTEST__GPT__example" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacetests_1_1test__helpers" kindref="compound">tests.test_helpers</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Create<sp/>an<sp/>event<sp/>instance<sp/>with<sp/>an<sp/>ID<sp/>of<sp/>230<sp/>and<sp/>mark<sp/>it<sp/>as<sp/>not<sp/>handled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespaceTEST__GPT__example_1ae1c6300f7c0634752f2c52489633a04f" refkind="member"><highlight class="normal">event1<sp/>=<sp/>Event(230,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Log<sp/>a<sp/>debug<sp/>message<sp/>indicating<sp/>the<sp/>start<sp/>of<sp/>initialization.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;GOING<sp/>TO<sp/>INITIALIZATION&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Navigate<sp/>to<sp/>the<sp/>&quot;INIT&quot;<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;INIT&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Log<sp/>a<sp/>debug<sp/>message<sp/>within<sp/>the<sp/>&quot;INIT&quot;<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;Initializing<sp/>...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Create<sp/>a<sp/>new<sp/>event<sp/>instance<sp/>with<sp/>an<sp/>ID<sp/>of<sp/>125<sp/>and<sp/>mark<sp/>it<sp/>as<sp/>not<sp/>handled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">event1<sp/>=<sp/>Event(125,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Log<sp/>a<sp/>debug<sp/>message<sp/>indicating<sp/>the<sp/>start<sp/>of<sp/>adding<sp/>and<sp/>triggering<sp/>handling<sp/>tests.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;ADDING<sp/>AND<sp/>TRIGGERING<sp/>HANDLING<sp/>TESTS&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>a<sp/>test<sp/>to<sp/>check<sp/>if<sp/>an<sp/>event<sp/>is<sp/>handled.<sp/>The<sp/>test<sp/>will<sp/>return<sp/>True<sp/>if<sp/>the<sp/>event<sp/>is<sp/>handled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="namespaceTEST__GPT__example_1a9ff904fb31dc0fc7c6debde80557537c" refkind="member"><highlight class="normal">test_handled<sp/>=<sp/>jarvis.AddTest(</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>test_fn=</highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>x:<sp/>x,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Event<sp/>handled&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Trigger<sp/>the<sp/>&quot;Event<sp/>handled&quot;<sp/>test<sp/>with<sp/>the<sp/>`handled`<sp/>status<sp/>of<sp/>`event1`<sp/>(which<sp/>is<sp/>False).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">jarvis.TriggerTest(test_handled,<sp/>event1.handled)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Navigate<sp/>back<sp/>to<sp/>the<sp/>parent<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Navigate<sp/>to<sp/>the<sp/>&quot;Processor&quot;<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;Processor&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Log<sp/>a<sp/>debug<sp/>message<sp/>indicating<sp/>the<sp/>start<sp/>of<sp/>adding<sp/>ID<sp/>tests.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;ADDING<sp/>ID_TESTS&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>a<sp/>test<sp/>to<sp/>check<sp/>if<sp/>the<sp/>event<sp/>ID<sp/>is<sp/>greater<sp/>than<sp/>100.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespaceTEST__GPT__example_1a84f4e0714e0376e9c1962a86b31251bd" refkind="member"><highlight class="normal">ID_SUP_100<sp/>=<sp/>jarvis.AddTest(</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>test_fn=is_more_100[</highlight><highlight class="stringliteral">&quot;test_fn&quot;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Event<sp/>id<sp/>&gt;100&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>a<sp/>test<sp/>to<sp/>check<sp/>if<sp/>the<sp/>event<sp/>ID<sp/>is<sp/>greater<sp/>than<sp/>150.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="namespaceTEST__GPT__example_1a06529d3e176b6a8e0401d1f2a1b7663e" refkind="member"><highlight class="normal">ID_SUP_150<sp/>=<sp/>jarvis.AddTest(</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>test_fn=is_more_150[</highlight><highlight class="stringliteral">&quot;test_fn&quot;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Event<sp/>id<sp/>&gt;150&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Log<sp/>a<sp/>debug<sp/>message<sp/>indicating<sp/>the<sp/>start<sp/>of<sp/>triggering<sp/>ID<sp/>tests.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;TRIGGERING<sp/>ID_TESTS&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Trigger<sp/>the<sp/>&quot;Event<sp/>id<sp/>&gt;100&quot;<sp/>test<sp/>with<sp/>the<sp/>ID<sp/>of<sp/>`event1`.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">jarvis.TriggerTest(ID_SUP_100,<sp/>event1.id)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Trigger<sp/>the<sp/>&quot;Event<sp/>id<sp/>&gt;150&quot;<sp/>test<sp/>with<sp/>the<sp/>ID<sp/>of<sp/>`event1`.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">jarvis.TriggerTest(ID_SUP_150,<sp/>event1.id)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Navigate<sp/>back<sp/>to<sp/>the<sp/>parent<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;Parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Log<sp/>a<sp/>debug<sp/>message<sp/>indicating<sp/>navigation<sp/>to<sp/>the<sp/>&quot;Processor&quot;<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;NAVIGATING<sp/>TO<sp/>PROCESSOR&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Log<sp/>a<sp/>warning<sp/>message<sp/>indicating<sp/>that<sp/>the<sp/>event<sp/>has<sp/>changed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">jarvis.Warning(</highlight><highlight class="stringliteral">&quot;event<sp/>changed<sp/>!!&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Create<sp/>a<sp/>new<sp/>event<sp/>instance<sp/>with<sp/>an<sp/>ID<sp/>of<sp/>1110<sp/>and<sp/>mark<sp/>it<sp/>as<sp/>not<sp/>handled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">event1<sp/>=<sp/>Event(1110,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Navigate<sp/>back<sp/>to<sp/>the<sp/>parent<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Log<sp/>a<sp/>debug<sp/>message<sp/>indicating<sp/>the<sp/>re-triggering<sp/>of<sp/>ID<sp/>tests.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">jarvis.Debug(</highlight><highlight class="stringliteral">&quot;TRIGGERING<sp/>ID_TESTS<sp/>again&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Re-trigger<sp/>the<sp/>&quot;Event<sp/>id<sp/>&gt;100&quot;<sp/>test<sp/>with<sp/>the<sp/>new<sp/>ID<sp/>of<sp/>`event1`.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">jarvis.TriggerTest(ID_SUP_100,<sp/>event1.id)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Re-trigger<sp/>the<sp/>&quot;Event<sp/>id<sp/>&gt;150&quot;<sp/>test<sp/>with<sp/>the<sp/>new<sp/>ID<sp/>of<sp/>`event1`.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">jarvis.TriggerTest(ID_SUP_150,<sp/>event1.id)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Navigate<sp/>to<sp/>the<sp/>&quot;mapping&quot;<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;mapping&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Navigate<sp/>to<sp/>the<sp/>&quot;testing&quot;<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;testing&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Mark<sp/>the<sp/>event<sp/>as<sp/>handled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="namespaceTEST__GPT__example_1a1b4e1666e6296c2e7160d9ea0bbccd01" refkind="member"><highlight class="normal">event1.handled<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Navigate<sp/>back<sp/>to<sp/>the<sp/>parent<sp/>context<sp/>twice<sp/>to<sp/>return<sp/>to<sp/>the<sp/>root<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">jarvis.Navigate(</highlight><highlight class="stringliteral">&quot;parent&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Re-trigger<sp/>the<sp/>&quot;Event<sp/>handled&quot;<sp/>test<sp/>with<sp/>the<sp/>updated<sp/>`handled`<sp/>status<sp/>of<sp/>`event1`<sp/>(which<sp/>is<sp/>now<sp/>True).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">jarvis.TriggerTest(test_handled,<sp/>event1.handled)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Write<sp/>the<sp/>log,<sp/>printing<sp/>all<sp/>logged<sp/>messages.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">jarvis.WriteLog()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="tests/TEST_GPT_example.py"/>
+  </compounddef>
+</doxygen>

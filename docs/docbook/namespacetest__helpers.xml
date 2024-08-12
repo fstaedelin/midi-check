@@ -6,6 +6,8 @@
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classtest__helpers_1_1Event">Event</link></para>
+
+<para>Represents a MIDI event. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -27,16 +29,17 @@
 <indexterm><primary>is_more_100</primary><secondary>test_helpers</secondary></indexterm>
 <indexterm><primary>test_helpers</primary><secondary>is_more_100</secondary></indexterm>
 <para><computeroutput>test_helpers.is_more_100</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;jarvis.AddTest(
-2 &#32;&#32;&#32;&#32;test_fn=<emphasis role="keyword">lambda</emphasis>&#32;x:&#32;<emphasis role="keyword">True</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;x&#32;&gt;&#32;100&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keyword">False</emphasis>,
-3 &#32;&#32;&#32;&#32;name&#32;=&#32;<emphasis role="stringliteral">&quot;&gt;100&quot;</emphasis>)
+2 &#32;&#32;&#32;&#32;test_fn=<emphasis role="keyword">lambda</emphasis>&#32;x:&#32;x&#32;&gt;&#32;100,
+3 &#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;&gt;100&quot;</emphasis>
+4 )
 </programlisting></section>
 <anchor xml:id="_namespacetest__helpers_1a34b38daf48ee1048959407b4433dae8e"/><section>
     <title>is_more_150</title>
 <indexterm><primary>is_more_150</primary><secondary>test_helpers</secondary></indexterm>
 <indexterm><primary>test_helpers</primary><secondary>is_more_150</secondary></indexterm>
 <para><computeroutput>test_helpers.is_more_150</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;jarvis.AddTest(
-2 &#32;&#32;&#32;&#32;test_fn=<emphasis role="keyword">lambda</emphasis>&#32;x:&#32;<emphasis role="keyword">True</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;x&#32;&gt;&#32;150&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keyword">False</emphasis>,
-3 &#32;&#32;&#32;&#32;name&#32;=&#32;<emphasis role="stringliteral">&quot;&gt;150&quot;</emphasis>
+2 &#32;&#32;&#32;&#32;test_fn=<emphasis role="keyword">lambda</emphasis>&#32;x:&#32;x&#32;&gt;&#32;150,
+3 &#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;&gt;150&quot;</emphasis>
 4 )
 </programlisting></section>
 <anchor xml:id="_namespacetest__helpers_1a8babde849ddfcdf75143938087231646"/><section>

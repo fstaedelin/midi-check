@@ -1,9 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.12.0" xml:lang="en-US">
   <compound refid="classtest__helpers_1_1Event" kind="class"><name>test_helpers::Event</name>
+    <member refid="classtest__helpers_1_1Event_1aee819e1d10992a0bbef68b50fdd87157" kind="variable"><name>channel</name></member>
+    <member refid="classtest__helpers_1_1Event_1afa160652ab7f41317fd69e7307345146" kind="variable"><name>data</name></member>
     <member refid="classtest__helpers_1_1Event_1aa689a2e7a9dd5990b209446bd4afdb9d" kind="variable"><name>handled</name></member>
     <member refid="classtest__helpers_1_1Event_1a370dac3e1471b3e01c7de98fef8c3366" kind="variable"><name>id</name></member>
-    <member refid="classtest__helpers_1_1Event_1ae94ffd22a2d755e0fce430542c0117f2" kind="function"><name>__init__</name></member>
+    <member refid="classtest__helpers_1_1Event_1a3fd839a7c208ba65fa41750307c77e13" kind="variable"><name>type</name></member>
+    <member refid="classtest__helpers_1_1Event_1ae6d7a4baaa4507d72f874fa76ec49e27" kind="function"><name>__init__</name></member>
+    <member refid="classtest__helpers_1_1Event_1a11c6695de8be9695c141f38b5004f7fb" kind="function"><name>mark_handled</name></member>
+    <member refid="classtest__helpers_1_1Event_1a0bbaf8d65200ed132ba39bf0c432c5ad" kind="function"><name>set_event_details</name></member>
   </compound>
   <compound refid="classjarvis_1_1JARVIS" kind="class"><name>jarvis::JARVIS</name>
     <member refid="classjarvis_1_1JARVIS_1a5b5d3d7a57acfc39a99c44aee31a5adb" kind="variable"><name>contexts</name></member>
@@ -45,6 +50,11 @@
     <member refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a6dace0d393d836d916e11b10bf70e7ae" kind="function"><name>_set_new_context</name></member>
     <member refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a1e933474919f97beb650adebf6ba5513" kind="function"><name>_trigger_messages</name></member>
   </compound>
+  <compound refid="namespace__get__values__from__path" kind="namespace"><name>_get_values_from_path</name>
+    <member refid="namespace__get__values__from__path_1a3126f53b0bf608c3abd8591fc79c8935" kind="function"><name>get_value_from_path</name></member>
+  </compound>
+  <compound refid="namespaceJARVIS" kind="namespace"><name>JARVIS</name>
+  </compound>
   <compound refid="namespacejarvis" kind="namespace"><name>jarvis</name>
   </compound>
   <compound refid="namespacejarvis__printing" kind="namespace"><name>jarvis_printing</name>
@@ -55,6 +65,22 @@
     <member refid="namespacelaunch__tests_1a71cf60e3f479a004617aaf4d2467b762" kind="variable"><name>testLib</name></member>
     <member refid="namespacelaunch__tests_1a8771b8b3d451ad0b33480d9ae73c1374" kind="function"><name>_importHelp</name></member>
     <member refid="namespacelaunch__tests_1a2d924b5e780336fa61ddb2e76cfa4eab" kind="function"><name>importTests</name></member>
+  </compound>
+  <compound refid="namespaceTEST__GPT__custom" kind="namespace"><name>TEST_GPT_custom</name>
+    <member refid="namespaceTEST__GPT__custom_1afeda068359a52a0a70679c86f850bf0a" kind="variable"><name>event1</name></member>
+    <member refid="namespaceTEST__GPT__custom_1adc07a6265c8b73c940bc07a7dabf5424" kind="variable"><name>event2</name></member>
+    <member refid="namespaceTEST__GPT__custom_1ad2ceb3094c626bc881a7bc03b28082fc" kind="variable"><name>handled</name></member>
+    <member refid="namespaceTEST__GPT__custom_1ae80d4dc6ef82d6b04999e7b10fa4eec3" kind="variable"><name>test_event_handled</name></member>
+    <member refid="namespaceTEST__GPT__custom_1a7e973c18fa7e41d54d0b7a49e843f370" kind="variable"><name>test_event_id_gt_100</name></member>
+    <member refid="namespaceTEST__GPT__custom_1a9f8b1e0c7d9cfd613fb9e15c0ec953d6" kind="variable"><name>test_event_id_gt_150</name></member>
+    <member refid="namespaceTEST__GPT__custom_1a441910e72726735081e32d0522051dee" kind="variable"><name>test_event_id_lt_100</name></member>
+  </compound>
+  <compound refid="namespaceTEST__GPT__example" kind="namespace"><name>TEST_GPT_example</name>
+    <member refid="namespaceTEST__GPT__example_1ae1c6300f7c0634752f2c52489633a04f" kind="variable"><name>event1</name></member>
+    <member refid="namespaceTEST__GPT__example_1a1b4e1666e6296c2e7160d9ea0bbccd01" kind="variable"><name>handled</name></member>
+    <member refid="namespaceTEST__GPT__example_1a84f4e0714e0376e9c1962a86b31251bd" kind="variable"><name>ID_SUP_100</name></member>
+    <member refid="namespaceTEST__GPT__example_1a06529d3e176b6a8e0401d1f2a1b7663e" kind="variable"><name>ID_SUP_150</name></member>
+    <member refid="namespaceTEST__GPT__example_1a9ff904fb31dc0fc7c6debde80557537c" kind="variable"><name>test_handled</name></member>
   </compound>
   <compound refid="namespacetest__helpers" kind="namespace"><name>test_helpers</name>
     <member refid="namespacetest__helpers_1a8cda8c35b53480367492f49f6238e2ca" kind="variable"><name>is_more_100</name></member>
@@ -70,6 +96,8 @@
   </compound>
   <compound refid="namespacetests_1_1test__helpers" kind="namespace"><name>tests::test_helpers</name>
   </compound>
+  <compound refid="chatgpt-workflow_8md" kind="file"><name>chatgpt-workflow.md</name>
+  </compound>
   <compound refid="jarvis_8py" kind="file"><name>jarvis.py</name>
   </compound>
   <compound refid="jarvis__printing_8py" kind="file"><name>jarvis_printing.py</name>
@@ -78,11 +106,21 @@
   </compound>
   <compound refid="launch__tests_8py" kind="file"><name>launch_tests.py</name>
   </compound>
+  <compound refid="__get__values__from__path_8py" kind="file"><name>_get_values_from_path.py</name>
+  </compound>
+  <compound refid="TEST__GPT__custom_8py" kind="file"><name>TEST_GPT_custom.py</name>
+  </compound>
+  <compound refid="TEST__GPT__example_8py" kind="file"><name>TEST_GPT_example.py</name>
+  </compound>
   <compound refid="test__helpers_8py" kind="file"><name>test_helpers.py</name>
   </compound>
   <compound refid="TEST__minimal__example_8py" kind="file"><name>TEST_minimal_example.py</name>
   </compound>
+  <compound refid="md_chatgpt-workflow" kind="page"><name>md_chatgpt-workflow</name>
+  </compound>
   <compound refid="dir_15cc57f9be470be4c01677f17814f731" kind="dir"><name>JARVIS</name>
+  </compound>
+  <compound refid="dir_c83c9fcee52ddc713c66ce63e5dd29e2" kind="dir"><name>scraps</name>
   </compound>
   <compound refid="dir_59425e443f801f1f2fd8bbe4959a3ccf" kind="dir"><name>tests</name>
   </compound>

@@ -8,12 +8,8 @@
             <listitem><para><link linkend="_namespaceTEST__minimal__example_1ad7c08c29f38fc5fdf9e71b5236804f59">event1</link> = Event(230, False)</para>
 </listitem>
             <listitem><para><link linkend="_namespaceTEST__minimal__example_1abbc91b0bb17a63d058c8c4fa97b5e440">handled</link></para>
-
-<para>Debug. </para>
 </listitem>
             <listitem><para><link linkend="_namespaceTEST__minimal__example_1ad1e96a1c6cb47c0ddb64f02e268dbc1a">ID_SUP_100</link></para>
-
-<para>Need to initiate and TriggerTest tests in same context for now. </para>
 </listitem>
             <listitem><para><link linkend="_namespaceTEST__minimal__example_1a6a06ea33a44d29d65fcdd3351b4351e3">ID_SUP_150</link></para>
 </listitem>
@@ -32,31 +28,23 @@
     <title>handled</title>
 <indexterm><primary>handled</primary><secondary>TEST_minimal_example</secondary></indexterm>
 <indexterm><primary>TEST_minimal_example</primary><secondary>handled</secondary></indexterm>
-<para><computeroutput>TEST_minimal_example.handled</computeroutput></para><para>
-
-<para>Debug. </para>
-</para>
-</section>
+<para><computeroutput>TEST_minimal_example.handled</computeroutput></para></section>
 <anchor xml:id="_namespaceTEST__minimal__example_1ad1e96a1c6cb47c0ddb64f02e268dbc1a"/><section>
     <title>ID_SUP_100</title>
 <indexterm><primary>ID_SUP_100</primary><secondary>TEST_minimal_example</secondary></indexterm>
 <indexterm><primary>TEST_minimal_example</primary><secondary>ID_SUP_100</secondary></indexterm>
 <para><computeroutput>TEST_minimal_example.ID_SUP_100</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;jarvis.AddTest(
 2 &#32;&#32;&#32;&#32;test_fn=is_more_100[<emphasis role="stringliteral">&quot;test_fn&quot;</emphasis>],
-3 &#32;&#32;&#32;&#32;name&#32;=&#32;<emphasis role="stringliteral">&quot;Event&#32;id&#32;&gt;100&quot;</emphasis>
+3 &#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Event&#32;id&#32;&gt;100&quot;</emphasis>
 4 )
-</programlisting><para>
-
-<para>Need to initiate and TriggerTest tests in same context for now. </para>
-</para>
-</section>
+</programlisting></section>
 <anchor xml:id="_namespaceTEST__minimal__example_1a6a06ea33a44d29d65fcdd3351b4351e3"/><section>
     <title>ID_SUP_150</title>
 <indexterm><primary>ID_SUP_150</primary><secondary>TEST_minimal_example</secondary></indexterm>
 <indexterm><primary>TEST_minimal_example</primary><secondary>ID_SUP_150</secondary></indexterm>
 <para><computeroutput>TEST_minimal_example.ID_SUP_150</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;jarvis.AddTest(
 2 &#32;&#32;&#32;&#32;test_fn=is_more_150[<emphasis role="stringliteral">&quot;test_fn&quot;</emphasis>],
-3 &#32;&#32;&#32;&#32;name&#32;=&#32;<emphasis role="stringliteral">&quot;Event&#32;id&#32;&gt;150&quot;</emphasis>&#32;&#32;&#32;&#32;
+3 &#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Event&#32;id&#32;&gt;150&quot;</emphasis>
 4 )
 </programlisting></section>
 <anchor xml:id="_namespaceTEST__minimal__example_1ab272371dea8b2da5305bf1f25a8b72e4"/><section>
@@ -65,7 +53,7 @@
 <indexterm><primary>TEST_minimal_example</primary><secondary>test_handled</secondary></indexterm>
 <para><computeroutput>TEST_minimal_example.test_handled</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;jarvis.AddTest(
 2 &#32;&#32;&#32;&#32;test_fn=<emphasis role="keyword">lambda</emphasis>&#32;x:&#32;x,
-3 &#32;&#32;&#32;&#32;name&#32;=&#32;<emphasis role="stringliteral">&quot;Event&#32;handled&quot;</emphasis>
+3 &#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Event&#32;handled&quot;</emphasis>
 4 )
 </programlisting></section>
 </section>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="__get__values__from__path_8py" kind="file" language="Python">
+    <compoundname>_get_values_from_path.py</compoundname>
+    <innernamespace refid="namespace__get__values__from__path">_get_values_from_path</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace__get__values__from__path_1a3126f53b0bf608c3abd8591fc79c8935" refkind="member"><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespace__get__values__from__path_1a3126f53b0bf608c3abd8591fc79c8935" kindref="member">get_value_from_path</ref>(data_dict,<sp/>path):</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Iterates<sp/>through<sp/>the<sp/>keys<sp/>of<sp/>a<sp/>dictionary<sp/>based<sp/>on<sp/>the<sp/>provided<sp/>path<sp/>list.</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>data_dict:<sp/>The<sp/>dictionary<sp/>to<sp/>traverse.</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>path:<sp/>A<sp/>list<sp/>of<sp/>strings<sp/>representing<sp/>the<sp/>path<sp/>to<sp/>traverse<sp/>in<sp/>the<sp/>dictionary.</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:return:<sp/>The<sp/>value<sp/>found<sp/>at<sp/>the<sp/>end<sp/>of<sp/>the<sp/>path,<sp/>or<sp/>None<sp/>if<sp/>the<sp/>path<sp/>is<sp/>invalid.</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>current<sp/>=<sp/>data_dict</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>path:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinstance(current,<sp/>dict)<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>current:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>=<sp/>current[key]</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>Return<sp/>None<sp/>if<sp/>the<sp/>path<sp/>is<sp/>invalid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>current</highlight></codeline>
+    </programlisting>
+    <location file="scraps/_get_values_from_path.py"/>
+  </compounddef>
+</doxygen>

@@ -1,9 +1,12 @@
 var searchData=
 [
-<<<<<<< HEAD
-  ['mark_5fhandled_0',['mark_handled',['../classtest__helpers_1_1Event.html#a11c6695de8be9695c141f38b5004f7fb',1,'test_helpers::Event']]],
-  ['msg_5flog_1',['msg_log',['../classjarvis_1_1JARVIS.html#a13da5016a641f83f6e6d1dcd2616dc94',1,'jarvis::JARVIS']]]
-=======
-  ['msg_5flog_0',['msg_log',['../classjarvis_1_1JARVIS.html#a13da5016a641f83f6e6d1dcd2616dc94',1,'jarvis::JARVIS']]]
->>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
+  ['jarvis_0',['JARVIS',['../classjarvis_1_1JARVIS.html',1,'jarvis.JARVIS'],['../namespaceJARVIS.html',1,'JARVIS']]],
+  ['jarvis_1',['jarvis',['../namespacejarvis.html',1,'jarvis'],['../namespacetest__helpers.html#a8babde849ddfcdf75143938087231646',1,'test_helpers.jarvis']]],
+  ['jarvis_2epy_2',['jarvis.py',['../jarvis_8py.html',1,'']]],
+  ['jarvis_5fprinting_3',['jarvis_printing',['../namespacejarvis__printing.html',1,'']]],
+  ['jarvis_5fprinting_2epy_4',['jarvis_printing.py',['../jarvis__printing_8py.html',1,'']]],
+  ['jarvis_5futilities_5',['jarvis_utilities',['../namespacejarvis__utilities.html',1,'']]],
+  ['jarvis_5futilities_2epy_6',['jarvis_utilities.py',['../jarvis__utilities_8py.html',1,'']]],
+  ['jarvisprintingmixin_7',['JarvisPrintingMixin',['../classjarvis__printing_1_1JarvisPrintingMixin.html',1,'jarvis_printing']]],
+  ['jarvisutilitiesmixin_8',['JarvisUtilitiesMixin',['../classjarvis__utilities_1_1JarvisUtilitiesMixin.html',1,'jarvis_utilities']]]
 ];

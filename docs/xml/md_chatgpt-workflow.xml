@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="md_chatgpt-workflow" kind="page">
+    <compoundname>md_chatgpt-workflow</compoundname>
+    <title>chatgpt-workflow</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Your approach to using Git submodules for <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> and tailoring it for the <computeroutput>MiniLab</computeroutput> project is sound. It allows you to maintain a clear separation between the core functionality and your project-specific adaptations. Here&apos;s a refined approach to manage the dual versions of <computeroutput>MiniLab</computeroutput>:</para>
+<sect1 id="md_chatgpt-workflow_1autotoc_md0_1s1"><sect2 id="md_chatgpt-workflow_1autotoc_md0_1s2"><sect3 id="md_chatgpt-workflow_1autotoc_md0">
+<title>Workflow for Dual Versions of <computeroutput>MiniLab</computeroutput></title><para><orderedlist>
+<listitem><para><bold>Version Control with Git Submodules</bold>:<itemizedlist>
+<listitem><para><bold>Submodule for Development</bold>: Use the <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> submodule in your development branch of <computeroutput>MiniLab</computeroutput> to leverage its debugging and logging capabilities.</para>
+</listitem><listitem><para><bold>Release Branch</bold>: Create a separate branch or tag in <computeroutput>MiniLab</computeroutput> for the release version that does not depend on <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Branch Management</bold>:<itemizedlist>
+<listitem><para><bold>Development Branch</bold>:<itemizedlist>
+<listitem><para><bold>Purpose</bold>: For ongoing development and testing with <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>.</para>
+</listitem><listitem><para><bold>Setup</bold>: Include the <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> submodule and configure it as needed.</para>
+</listitem><listitem><para><bold>Process</bold>: Regularly update and test with <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> features. Merge changes from <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> as needed.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Release Branch</bold>:<itemizedlist>
+<listitem><para><bold>Purpose</bold>: For the final release of <computeroutput>MiniLab</computeroutput> that is independent of <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>.</para>
+</listitem><listitem><para><bold>Setup</bold>: Remove or disable <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> related code and configurations.</para>
+</listitem><listitem><para><bold>Process</bold>: Ensure that all <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> dependencies and references are removed or appropriately handled.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Handling <ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref> Integration</bold>:<itemizedlist>
+<listitem><para><bold>Configuration Management</bold>:<itemizedlist>
+<listitem><para>Use configuration files or environment variables to toggle the integration of <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> features in <computeroutput>MiniLab</computeroutput>. This can help manage different setups without changing the core codebase significantly.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Code Separation</bold>:<itemizedlist>
+<listitem><para>Isolate <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>-specific code in modules or classes that can be easily included or excluded based on the build configuration.</para>
+</listitem><listitem><para>Use conditional imports or configuration flags to enable or disable <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> functionality.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Release Process</bold>:<itemizedlist>
+<listitem><para><bold>Prepare for Release</bold>:<itemizedlist>
+<listitem><para><bold>Final Testing</bold>: Ensure the release version is thoroughly tested without <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>. This may involve using mock objects or alternative testing strategies.</para>
+</listitem><listitem><para><bold>Documentation</bold>: Update the documentation for both versions of <computeroutput>MiniLab</computeroutput>. Ensure users understand the differences between the release and development versions.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Deployment</bold>:<itemizedlist>
+<listitem><para><bold>Release Version</bold>: Package and distribute the release version of <computeroutput>MiniLab</computeroutput>. Ensure it is self-contained and does not have dependencies on <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>.</para>
+</listitem><listitem><para><bold>Development Version</bold>: Maintain the development version with <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> for ongoing testing and debugging.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Automated Testing and CI/CD</bold>:<itemizedlist>
+<listitem><para><bold>CI/CD Pipeline</bold>:<itemizedlist>
+<listitem><para>Configure CI/CD pipelines to handle both versions. Ensure that tests are run for both the development (with <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>) and release versions (without <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>).</para>
+</listitem><listitem><para>Use separate pipeline configurations or jobs to manage the differences between the versions.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Documentation and Communication</bold>:<itemizedlist>
+<listitem><para><bold>README and Documentation</bold>:<itemizedlist>
+<listitem><para>Clearly document the purpose of each version in the <computeroutput>README.md</computeroutput> or equivalent documentation. Provide instructions on how to switch between versions or configure <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Change Log</bold>:<itemizedlist>
+<listitem><para>Maintain a change log or version history to document updates, fixes, and changes between the development and release versions.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</sect3></sect2></sect1>
+<sect1 id="md_chatgpt-workflow_1autotoc_md1_1s1"><sect2 id="md_chatgpt-workflow_1autotoc_md1_1s2"><sect3 id="md_chatgpt-workflow_1autotoc_md1">
+<title>Example Directory Structure</title><para><itemizedlist>
+<listitem><para><bold><computeroutput>MiniLab</computeroutput> Repository</bold>:<itemizedlist>
+<listitem><para><computeroutput>scripts/</computeroutput>: FL Studio scripts.</para>
+</listitem><listitem><para><computeroutput>docs/</computeroutput>: Project documentation.</para>
+</listitem><listitem><para><computeroutput>JARVIS/</computeroutput>: Submodule for <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> (only in development branch).</para>
+</listitem><listitem><para><computeroutput>README.md</computeroutput>: Project overview and setup instructions.</para>
+</listitem><listitem><para><computeroutput>.gitignore</computeroutput>: Project-specific ignores.</para>
+</listitem><listitem><para><computeroutput>.gitlab-ci.yml</computeroutput>: CI configuration, handling both versions.</para>
+</listitem><listitem><para><computeroutput>release/</computeroutput>: Scripts or configurations for the release version (if needed).</para>
+</listitem><listitem><para><computeroutput>tests/</computeroutput>: Unit and integration tests, including those specific to <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</sect3></sect2></sect1>
+<sect1 id="md_chatgpt-workflow_1autotoc_md2_1s1"><sect2 id="md_chatgpt-workflow_1autotoc_md2_1s2"><sect3 id="md_chatgpt-workflow_1autotoc_md2">
+<title>Summary</title><para>Your plan to manage two versions of <computeroutput>MiniLab</computeroutput>—one with <computeroutput><ref refid="namespaceJARVIS" kindref="compound">JARVIS</ref></computeroutput> and one without—is well-structured and practical. Using Git submodules for development and configuring separate branches or configurations for the release version allows you to maintain a clean separation between testing and production code. By implementing conditional integration and keeping a clear distinction between development and release setups, you&apos;ll be able to effectively manage both versions of <computeroutput>MiniLab</computeroutput>. </para>
+</sect3></sect2></sect1>
+    </detaileddescription>
+    <location file="chatgpt-workflow.md"/>
+  </compounddef>
+</doxygen>

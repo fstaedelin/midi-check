@@ -1,10 +1,5 @@
 <map id="jarvis.JARVIS.Cb_False" name="jarvis.JARVIS.Cb_False">
-<<<<<<< HEAD
 <area shape="rect" id="Node000001" title="Generate a failure callback message." alt="" coords="5,13,171,38"/>
 <area shape="rect" id="Node000002" href="$classjarvis__printing_1_1JarvisPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f" title="Formats a log message based on its level and other parameters." alt="" coords="219,5,404,45"/>
-=======
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,171,38"/>
-<area shape="rect" id="Node000002" href="$classjarvis__printing_1_1JarvisPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f" title=" " alt="" coords="219,5,404,45"/>
->>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,23,205,23,205,28,171,28"/>
 </map>

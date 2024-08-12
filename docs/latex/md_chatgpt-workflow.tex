@@ -1,0 +1,85 @@
+\chapter{chatgpt-\/workflow}
+\hypertarget{md_chatgpt-workflow}{}\label{md_chatgpt-workflow}\index{chatgpt-\/workflow@{chatgpt-\/workflow}}
+Your approach to using Git submodules for {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} and tailoring it for the {\ttfamily Mini\+Lab} project is sound. It allows you to maintain a clear separation between the core functionality and your project-\/specific adaptations. Here\textquotesingle{}s a refined approach to manage the dual versions of {\ttfamily Mini\+Lab}\+:\hypertarget{md_chatgpt-workflow_autotoc_md0}{}\doxysubsubsection{\texorpdfstring{Workflow for Dual Versions of {\ttfamily Mini\+Lab}}{Workflow for Dual Versions of {\ttfamily Mini\+Lab}}}\label{md_chatgpt-workflow_autotoc_md0}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Version Control with Git Submodules}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Submodule for Development}}\+: Use the {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} submodule in your development branch of {\ttfamily Mini\+Lab} to leverage its debugging and logging capabilities.
+\item {\bfseries{Release Branch}}\+: Create a separate branch or tag in {\ttfamily Mini\+Lab} for the release version that does not depend on {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}.
+\end{DoxyItemize}
+\item {\bfseries{Branch Management}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Development Branch}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Purpose}}\+: For ongoing development and testing with {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}.
+\item {\bfseries{Setup}}\+: Include the {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} submodule and configure it as needed.
+\item {\bfseries{Process}}\+: Regularly update and test with {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} features. Merge changes from {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} as needed.
+\end{DoxyItemize}
+\item {\bfseries{Release Branch}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Purpose}}\+: For the final release of {\ttfamily Mini\+Lab} that is independent of {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}.
+\item {\bfseries{Setup}}\+: Remove or disable {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} related code and configurations.
+\item {\bfseries{Process}}\+: Ensure that all {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} dependencies and references are removed or appropriately handled.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Handling \doxylink{namespaceJARVIS}{JARVIS} Integration}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Configuration Management}}\+:
+\begin{DoxyItemize}
+\item Use configuration files or environment variables to toggle the integration of {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} features in {\ttfamily Mini\+Lab}. This can help manage different setups without changing the core codebase significantly.
+\end{DoxyItemize}
+\item {\bfseries{Code Separation}}\+:
+\begin{DoxyItemize}
+\item Isolate {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}-\/specific code in modules or classes that can be easily included or excluded based on the build configuration.
+\item Use conditional imports or configuration flags to enable or disable {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} functionality.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Release Process}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Prepare for Release}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Final Testing}}\+: Ensure the release version is thoroughly tested without {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}. This may involve using mock objects or alternative testing strategies.
+\item {\bfseries{Documentation}}\+: Update the documentation for both versions of {\ttfamily Mini\+Lab}. Ensure users understand the differences between the release and development versions.
+\end{DoxyItemize}
+\item {\bfseries{Deployment}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Release Version}}\+: Package and distribute the release version of {\ttfamily Mini\+Lab}. Ensure it is self-\/contained and does not have dependencies on {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}.
+\item {\bfseries{Development Version}}\+: Maintain the development version with {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} for ongoing testing and debugging.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Automated Testing and CI/\+CD}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{CI/\+CD Pipeline}}\+:
+\begin{DoxyItemize}
+\item Configure CI/\+CD pipelines to handle both versions. Ensure that tests are run for both the development (with {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}) and release versions (without {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}).
+\item Use separate pipeline configurations or jobs to manage the differences between the versions.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Documentation and Communication}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{README and Documentation}}\+:
+\begin{DoxyItemize}
+\item Clearly document the purpose of each version in the {\ttfamily README.\+md} or equivalent documentation. Provide instructions on how to switch between versions or configure {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}.
+\end{DoxyItemize}
+\item {\bfseries{Change Log}}\+:
+\begin{DoxyItemize}
+\item Maintain a change log or version history to document updates, fixes, and changes between the development and release versions.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{md_chatgpt-workflow_autotoc_md1}{}\doxysubsubsection{\texorpdfstring{Example Directory Structure}{Example Directory Structure}}\label{md_chatgpt-workflow_autotoc_md1}
+
+\begin{DoxyItemize}
+\item {\bfseries{{\ttfamily Mini\+Lab} Repository}}\+:
+\begin{DoxyItemize}
+\item {\ttfamily scripts/}\+: FL Studio scripts.
+\item {\ttfamily docs/}\+: Project documentation.
+\item {\ttfamily JARVIS/}\+: Submodule for {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} (only in development branch).
+\item {\ttfamily README.\+md}\+: Project overview and setup instructions.
+\item {\ttfamily .gitignore}\+: Project-\/specific ignores.
+\item {\ttfamily .gitlab-\/ci.\+yml}\+: CI configuration, handling both versions.
+\item {\ttfamily release/}\+: Scripts or configurations for the release version (if needed).
+\item {\ttfamily tests/}\+: Unit and integration tests, including those specific to {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}}.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_chatgpt-workflow_autotoc_md2}{}\doxysubsubsection{\texorpdfstring{Summary}{Summary}}\label{md_chatgpt-workflow_autotoc_md2}
+Your plan to manage two versions of {\ttfamily Mini\+Lab}—one with {\ttfamily \doxylink{namespaceJARVIS}{JARVIS}} and one without—is well-\/structured and practical. Using Git submodules for development and configuring separate branches or configurations for the release version allows you to maintain a clean separation between testing and production code. By implementing conditional integration and keeping a clear distinction between development and release setups, you\textquotesingle{}ll be able to effectively manage both versions of {\ttfamily Mini\+Lab}. 

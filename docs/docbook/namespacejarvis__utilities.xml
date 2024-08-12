@@ -6,6 +6,8 @@
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classjarvis__utilities_1_1JarvisUtilitiesMixin">JarvisUtilitiesMixin</link></para>
+
+<para>Mixin class providing utility functions for the Logger class. </para>
 </listitem>
         </itemizedlist>
 </simplesect>

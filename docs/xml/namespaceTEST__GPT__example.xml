@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespaceTEST__GPT__example" kind="namespace" language="Python">
+    <compoundname>TEST_GPT_example</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceTEST__GPT__example_1ae1c6300f7c0634752f2c52489633a04f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_example.event1</definition>
+        <argsstring></argsstring>
+        <name>event1</name>
+        <qualifiedname>TEST_GPT_example.event1</qualifiedname>
+        <initializer>=  Event(230, False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_example.py" line="4" column="1" bodyfile="tests/TEST_GPT_example.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__example_1a1b4e1666e6296c2e7160d9ea0bbccd01" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_example.handled</definition>
+        <argsstring></argsstring>
+        <name>handled</name>
+        <qualifiedname>TEST_GPT_example.handled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_example.py" line="91" column="1" bodyfile="tests/TEST_GPT_example.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__example_1a84f4e0714e0376e9c1962a86b31251bd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_example.ID_SUP_100</definition>
+        <argsstring></argsstring>
+        <name>ID_SUP_100</name>
+        <qualifiedname>TEST_GPT_example.ID_SUP_100</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=is_more_100[&quot;test_fn&quot;],
+    name=&quot;Event id &gt;100&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_example.py" line="40" column="1" bodyfile="tests/TEST_GPT_example.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__example_1a06529d3e176b6a8e0401d1f2a1b7663e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_example.ID_SUP_150</definition>
+        <argsstring></argsstring>
+        <name>ID_SUP_150</name>
+        <qualifiedname>TEST_GPT_example.ID_SUP_150</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=is_more_150[&quot;test_fn&quot;],
+    name=&quot;Event id &gt;150&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_example.py" line="46" column="1" bodyfile="tests/TEST_GPT_example.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceTEST__GPT__example_1a9ff904fb31dc0fc7c6debde80557537c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TEST_GPT_example.test_handled</definition>
+        <argsstring></argsstring>
+        <name>test_handled</name>
+        <qualifiedname>TEST_GPT_example.test_handled</qualifiedname>
+        <initializer>=  jarvis.AddTest(
+    test_fn=lambda x: x,
+    name=&quot;Event handled&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/TEST_GPT_example.py" line="22" column="1" bodyfile="tests/TEST_GPT_example.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/TEST_GPT_example.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
   <compounddef id="classjarvis_1_1JARVIS" kind="class" language="Python" prot="public">
     <compoundname>jarvis::JARVIS</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">JarvisUtilitiesMixin</basecompoundref>
+    <basecompoundref refid="classjarvis__utilities_1_1JarvisUtilitiesMixin" prot="public" virt="non-virtual">jarvis_utilities.JarvisUtilitiesMixin</basecompoundref>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classjarvis_1_1JARVIS_1a5b5d3d7a57acfc39a99c44aee31a5adb" prot="public" static="no" mutable="no">
         <type>dict</type>
@@ -17,8 +17,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="22" column="1" bodyfile="JARVIS/jarvis.py" bodystart="22" bodyend="-1"/>
-        <referencedby refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="32" endline="42">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</referencedby>
+        <location file="JARVIS/jarvis.py" line="46" column="1" bodyfile="JARVIS/jarvis.py" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="68" endline="78">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classjarvis_1_1JARVIS_1a7a12fe08ec496214cab7dfecf2b4925c" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -33,10 +33,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="24" column="1" bodyfile="JARVIS/jarvis.py" bodystart="24" bodyend="-1"/>
-        <referencedby refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="39" endline="79">jarvis_printing.JarvisPrintingMixin._format_message</referencedby>
-        <referencedby refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="32" endline="42">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</referencedby>
-        <referencedby refid="classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a" compoundref="jarvis_8py" startline="26" endline="42">jarvis.JARVIS.Navigate</referencedby>
+        <location file="JARVIS/jarvis.py" line="48" column="1" bodyfile="JARVIS/jarvis.py" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="99" endline="140">jarvis_printing.JarvisPrintingMixin._format_message</referencedby>
+        <referencedby refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="68" endline="78">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</referencedby>
+        <referencedby refid="classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a" compoundref="jarvis_8py" startline="59" endline="75">jarvis.JARVIS.Navigate</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classjarvis_1_1JARVIS_1ae5be94ffdb85f619426a5fed458f282d" prot="public" static="no" mutable="no">
         <type></type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="11" column="1" bodyfile="JARVIS/jarvis.py" bodystart="11" bodyend="-1"/>
+        <location file="JARVIS/jarvis.py" line="35" column="1" bodyfile="JARVIS/jarvis.py" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classjarvis_1_1JARVIS_1ac2d94946d6cf0b69c7f45ff5c3bf3d11" prot="public" static="no" mutable="no">
         <type>dict</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="13" column="1" bodyfile="JARVIS/jarvis.py" bodystart="13" bodyend="-1"/>
+        <location file="JARVIS/jarvis.py" line="37" column="1" bodyfile="JARVIS/jarvis.py" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classjarvis_1_1JARVIS_1a13da5016a641f83f6e6d1dcd2616dc94" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -88,10 +88,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="21" column="1" bodyfile="JARVIS/jarvis.py" bodystart="21" bodyend="-1"/>
-        <referencedby refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="39" endline="79">jarvis_printing.JarvisPrintingMixin._format_message</referencedby>
-        <referencedby refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a1e933474919f97beb650adebf6ba5513" compoundref="jarvis__utilities_8py" startline="76" endline="103">jarvis_utilities.JarvisUtilitiesMixin._trigger_messages</referencedby>
-        <referencedby refid="classjarvis_1_1JARVIS_1afb1719dc14c9e960e46de2add6221b3f" compoundref="jarvis_8py" startline="43" endline="49">jarvis.JARVIS.WriteLog</referencedby>
+        <location file="JARVIS/jarvis.py" line="45" column="1" bodyfile="JARVIS/jarvis.py" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="99" endline="140">jarvis_printing.JarvisPrintingMixin._format_message</referencedby>
+        <referencedby refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a1e933474919f97beb650adebf6ba5513" compoundref="jarvis__utilities_8py" startline="147" endline="175">jarvis_utilities.JarvisUtilitiesMixin._trigger_messages</referencedby>
+        <referencedby refid="classjarvis_1_1JARVIS_1afb1719dc14c9e960e46de2add6221b3f" compoundref="jarvis_8py" startline="82" endline="88">jarvis.JARVIS.WriteLog</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classjarvis_1_1JARVIS_1a100f573fb29349b5f53bba148cb45fc3" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -106,9 +106,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="10" column="1" bodyfile="JARVIS/jarvis.py" bodystart="10" bodyend="-1"/>
-        <referencedby refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae25c5deeae73a2bfc65f6b05656d39b7" compoundref="jarvis__printing_8py" startline="2" endline="10">jarvis_printing.JarvisPrintingMixin._printIn</referencedby>
-        <referencedby refid="classjarvis__printing_1_1JarvisPrintingMixin_1a88ba37c91cf9237f17cd4ad913cc3323" compoundref="jarvis__printing_8py" startline="11" endline="19">jarvis_printing.JarvisPrintingMixin._printOut</referencedby>
+        <location file="JARVIS/jarvis.py" line="34" column="1" bodyfile="JARVIS/jarvis.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae25c5deeae73a2bfc65f6b05656d39b7" compoundref="jarvis__printing_8py" startline="19" endline="27">jarvis_printing.JarvisPrintingMixin._printIn</referencedby>
+        <referencedby refid="classjarvis__printing_1_1JarvisPrintingMixin_1a88ba37c91cf9237f17cd4ad913cc3323" compoundref="jarvis__printing_8py" startline="38" endline="46">jarvis_printing.JarvisPrintingMixin._printOut</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classjarvis_1_1JARVIS_1a458afde40bcfa08a21beb1ed9c3b6b72" prot="public" static="no" mutable="no">
         <type>list</type>
@@ -123,8 +123,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="12" column="1" bodyfile="JARVIS/jarvis.py" bodystart="12" bodyend="-1"/>
-        <referencedby refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" compoundref="jarvis_8py" startline="98" endline="139">jarvis.JARVIS.AddTest</referencedby>
+        <location file="JARVIS/jarvis.py" line="36" column="1" bodyfile="JARVIS/jarvis.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" compoundref="jarvis_8py" startline="188" endline="229">jarvis.JARVIS.AddTest</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classjarvis_1_1JARVIS_1a18b5f817907450771336d91feb9787b5" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -139,8 +139,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="23" column="1" bodyfile="JARVIS/jarvis.py" bodystart="23" bodyend="-1"/>
-        <referencedby refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a38d7b0c3162fb77ab8a9b261cc7f8449" compoundref="jarvis__utilities_8py" startline="60" endline="75">jarvis_utilities.JarvisUtilitiesMixin._autonameTests</referencedby>
+        <location file="JARVIS/jarvis.py" line="47" column="1" bodyfile="JARVIS/jarvis.py" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a38d7b0c3162fb77ab8a9b261cc7f8449" compoundref="jarvis__utilities_8py" startline="118" endline="133">jarvis_utilities.JarvisUtilitiesMixin._autonameTests</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -160,16 +160,27 @@
           <defval>&quot;WARNING&quot;</defval>
         </param>
         <briefdescription>
+<para>Initializes the <ref refid="classjarvis_1_1JARVIS" kindref="compound">JARVIS</ref> logger with a default logging level. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Initialize the Logger with a default logging level.
+<para>This constructor sets up the initial state of the <ref refid="classjarvis_1_1JARVIS" kindref="compound">JARVIS</ref> logger, including the logging level, context hierarchy, and test management. It also initializes internal variables that track indentation levels, logging contexts, and the log itself.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The default logging level (defaults to &quot;WARNING&quot;).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<verbatim>Initialize the Logger with a default logging level.
 
 :param level: Default logging level, defaults to &quot;WARNING&quot;.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="4" column="1" bodyfile="JARVIS/jarvis.py" bodystart="4" bodyend="25"/>
+        <location file="JARVIS/jarvis.py" line="28" column="1" bodyfile="JARVIS/jarvis.py" bodystart="28" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -207,9 +218,54 @@
           <defval>&quot;test&quot;</defval>
         </param>
         <briefdescription>
+<para>Add a new test to the current context. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Add a new test to the current context.
+<para>This method adds a new test to the current context within the logging hierarchy. The test is defined by a test function, expected result, and optional callback functions for handling success and failure. The test is automatically named to avoid conflicts, and the method returns the test object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>test_fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The test function to evaluate (defaults to a lambda returning False). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expected result key for the test (defaults to True). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function if the test passes (defaults to a success message). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function if the test fails (defaults to a failure message). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the test (defaults to &quot;test&quot;). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly added test object.</para>
+</simplesect>
+<verbatim>Add a new test to the current context.
 
 :param test_fn: The test function to evaluate.
 :param result_key: Expected result key for the test.
@@ -221,14 +277,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="93" column="1" bodyfile="JARVIS/jarvis.py" bodystart="98" bodyend="139"/>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a38d7b0c3162fb77ab8a9b261cc7f8449" compoundref="jarvis__utilities_8py" startline="60" endline="75">jarvis_utilities.JarvisUtilitiesMixin._autonameTests</references>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="32" endline="42">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</references>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a6dace0d393d836d916e11b10bf70e7ae" compoundref="jarvis__utilities_8py" startline="8" endline="31">jarvis_utilities.JarvisUtilitiesMixin._set_new_context</references>
-        <references refid="classjarvis_1_1JARVIS_1a3e7426a263dabc9aa3f62182afdb949d" compoundref="jarvis_8py" startline="168" endline="178">jarvis.JARVIS.Cb_False</references>
-        <references refid="classjarvis_1_1JARVIS_1a411998cc9fec9c144deb5d5ba96b931e" compoundref="jarvis_8py" startline="157" endline="167">jarvis.JARVIS.Cb_True</references>
-        <references refid="classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a" compoundref="jarvis_8py" startline="26" endline="42">jarvis.JARVIS.Navigate</references>
-        <references refid="classjarvis_1_1JARVIS_1a458afde40bcfa08a21beb1ed9c3b6b72" compoundref="jarvis_8py" startline="12">jarvis.JARVIS.tests</references>
+        <location file="JARVIS/jarvis.py" line="183" column="1" bodyfile="JARVIS/jarvis.py" bodystart="188" bodyend="229"/>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a38d7b0c3162fb77ab8a9b261cc7f8449" compoundref="jarvis__utilities_8py" startline="118" endline="133">jarvis_utilities.JarvisUtilitiesMixin._autonameTests</references>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="68" endline="78">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</references>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a6dace0d393d836d916e11b10bf70e7ae" compoundref="jarvis__utilities_8py" startline="35" endline="58">jarvis_utilities.JarvisUtilitiesMixin._set_new_context</references>
+        <references refid="classjarvis_1_1JARVIS_1a3e7426a263dabc9aa3f62182afdb949d" compoundref="jarvis_8py" startline="289" endline="300">jarvis.JARVIS.Cb_False</references>
+        <references refid="classjarvis_1_1JARVIS_1a411998cc9fec9c144deb5d5ba96b931e" compoundref="jarvis_8py" startline="268" endline="278">jarvis.JARVIS.Cb_True</references>
+        <references refid="classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a" compoundref="jarvis_8py" startline="59" endline="75">jarvis.JARVIS.Navigate</references>
+        <references refid="classjarvis_1_1JARVIS_1a458afde40bcfa08a21beb1ed9c3b6b72" compoundref="jarvis_8py" startline="36">jarvis.JARVIS.tests</references>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1a3e7426a263dabc9aa3f62182afdb949d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -250,9 +306,30 @@
           <defval>&quot;FAIL&quot;</defval>
         </param>
         <briefdescription>
+<para>Generate a failure callback message. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Generate a failure callback message.
+<para>This method generates a callback message indicating that a test has failed. The message is formatted with a &quot;FAIL&quot; level by default.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logging level (defaults to &quot;FAIL&quot;). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The formatted message.</para>
+</simplesect>
+<verbatim>Generate a failure callback message.
 
 :param message: The message to format.
 :param level: The logging level, defaults to &quot;FAIL&quot;.
@@ -261,9 +338,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="168" column="1" bodyfile="JARVIS/jarvis.py" bodystart="168" bodyend="178"/>
-        <references refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="39" endline="79">jarvis_printing.JarvisPrintingMixin._format_message</references>
-        <referencedby refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" compoundref="jarvis_8py" startline="98" endline="139">jarvis.JARVIS.AddTest</referencedby>
+        <location file="JARVIS/jarvis.py" line="289" column="1" bodyfile="JARVIS/jarvis.py" bodystart="289" bodyend="300"/>
+        <references refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="99" endline="140">jarvis_printing.JarvisPrintingMixin._format_message</references>
+        <referencedby refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" compoundref="jarvis_8py" startline="188" endline="229">jarvis.JARVIS.AddTest</referencedby>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1a411998cc9fec9c144deb5d5ba96b931e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -285,9 +362,30 @@
           <defval>&quot;SUCCESS&quot;</defval>
         </param>
         <briefdescription>
+<para>Generate a success callback message. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Generate a success callback message.
+<para>This method generates a callback message indicating that a test has passed. The message is formatted with a &quot;SUCCESS&quot; level by default.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logging level (defaults to &quot;SUCCESS&quot;). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The formatted message.</para>
+</simplesect>
+<verbatim>Generate a success callback message.
 
 :param message: The message to format.
 :param level: The logging level, defaults to &quot;SUCCESS&quot;.
@@ -296,9 +394,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="157" column="1" bodyfile="JARVIS/jarvis.py" bodystart="157" bodyend="167"/>
-        <references refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="39" endline="79">jarvis_printing.JarvisPrintingMixin._format_message</references>
-        <referencedby refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" compoundref="jarvis_8py" startline="98" endline="139">jarvis.JARVIS.AddTest</referencedby>
+        <location file="JARVIS/jarvis.py" line="268" column="1" bodyfile="JARVIS/jarvis.py" bodystart="268" bodyend="278"/>
+        <references refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="99" endline="140">jarvis_printing.JarvisPrintingMixin._format_message</references>
+        <referencedby refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" compoundref="jarvis_8py" startline="188" endline="229">jarvis.JARVIS.AddTest</referencedby>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1a922459758e5ed3674a4aedfee450e1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -315,17 +413,28 @@
           <defname>message</defname>
         </param>
         <briefdescription>
+<para>Log a debug message. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Log a debug message.
+<para>This method logs a message at the &quot;DEBUG&quot; level, which is typically used for detailed debugging information that may not be required during normal operation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The debug message to log.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<verbatim>Log a debug message.
 
 :param message: The debug message to log.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="69" column="1" bodyfile="JARVIS/jarvis.py" bodystart="69" bodyend="76"/>
-        <references refid="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" compoundref="jarvis_8py" startline="50" endline="68">jarvis.JARVIS.Log</references>
+        <location file="JARVIS/jarvis.py" line="127" column="1" bodyfile="JARVIS/jarvis.py" bodystart="127" bodyend="134"/>
+        <references refid="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" compoundref="jarvis_8py" startline="100" endline="118">jarvis.JARVIS.Log</references>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1a11ece9fa16c0a5a3d55fc3ef5f4f22ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -342,17 +451,28 @@
           <defname>message</defname>
         </param>
         <briefdescription>
+<para>Log an error message. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Log an error message.
+<para>This method logs a message at the &quot;ERROR&quot; level, which is typically used for logging serious issues that might cause the application to behave unexpectedly.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error message to log.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<verbatim>Log an error message.
 
 :param message: The error message to log.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="85" column="1" bodyfile="JARVIS/jarvis.py" bodystart="85" bodyend="92"/>
-        <references refid="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" compoundref="jarvis_8py" startline="50" endline="68">jarvis.JARVIS.Log</references>
+        <location file="JARVIS/jarvis.py" line="160" column="1" bodyfile="JARVIS/jarvis.py" bodystart="160" bodyend="167"/>
+        <references refid="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" compoundref="jarvis_8py" startline="100" endline="118">jarvis.JARVIS.Log</references>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -373,9 +493,30 @@
           <defname>level</defname>
         </param>
         <briefdescription>
+<para>Log a message at a specified level. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Log a message at the given level.
+<para>This method logs a message at the given level by navigating to the appropriate context, formatting the message, and storing it in the current context. It also returns the formatted message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to log. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The level at which to log the message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The formatted message.</para>
+</simplesect>
+<verbatim>Log a message at the given level.
 
 :param message: The message to log.
 :param level: The level at which to log the message.
@@ -384,14 +525,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="50" column="1" bodyfile="JARVIS/jarvis.py" bodystart="50" bodyend="68"/>
-        <references refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="39" endline="79">jarvis_printing.JarvisPrintingMixin._format_message</references>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="32" endline="42">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</references>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a6dace0d393d836d916e11b10bf70e7ae" compoundref="jarvis__utilities_8py" startline="8" endline="31">jarvis_utilities.JarvisUtilitiesMixin._set_new_context</references>
-        <references refid="classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a" compoundref="jarvis_8py" startline="26" endline="42">jarvis.JARVIS.Navigate</references>
-        <referencedby refid="classjarvis_1_1JARVIS_1a922459758e5ed3674a4aedfee450e1c5" compoundref="jarvis_8py" startline="69" endline="76">jarvis.JARVIS.Debug</referencedby>
-        <referencedby refid="classjarvis_1_1JARVIS_1a11ece9fa16c0a5a3d55fc3ef5f4f22ec" compoundref="jarvis_8py" startline="85" endline="92">jarvis.JARVIS.Error</referencedby>
-        <referencedby refid="classjarvis_1_1JARVIS_1a6c0d7b07134d9e4e547fd06f5f5eee15" compoundref="jarvis_8py" startline="77" endline="84">jarvis.JARVIS.Warning</referencedby>
+        <location file="JARVIS/jarvis.py" line="100" column="1" bodyfile="JARVIS/jarvis.py" bodystart="100" bodyend="118"/>
+        <references refid="classjarvis__printing_1_1JarvisPrintingMixin_1ae018ddf1cbdc84c31fa2b97c61990a7f" compoundref="jarvis__printing_8py" startline="99" endline="140">jarvis_printing.JarvisPrintingMixin._format_message</references>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="68" endline="78">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</references>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a6dace0d393d836d916e11b10bf70e7ae" compoundref="jarvis__utilities_8py" startline="35" endline="58">jarvis_utilities.JarvisUtilitiesMixin._set_new_context</references>
+        <references refid="classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a" compoundref="jarvis_8py" startline="59" endline="75">jarvis.JARVIS.Navigate</references>
+        <referencedby refid="classjarvis_1_1JARVIS_1a922459758e5ed3674a4aedfee450e1c5" compoundref="jarvis_8py" startline="127" endline="134">jarvis.JARVIS.Debug</referencedby>
+        <referencedby refid="classjarvis_1_1JARVIS_1a11ece9fa16c0a5a3d55fc3ef5f4f22ec" compoundref="jarvis_8py" startline="160" endline="167">jarvis.JARVIS.Error</referencedby>
+        <referencedby refid="classjarvis_1_1JARVIS_1a6c0d7b07134d9e4e547fd06f5f5eee15" compoundref="jarvis_8py" startline="144" endline="151">jarvis.JARVIS.Warning</referencedby>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1a7bbd76a4fc37948be7e54aee4f1ec95a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -409,23 +550,34 @@
           <defval>&quot;children&quot;</defval>
         </param>
         <briefdescription>
+<para>Navigate to a different context within the logger. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Navigate to a different context.
+<para>This method allows the user to move between different contexts within the logging hierarchy. It can navigate to a child context or move up to the parent context. If the destination context does not exist, it creates a new one.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context to navigate to (defaults to &quot;children&quot;).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<verbatim>Navigate to a different context.
 
 :param destination: The context to navigate to. Defaults to &quot;children&quot;.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="26" column="1" bodyfile="JARVIS/jarvis.py" bodystart="26" bodyend="42"/>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="32" endline="42">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</references>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a6dace0d393d836d916e11b10bf70e7ae" compoundref="jarvis__utilities_8py" startline="8" endline="31">jarvis_utilities.JarvisUtilitiesMixin._set_new_context</references>
-        <references refid="classjarvis_1_1JARVIS_1a7a12fe08ec496214cab7dfecf2b4925c" compoundref="jarvis_8py" startline="24">jarvis.JARVIS.current_path</references>
-        <references refid="classjarvis__printing_1_1JarvisPrintingMixin_1ac4c2e7dd28f977f8ac118b78d08924a1" compoundref="jarvis__printing_8py" startline="35">jarvis_printing.JarvisPrintingMixin.current_path</references>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a2fb7c0327e9f1c226116fc6fa9e0c38d" compoundref="jarvis__utilities_8py" startline="18">jarvis_utilities.JarvisUtilitiesMixin.current_path</references>
-        <referencedby refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" compoundref="jarvis_8py" startline="98" endline="139">jarvis.JARVIS.AddTest</referencedby>
-        <referencedby refid="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" compoundref="jarvis_8py" startline="50" endline="68">jarvis.JARVIS.Log</referencedby>
+        <location file="JARVIS/jarvis.py" line="59" column="1" bodyfile="JARVIS/jarvis.py" bodystart="59" bodyend="75"/>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="68" endline="78">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</references>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a6dace0d393d836d916e11b10bf70e7ae" compoundref="jarvis__utilities_8py" startline="35" endline="58">jarvis_utilities.JarvisUtilitiesMixin._set_new_context</references>
+        <references refid="classjarvis_1_1JARVIS_1a7a12fe08ec496214cab7dfecf2b4925c" compoundref="jarvis_8py" startline="48">jarvis.JARVIS.current_path</references>
+        <references refid="classjarvis__printing_1_1JarvisPrintingMixin_1ac4c2e7dd28f977f8ac118b78d08924a1" compoundref="jarvis__printing_8py" startline="82">jarvis_printing.JarvisPrintingMixin.current_path</references>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a2fb7c0327e9f1c226116fc6fa9e0c38d" compoundref="jarvis__utilities_8py" startline="45">jarvis_utilities.JarvisUtilitiesMixin.current_path</references>
+        <referencedby refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" compoundref="jarvis_8py" startline="188" endline="229">jarvis.JARVIS.AddTest</referencedby>
+        <referencedby refid="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" compoundref="jarvis_8py" startline="100" endline="118">jarvis.JARVIS.Log</referencedby>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1a2444145876c9d99aaac5b583737e2c8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -446,9 +598,30 @@
           <defname>val</defname>
         </param>
         <briefdescription>
+<para>Trigger a specific test. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Trigger a specific test.
+<para>This method triggers a specific test by executing the test function with the provided value. It then logs appropriate success or failure messages based on the test result and updates the test&apos;s status.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>test</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The test object to trigger. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to pass to the test function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The test object after execution.</para>
+</simplesect>
+<verbatim>Trigger a specific test.
 
 :param test: The test object to trigger.
 :param val: The value to pass to the test function.
@@ -457,9 +630,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="140" column="1" bodyfile="JARVIS/jarvis.py" bodystart="140" bodyend="156"/>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="32" endline="42">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</references>
-        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a1e933474919f97beb650adebf6ba5513" compoundref="jarvis__utilities_8py" startline="76" endline="103">jarvis_utilities.JarvisUtilitiesMixin._trigger_messages</references>
+        <location file="JARVIS/jarvis.py" line="241" column="1" bodyfile="JARVIS/jarvis.py" bodystart="241" bodyend="257"/>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a383b850245894c7aacdad6751105bbba" compoundref="jarvis__utilities_8py" startline="68" endline="78">jarvis_utilities.JarvisUtilitiesMixin._get_current_context</references>
+        <references refid="classjarvis__utilities_1_1JarvisUtilitiesMixin_1a1e933474919f97beb650adebf6ba5513" compoundref="jarvis__utilities_8py" startline="147" endline="175">jarvis_utilities.JarvisUtilitiesMixin._trigger_messages</references>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1a6c0d7b07134d9e4e547fd06f5f5eee15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -476,17 +649,28 @@
           <defname>message</defname>
         </param>
         <briefdescription>
+<para>Log a warning message. </para>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Log a warning message.
+<para>This method logs a message at the &quot;WARNING&quot; level, which is typically used for logging potentially harmful situations or important notices that require attention.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The warning message to log.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<verbatim>Log a warning message.
 
 :param message: The warning message to log.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="77" column="1" bodyfile="JARVIS/jarvis.py" bodystart="77" bodyend="84"/>
-        <references refid="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" compoundref="jarvis_8py" startline="50" endline="68">jarvis.JARVIS.Log</references>
+        <location file="JARVIS/jarvis.py" line="144" column="1" bodyfile="JARVIS/jarvis.py" bodystart="144" bodyend="151"/>
+        <references refid="classjarvis_1_1JARVIS_1a24cb1572ef996dbbe06669780ac076cf" compoundref="jarvis_8py" startline="100" endline="118">jarvis.JARVIS.Log</references>
       </memberdef>
       <memberdef kind="function" id="classjarvis_1_1JARVIS_1afb1719dc14c9e960e46de2add6221b3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -499,44 +683,62 @@
           <defname>self</defname>
         </param>
         <briefdescription>
+<para>Print all the log entries stored in <computeroutput>msg_log</computeroutput>. </para>
         </briefdescription>
         <detaileddescription>
+<para>This method iterates over all log entries stored in the <computeroutput>msg_log</computeroutput> list and prints them. This provides a simple way to output the entire log to the console.</para>
 <para><verbatim>Print all the log entries stored in `msg_log`.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="JARVIS/jarvis.py" line="43" column="1" bodyfile="JARVIS/jarvis.py" bodystart="43" bodyend="49"/>
-        <references refid="classjarvis_1_1JARVIS_1a13da5016a641f83f6e6d1dcd2616dc94" compoundref="jarvis_8py" startline="21">jarvis.JARVIS.msg_log</references>
+        <location file="JARVIS/jarvis.py" line="82" column="1" bodyfile="JARVIS/jarvis.py" bodystart="82" bodyend="88"/>
+        <references refid="classjarvis_1_1JARVIS_1a13da5016a641f83f6e6d1dcd2616dc94" compoundref="jarvis_8py" startline="45">jarvis.JARVIS.msg_log</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Main class for the <ref refid="classjarvis_1_1JARVIS" kindref="compound">JARVIS</ref> logging system. </para>
     </briefdescription>
     <detaileddescription>
+<para>The <ref refid="classjarvis_1_1JARVIS" kindref="compound">JARVIS</ref> class extends JarvisUtilitiesMixin, incorporating a variety of logging and utility functions. This class provides methods for logging messages at different levels, navigating between contexts, adding and triggering tests, and generating callback messages. The class is designed to be the central point of interaction for the <ref refid="classjarvis_1_1JARVIS" kindref="compound">JARVIS</ref> logging system. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>JarvisUtilitiesMixin</label>
-      </node>
       <node id="1">
         <label>jarvis.JARVIS</label>
         <link refid="classjarvis_1_1JARVIS"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>jarvis_printing.JarvisPrintingMixin</label>
+        <link refid="classjarvis__printing_1_1JarvisPrintingMixin"/>
+      </node>
+      <node id="2">
+        <label>jarvis_utilities.JarvisUtilitiesMixin</label>
+        <link refid="classjarvis__utilities_1_1JarvisUtilitiesMixin"/>
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>JarvisUtilitiesMixin</label>
-      </node>
       <node id="1">
         <label>jarvis.JARVIS</label>
         <link refid="classjarvis_1_1JARVIS"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="3">
+        <label>jarvis_printing.JarvisPrintingMixin</label>
+        <link refid="classjarvis__printing_1_1JarvisPrintingMixin"/>
+      </node>
+      <node id="2">
+        <label>jarvis_utilities.JarvisUtilitiesMixin</label>
+        <link refid="classjarvis__utilities_1_1JarvisUtilitiesMixin"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
     </collaborationgraph>
-    <location file="JARVIS/jarvis.py" line="3" column="1" bodyfile="JARVIS/jarvis.py" bodystart="3" bodyend="178"/>
+    <location file="JARVIS/jarvis.py" line="17" column="1" bodyfile="JARVIS/jarvis.py" bodystart="17" bodyend="300"/>
     <listofallmembers>
       <member refid="classjarvis_1_1JARVIS_1a0b9e05f4731aa1c92207e5b5099599bc" prot="public" virt="non-virtual"><scope>jarvis::JARVIS</scope><name>__init__</name></member>
       <member refid="classjarvis_1_1JARVIS_1af12de11c965f255440924df2baf5946a" prot="public" virt="non-virtual"><scope>jarvis::JARVIS</scope><name>AddTest</name></member>

@@ -5,6 +5,10 @@
 <simplesect>
     <title>Files    </title>
         <itemizedlist>
+            <listitem><para>file <link linkend="_TEST__GPT__custom_8py">TEST_GPT_custom.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_TEST__GPT__example_8py">TEST_GPT_example.py</link></para>
+</listitem>
             <listitem><para>file <link linkend="_test__helpers_8py">test_helpers.py</link></para>
 </listitem>
             <listitem><para>file <link linkend="_TEST__minimal__example_8py">TEST_minimal_example.py</link></para>

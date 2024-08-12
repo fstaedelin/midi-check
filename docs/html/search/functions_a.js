@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triggertest_0',['TriggerTest',['../classjarvis_1_1JARVIS.html#a2444145876c9d99aaac5b583737e2c8b',1,'jarvis::JARVIS']]]
+  ['set_5fevent_5fdetails_0',['set_event_details',['../classtest__helpers_1_1Event.html#a0bbaf8d65200ed132ba39bf0c432c5ad',1,'test_helpers::Event']]]
 ];

@@ -1,5 +1,6 @@
 <map id="launch_tests._importHelp" name="launch_tests._importHelp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="221,5,392,31"/>
-<area shape="rect" id="Node000002" href="$namespacelaunch__tests.html#a2d924b5e780336fa61ddb2e76cfa4eab" title=" " alt="" coords="5,5,173,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,21,174,21,174,15,207,15"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,29,392,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="345,20,335,11,307,8,284,10,271,15,269,20,275,28,271,31,264,21,268,11,282,5,307,3,337,6,349,15"/>
+<area shape="rect" id="Node000002" href="$namespacelaunch__tests.html#a2d924b5e780336fa61ddb2e76cfa4eab" title=" " alt="" coords="5,29,173,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="207,45,174,45,174,39,207,39"/>
 </map>

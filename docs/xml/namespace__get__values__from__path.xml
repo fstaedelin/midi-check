@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace__get__values__from__path" kind="namespace" language="Python">
+    <compoundname>_get_values_from_path</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace__get__values__from__path_1a3126f53b0bf608c3abd8591fc79c8935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>_get_values_from_path.get_value_from_path</definition>
+        <argsstring>(data_dict, path)</argsstring>
+        <name>get_value_from_path</name>
+        <qualifiedname>_get_values_from_path.get_value_from_path</qualifiedname>
+        <param>
+          <type>data_dict</type>
+          <defname>data_dict</defname>
+        </param>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Iterates through the keys of a dictionary based on the provided path list.
+
+:param data_dict: The dictionary to traverse.
+:param path: A list of strings representing the path to traverse in the dictionary.
+:return: The value found at the end of the path, or None if the path is invalid.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scraps/_get_values_from_path.py" line="1" column="1" bodyfile="scraps/_get_values_from_path.py" bodystart="1" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scraps/_get_values_from_path.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
