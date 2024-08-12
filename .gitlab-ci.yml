@@ -20,7 +20,7 @@ before_script:
 test:
   stage: test
   script:
-    - python3 -m launch_tests  # This will discover and run tests in your project
+    - pytest --maxfail=1 --disable-warnings -q  # Run tests and stop after the first failure, disable warnings, and be quiet
 
 #deploy:
 #  stage: deploy
