@@ -1,10 +1,10 @@
-## 
+##
 # @file Contains utils for MIDI-related tests
-
 from MIDI_CHECK.mc import MIDI_CHECK
 
 # Initialize the MIDI_CHECK logger with an "INFO" level.
 mc = MIDI_CHECK("INFO")
+
 
 ##
 # @class Represents a MIDI event.
@@ -27,7 +27,7 @@ class Event:
     def __init__(self, event_id, handled=False):
         self.id = event_id  # The unique identifier for the event.
         self.handled = handled  # Whether the event has been handled or not.
-        
+
         # Additional attributes for MIDI event details could include:
         self.type = None  # MIDI event type (e.g., Note On, Note Off, Control Change).
         self.channel = None  # MIDI channel (0-15).

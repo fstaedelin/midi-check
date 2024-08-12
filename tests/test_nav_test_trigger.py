@@ -1,4 +1,4 @@
-## 
+##
 # @file Contains a test for all functionalities
 from tests.MIDI_test_helpers import mc, Event, is_more_100, is_more_150
 

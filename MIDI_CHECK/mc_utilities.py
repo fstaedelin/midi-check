@@ -121,7 +121,7 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
             name = f"{name}_{self.unnamed_tests + 1}"
             self.unnamed_tests += 1
         return name
-    
+
     ##
     # @brief Triggers success or failure messages based on the result of a test.
     #
