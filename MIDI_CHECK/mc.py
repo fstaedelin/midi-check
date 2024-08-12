@@ -1,9 +1,13 @@
 ##
 # @package MIDI_CHECK
-# MIDI_CHECK is a logging package designed to help developers manage complex logging scenarios.
+# @brief MIDI_CHECK is a logging package designed to help developers manage complex logging scenarios.
 # It provides various utilities for logging messages at different levels, managing contexts,
 # and testing functionality. This module defines the main MIDI_CHECK class, which integrates all
 # the utility functions and logging capabilities into a single, easy-to-use interface.
+# @ingroup MIDI_CHECK
+#
+# @{
+##
 
 from MIDI_CHECK.mc_utilities import MidiCheckUtilitiesMixin
 
@@ -303,3 +307,6 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         """
         formatted_message = self._format_message(level, message, ignore=True)
         return formatted_message
+##
+# @}
+##

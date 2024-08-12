@@ -1,12 +1,18 @@
+##
+# @package MIDI_CHECK
+# @ingroup MIDI_CHECK
+# @{
+##
+
 from MIDI_CHECK.mc_printing import MidiCheckPrintingMixin
+
+
 ##
 # @class MidiCheckUtilitiesMixin
 # The MidiCheckUtilitiesMixin class extends the MidiCheckPrintingMixin class and includes
 # several utility functions that manage logging contexts, handle automatic naming
 # of contexts and tests, and trigger messages based on the outcomes of tests.
 # These utilities are designed to work seamlessly with the logging system in MIDI_CHECK.
-
-
 class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
     """
     Mixin class for various utility functions used by the Logger class.
@@ -158,3 +164,6 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
 
             self.msg_log.append(test["callback_false"])
             test["passed"] = False
+##
+# @}
+##

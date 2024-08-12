@@ -1,4 +1,10 @@
 ##
+# @package MIDI_CHECK
+# @ingroup MIDI_CHECK
+# @{
+##
+
+##
 # @class MidiCheckPrintingMixin
 # A mixer class to handle functions helpful to print messages
 class MidiCheckPrintingMixin:
@@ -132,3 +138,7 @@ class MidiCheckPrintingMixin:
             self.msg_log.append(formatted_message)
 
         return formatted_message
+
+##
+# @}
+##
