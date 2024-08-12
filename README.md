@@ -19,13 +19,12 @@ This repository contains a Python-based logging library designed to manage compl
 - [Configuration](#configuration)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
 This is a simple python logger written to debug python MIDI interfaces
 
-## Features
+### Features
 
 - **Context Management**: Navigate through different logging contexts and maintain a structured log hierarchy.
 - **Automated Test Logging**: Add tests with expected results and automatically log success or failure messages.
@@ -40,8 +39,8 @@ This is a simple python logger written to debug python MIDI interfaces
 Instructions for cloning the repository.
 
 ```bash
-$ git clone https://github.com/yourusername/yourprojectname.git
-$ cd yourprojectname
+$ git clone https://gitlab.com/opensource6744033/midi-check.git
+$ cd midi-check
 ```
 
 ## Usage
