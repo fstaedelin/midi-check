@@ -2,7 +2,7 @@ image: python:3.8
 
 variables:
   # Set the Python environment variable
-  PYTHONPATH: "${CI_PROJECT_DIR}"
+  PYTHONPATH: "${CI_PROJECT_DIR}:${CI_PROJECT_DIR}/tests:${CI_PROJECT_DIR}/MIDI_CHECK"
 
 stages:
   - lint
