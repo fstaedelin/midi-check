@@ -4,84 +4,64 @@
 
 This repository contains a Python-based logging library designed to manage complex hierarchical logging and testing within a software application. The library provides utility functions to manage contexts, create automated logs, and handle test cases with customizable callback messages.
 
+
+
+# Project Name
+
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## Introduction
+
+This is a simple python logger written to debug python MIDI interfaces
+
 ## Features
 
 - **Context Management**: Navigate through different logging contexts and maintain a structured log hierarchy.
 - **Automated Test Logging**: Add tests with expected results and automatically log success or failure messages.
 - **Customizable Log Levels**: Support for multiple log levels such as DEBUG, INFO, WARNING, ERROR, SUCCESS, and FAIL.
+- **Adding Tests and triggering them multiple times**: Add a test and trigger it multiple times, generating a report.
 - **Callback Functions**: Define custom callback messages for test success or failure.
 
 ## Installation
 
-Clone this repository to your local machine using:
+### Cloning the Repository
+
+Instructions for cloning the repository.
 
 ```bash
-git clone <your-git-url>
+$ git clone https://github.com/yourusername/yourprojectname.git
+$ cd yourprojectname
+```
 
 ## Usage
 
-### Logger Class
+For example usage, see tests in tests/.
 
-The Logger class provides the core functionality to create and manage logs.
+## Configuration
 
-Initialization
+Detail any configuration options available in the project. Include details on how to modify default settings or connect to external services.
 
-python
+## Contributing
 
-logger = Logger(level="WARNING")
+Guidelines for contributing to the project:
 
-Logging Messages
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add YourFeature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
-python
+## License
 
-logger.Debug("This is a debug message.")
-logger.Warning("This is a warning message.")
-logger.Error("This is an error message.")
-
-Context Navigation
-
-python
-
-logger.Navigate("new_context")
-
-Writing Logs
-
-python
-
-logger.WriteLog()
-
-Adding and Triggering Tests
-
-Adding Tests
-
-python
-
-logger.AddTest(
-    test_fn=lambda: True,
-    result_key=True,
-    callback_true="Test passed!",
-    callback_false="Test failed!",
-    name="test_name"
-)
-
-Triggering Tests
-
-python
-
-test = logger.TriggerTest(test, val)
-
-LoggerUtilitiesMixin Class
-
-The LoggerUtilitiesMixin class provides utility functions that are inherited by the Logger class. These include functions for context management, automatic naming of tests and contexts, and triggering test messages.
-
-LoggerPrintingMixin Class
-
-The LoggerPrintingMixin class provides utility functions specifically for printing and formatting log messages. These include functions for indenting messages, printing contexts, and managing print levels.
-
-Contributing
-
-Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
