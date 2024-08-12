@@ -184,11 +184,11 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     # @return The newly added test object.
     #
     def AddTest(self,
-            test_fn=lambda: False,
-            result_key=True,
-            callback_true=None,
-            callback_false=None,
-            name="test"):
+                test_fn=lambda: False,
+                result_key=True,
+                callback_true=None,
+                callback_false=None,
+                name="test"):
         """
         Add a new test to the current context.
 
@@ -202,7 +202,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         if "TESTS" not in self._get_current_context():
             self._set_new_context("TESTS")
         self.Navigate("TESTS")
-        
+
         # Set automatic callbacks if not provided
         if callback_false is None:
             callback_false = self.Cb_False(f"Test {name} failed!")
@@ -211,7 +211,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
 
         # Automatically name the test if not provided
         name = self._autonameTests(name)
-        
+
         # Define new test and assign it in the context
         newTest = {
             "name": name,
@@ -223,7 +223,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
             "triggered": False,
             "output": {}
         }
-        
+
         self._get_current_context()[name] = newTest
         self.tests.append(newTest)
         self.Navigate("parent")  # Return to the previous context
