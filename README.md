@@ -1,13 +1,5 @@
 # MIDI-CHECK
 
-## Overview
-
-This repository contains a Python-based logging library designed to manage complex hierarchical logging and testing within a software application. The library provides utility functions to manage contexts, create automated logs, and handle test cases with customizable callback messages.
-
-
-
-# Project Name
-
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Table of Contents
