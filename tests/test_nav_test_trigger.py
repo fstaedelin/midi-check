@@ -2,6 +2,7 @@
 # @file Contains a test for all functionalities
 from tests.MIDI_test_helpers import mc, Event, is_more_100, is_more_150
 
+
 def test_nav_trigger():
     # Create an event instance with an ID of 230 and mark it as not handled.
     event1 = Event(230, False)
