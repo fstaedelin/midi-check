@@ -11,13 +11,12 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
     """
     Mixin class for various utility functions used by the Logger class.
     """
-
     ##
     # @brief Sets a new context in the logger's hierarchy.
     #
-    # This method creates and sets a new context within the logging hierarchy. 
-    # It can either initialize a root context if none exists, or it navigates 
-    # the existing hierarchy to add a new sub-context. The new context is named 
+    # This method creates and sets a new context within the logging hierarchy.
+    # It can either initialize a root context if none exists, or it navigates
+    # the existing hierarchy to add a new sub-context. The new context is named
     # either as specified or automatically to avoid conflicts.
     #
     # @param name The name of the new context (defaults to "children").
@@ -33,7 +32,7 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
         """
         name = self._autoname(name, parent)
         parent = self._autoname(parent)
-        
+
         if not self.current_path:  # If no current path, initialize the root context
             if name not in self.contexts:
                 self.contexts[name] = {}
@@ -44,7 +43,7 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
                 if part not in context_ref:
                     context_ref[part] = {}
                 context_ref = context_ref[part]
-            
+
             if name not in context_ref:
                 context_ref[name] = {}
 
@@ -72,7 +71,7 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
     # @brief Automatically generates a name for a new context to avoid conflicts.
     #
     # This method generates a name for a new context, ensuring that it does not
-    # overwrite existing contexts with the same name. It appends a number to the 
+    # overwrite existing contexts with the same name. It appends a number to the
     # name if a conflict is detected, making it unique within the parent context.
     #
     # @param name The desired context name (defaults to "children").
@@ -95,12 +94,12 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
             elif name in context:
                 name = f"{name}_{len(context[name])}"
         return name
-    
+
     ##
     # @brief Automatically generates a unique name for a new test.
     #
     # This method automatically names a new test within a specific parent context
-    # (by default, the "TESTS" context). It ensures that the test name is unique by 
+    # (by default, the "TESTS" context). It ensures that the test name is unique by
     # appending a number if necessary, which prevents overwriting existing tests.
     #
     # @param name The desired test name (defaults to "test").
@@ -148,7 +147,7 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
                 self.msg_log.append(self._format_message("SUCCESS", test["name"]+" was Failed, now is:", ignore=True))
             elif test["triggered"]:
                 self.msg_log.append(self._format_message("SUCCESS", test["name"]+" was Passed, still is:", ignore=True))
-            
+
             self.msg_log.append(test["callback_true"])
             test["passed"] = True
         else:
@@ -156,6 +155,6 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
                 self.msg_log.append(self._format_message("FAIL", test["name"]+" was Failed, now is:", ignore=True))
             elif test["triggered"]:
                 self.msg_log.append(self._format_message("FAIL", test["name"]+" was Passed, still is:", ignore=True))
-            
+
             self.msg_log.append(test["callback_false"])
             test["passed"] = False
