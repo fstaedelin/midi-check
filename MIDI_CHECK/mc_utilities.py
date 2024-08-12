@@ -1,16 +1,7 @@
-##
-# @package MIDI_CHECK
-# MIDI_CHECK is a logging package designed to aid in debugging, formatting output, 
-# and managing complex logging contexts. This module introduces the 
-# MidiCheckUtilitiesMixin class, which provides various utility functions to manage 
-# and manipulate logging contexts, handle naming conventions, and trigger 
-# appropriate log messages based on test results.
-
 from MIDI_CHECK.mc_printing import MidiCheckPrintingMixin
 
 ##
-# @brief Mixin class providing utility functions for the Logger class.
-#
+# @class MidiCheckUtilitiesMixin
 # The MidiCheckUtilitiesMixin class extends the MidiCheckPrintingMixin class and includes
 # several utility functions that manage logging contexts, handle automatic naming
 # of contexts and tests, and trigger messages based on the outcomes of tests.

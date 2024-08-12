@@ -8,7 +8,7 @@
 from MIDI_CHECK.mc_utilities import MidiCheckUtilitiesMixin
 
 ##
-# @brief Main class for the MIDI_CHECK logging system.
+# @class Main class for the MIDI_CHECK logging system.
 #
 # The MIDI_CHECK class extends MidiCheckUtilitiesMixin, incorporating a variety of logging and
 # utility functions. This class provides methods for logging messages at different levels,

@@ -52,7 +52,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"TEST__nav__test__trigger_8py.html"
+"MIDI__test__helpers_8py.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_5f_5finit_5f_5f_0',['__init__',['../classmc_1_1MIDI__CHECK.html#a1b33624c6eb91a07b110dfcd07c82021',1,'mc.MIDI_CHECK.__init__()'],['../classtest__helpers_1_1Event.html#ae6d7a4baaa4507d72f874fa76ec49e27',1,'test_helpers.Event.__init__()']]],
+  ['_5f_5finit_5f_5f_0',['__init__',['../classmc_1_1MIDI__CHECK.html#a1b33624c6eb91a07b110dfcd07c82021',1,'mc.MIDI_CHECK.__init__()'],['../classMIDI__test__helpers_1_1Event.html#a121c0d068078197f46cd8d7b5a440c1c',1,'MIDI_test_helpers.Event.__init__()']]],
   ['_5fautoname_1',['_autoname',['../classmc__utilities_1_1MidiCheckUtilitiesMixin.html#abb88123e593b4e9923622ed7d033aa69',1,'mc_utilities::MidiCheckUtilitiesMixin']]],
   ['_5fautonametests_2',['_autonameTests',['../classmc__utilities_1_1MidiCheckUtilitiesMixin.html#acb1cf8e12843a4ea1e88635fc428b1f7',1,'mc_utilities::MidiCheckUtilitiesMixin']]],
   ['_5fformat_5fmessage_3',['_format_message',['../classmc__printing_1_1MidiCheckPrintingMixin.html#aceacf8dfdbad668b46948f22e76e17d3',1,'mc_printing::MidiCheckPrintingMixin']]],

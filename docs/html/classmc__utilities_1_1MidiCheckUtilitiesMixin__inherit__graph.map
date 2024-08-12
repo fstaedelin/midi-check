@@ -1,5 +1,5 @@
 <map id="mc_utilities.MidiCheckUtilitiesMixin" name="mc_utilities.MidiCheckUtilitiesMixin">
-<area shape="rect" id="Node000001" title="Mixin class providing utility functions for the Logger class." alt="" coords="5,79,204,119"/>
+<area shape="rect" id="Node000001" title="The MidiCheckUtilitiesMixin class extends the MidiCheckPrintingMixin class and includes several utili..." alt="" coords="5,79,204,119"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="25,5,184,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,44,107,79,102,79,102,44"/>
 </map>

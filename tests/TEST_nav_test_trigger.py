@@ -1,3 +1,5 @@
+## 
+# @file Contains a test for all functionalities
 from tests.test_helpers import *
 
 # Create an event instance with an ID of 230 and mark it as not handled.

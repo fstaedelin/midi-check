@@ -11,7 +11,7 @@ var namespaces_dup =
     [ "mc_printing", "namespacemc__printing.html", "namespacemc__printing" ],
     [ "mc_utilities", "namespacemc__utilities.html", "namespacemc__utilities" ],
     [ "MIDI_CHECK", "namespaceMIDI__CHECK.html", null ],
-    [ "test_helpers", "namespacetest__helpers.html", "namespacetest__helpers" ],
+    [ "MIDI_test_helpers", "namespaceMIDI__test__helpers.html", "namespaceMIDI__test__helpers" ],
     [ "TEST_nav_test_trigger", "namespaceTEST__nav__test__trigger.html", [
       [ "event1", "namespaceTEST__nav__test__trigger.html#a27223ad69145ffb13e92f9425a36e9e8", null ],
       [ "handled", "namespaceTEST__nav__test__trigger.html#aa3a891cbb37abcae94d7d50c88af9925", null ],

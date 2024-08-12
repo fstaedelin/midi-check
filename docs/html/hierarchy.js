@@ -1,7 +1,9 @@
 var hierarchy =
 [
-    [ "test_helpers.Event", "classtest__helpers_1_1Event.html", null ],
+    [ "MIDI_test_helpers.Event", "classMIDI__test__helpers_1_1Event.html", null ],
+    [ "Main", "classMain.html", null ],
     [ "mc_printing.MidiCheckPrintingMixin", "classmc__printing_1_1MidiCheckPrintingMixin.html", null ],
+    [ "Represents", "classRepresents.html", null ],
     [ "MidiCheckPrintingMixin", null, [
       [ "mc_utilities.MidiCheckUtilitiesMixin", "classmc__utilities_1_1MidiCheckUtilitiesMixin.html", null ]
     ] ],

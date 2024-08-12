@@ -9,7 +9,9 @@ var annotated_dup =
     [ "mc_utilities", "namespacemc__utilities.html", [
       [ "MidiCheckUtilitiesMixin", "classmc__utilities_1_1MidiCheckUtilitiesMixin.html", "classmc__utilities_1_1MidiCheckUtilitiesMixin" ]
     ] ],
-    [ "test_helpers", "namespacetest__helpers.html", [
-      [ "Event", "classtest__helpers_1_1Event.html", "classtest__helpers_1_1Event" ]
-    ] ]
+    [ "MIDI_test_helpers", "namespaceMIDI__test__helpers.html", [
+      [ "Event", "classMIDI__test__helpers_1_1Event.html", "classMIDI__test__helpers_1_1Event" ]
+    ] ],
+    [ "Main", "classMain.html", null ],
+    [ "Represents", "classRepresents.html", null ]
 ];

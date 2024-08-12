@@ -1,10 +1,13 @@
+## 
+# @file Contains utils for MIDI-related tests
+
 from MIDI_CHECK.mc import MIDI_CHECK
 
 # Initialize the MIDI_CHECK logger with an "INFO" level.
 mc = MIDI_CHECK("INFO")
 
 ##
-# @brief Represents a MIDI event.
+# @class Represents a MIDI event.
 #
 # The Event class encapsulates data related to MIDI events. This includes
 # the event ID, whether the event has been handled, and potentially other
@@ -67,8 +70,3 @@ is_more_150 = mc.AddTest(
     test_fn=lambda x: x > 150,
     name=">150"
 )
-
-# The above tests are general-purpose tests that could be applied to various 
-# scenarios, such as verifying the correctness of MIDI event data or other 
-# numerical thresholds in the system.
-
