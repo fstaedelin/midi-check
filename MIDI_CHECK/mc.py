@@ -278,7 +278,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         """
         formatted_message = self._format_message(level, message, ignore=True)
         return formatted_message
-    
+
     ##
     # @brief Generate a failure callback message.
     #
@@ -299,4 +299,3 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         """
         formatted_message = self._format_message(level, message, ignore=True)
         return formatted_message
-
