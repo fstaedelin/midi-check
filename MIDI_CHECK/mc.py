@@ -15,7 +15,8 @@ from MIDI_CHECK.mc_utilities import MidiCheckUtilitiesMixin
 # navigating between contexts, adding and triggering tests, and generating callback messages.
 # The class is designed to be the central point of interaction for the MIDI_CHECK logging system.
 class MIDI_CHECK(MidiCheckUtilitiesMixin):
-    
+
+
     ##
     # @brief Initializes the MIDI_CHECK logger with a default logging level.
     #
@@ -46,7 +47,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         self.contexts = {}  # Initialize the root context
         self.unnamed_tests = 0  # Counter for unnamed tests
         self.current_path = []  # Path to the current context
-        
+
     ##
     # @brief Navigate to a different context within the logger.
     #
@@ -88,7 +89,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         """
         for entry in self.msg_log:
             print(entry)
-            
+
     ##
     # @brief Log a message at a specified level.
     #
