@@ -1,5 +1,0 @@
-<map id="mc.MIDI_CHECK.Cb_True" name="mc.MIDI_CHECK.Cb_True">
-<area shape="rect" id="Node000001" title="Generate a success callback message." alt="" coords="5,13,188,38"/>
-<area shape="rect" id="Node000002" href="$classmc__printing_1_1MidiCheckPrintingMixin.html#aceacf8dfdbad668b46948f22e76e17d3" title="Formats a log message based on its level and other parameters." alt="" coords="236,5,435,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,23,223,23,223,28,188,28"/>
-</map>

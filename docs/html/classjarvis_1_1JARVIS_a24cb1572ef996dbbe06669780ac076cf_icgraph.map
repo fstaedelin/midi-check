@@ -1,9 +1,0 @@
-<map id="mc.MIDI_CHECK.Log" name="mc.MIDI_CHECK.Log">
-<area shape="rect" id="Node000001" title="Log a message at a specified level." alt="" coords="209,55,340,80"/>
-<area shape="rect" id="Node000002" href="$classmc_1_1MIDI_CHECK.html#a922459758e5ed3674a4aedfee450e1c5" title="Log a debug message." alt="" coords="10,5,157,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,54,133,33,134,28,212,49"/>
-<area shape="rect" id="Node000003" href="$classmc_1_1MIDI_CHECK.html#a11ece9fa16c0a5a3d55fc3ef5f4f22ec" title="Log an error message." alt="" coords="15,55,152,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,70,153,70,153,65,196,65"/>
-<area shape="rect" id="Node000004" href="$classmc_1_1MIDI_CHECK.html#a6c0d7b07134d9e4e547fd06f5f5eee15" title="Log a warning message." alt="" coords="5,104,161,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,86,134,106,133,101,211,81"/>
-</map>

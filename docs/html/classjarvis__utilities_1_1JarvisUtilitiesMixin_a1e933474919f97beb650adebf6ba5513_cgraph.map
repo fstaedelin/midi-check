@@ -1,5 +1,0 @@
-<map id="mc_utilities.MidiCheckUtilitiesMixin._trigger_messages" name="mc_utilities.MidiCheckUtilitiesMixin._trigger_messages">
-<area shape="rect" id="Node000001" title="Triggers success or failure messages based on the result of a test." alt="" coords="5,5,189,45"/>
-<area shape="rect" id="Node000002" href="$classmc__printing_1_1MidiCheckPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f" title="Formats a log message based on its level and other parameters." alt="" coords="237,5,423,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,224,23,224,28,190,28"/>
-</map>
