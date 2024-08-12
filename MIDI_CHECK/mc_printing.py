@@ -20,7 +20,7 @@ class MidiCheckPrintingMixin:
         """
         self.print_lvl += 1
         print(self.print_lvl * "  ", "In : ", fn_name)
-    
+
     ##
     # @brief Decreases indentation level and prints an exiting message.
     #
@@ -39,7 +39,7 @@ class MidiCheckPrintingMixin:
         """
         print(self.print_lvl * "  ", "Out: ", fn_name)
         self.print_lvl -= 1
-    
+
     ##
     # @brief Prints a debug message with the current indentation level.
     #
@@ -59,7 +59,7 @@ class MidiCheckPrintingMixin:
         :param val: The value or content of the debug message.
         """
         print('|   ' * (len(self._get_current_context()) + 1), name, ":  ", val)
-    
+
     ##
     # @brief Prints the current state of contexts for debugging purposes.
     #
@@ -106,9 +106,9 @@ class MidiCheckPrintingMixin:
             indent = '====' * (len(self.current_path))
         elif level == "FAIL":
             indent = '|XXX' + '|   ' * (len(self.current_path) - 1)
-        else:    
+        else:
             indent = '|   ' * (len(self.current_path))
-            
+
         flag = {
             "SUCCESS": '===3',
             "DEBUG": '|-->',
@@ -127,9 +127,8 @@ class MidiCheckPrintingMixin:
             formatted_message = f"{lvl}{indent}{flag}|{name}:{message}"
         else:
             formatted_message = f"{lvl}{indent}{flag}|{message}"
-        
+
         if not ignore:
             self.msg_log.append(formatted_message)
-        
-        return formatted_message
 
+        return formatted_message
