@@ -5,6 +5,8 @@ from MIDI_CHECK.mc_printing import MidiCheckPrintingMixin
 # several utility functions that manage logging contexts, handle automatic naming
 # of contexts and tests, and trigger messages based on the outcomes of tests.
 # These utilities are designed to work seamlessly with the logging system in MIDI_CHECK.
+
+
 class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
     """
     Mixin class for various utility functions used by the Logger class.
