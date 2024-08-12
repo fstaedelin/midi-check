@@ -1,4 +1,5 @@
-# Logger Library
+# MIDI-CHECK
+## MIDI Interface Diagnostic & Event Collection Hub is a tiny logger, adapted to debugging of a python MIDI interface.
 
 ## Overview
 
