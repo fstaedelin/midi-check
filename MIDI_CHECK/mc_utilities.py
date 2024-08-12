@@ -1,5 +1,4 @@
 from MIDI_CHECK.mc_printing import MidiCheckPrintingMixin
-
 ##
 # @class MidiCheckUtilitiesMixin
 # The MidiCheckUtilitiesMixin class extends the MidiCheckPrintingMixin class and includes
@@ -158,4 +157,3 @@ class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
             
             self.msg_log.append(test["callback_false"])
             test["passed"] = False
-
