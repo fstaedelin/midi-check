@@ -56,7 +56,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     #
     # @param destination The context to navigate to (defaults to "children").
     #
-    def Navigate(self, destination="children"):
+    def Navigate(self, destination="children", logging = False):
         """
         Navigate to a different context.
 
@@ -64,17 +64,17 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         """
         if destination == "parent":
             if len(self.current_path) > 0:  # Move to the parent context
+                if not logging: self.Debug("Moving to parent folder", True)
                 self.current_path.pop()
-                self._print("Moving to parent folder")
             else:
                 print("Cannot Navigate to parent, root has no parents")
         else:
             # Create a new context if the destination doesn't exist
             if destination not in self._get_current_context():
-                self._print("Destination does not exist, creating nested context: "+destination)
+                if not logging: self.Warning("Destination does not exist, creating nested context: "+destination, True)
                 self._set_new_context(destination)
+            if not logging: self.Debug("Moving to: "+ destination, True)
             self.current_path.append(destination)  # Move to the new or existing context
-            self._print("Moving to "+destination)
 
     ##
     # @brief Print all the log entries stored in `msg_log`.
@@ -100,7 +100,7 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     # @param level The level at which to log the message.
     # @return The formatted message.
     #
-    def Log(self, message, level):
+    def Log(self, message, level, navigating = False):
         """
         Log a message at the given level.
 
@@ -108,15 +108,16 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         :param level: The level at which to log the message.
         :return: The formatted message.
         """
-        if level not in self._get_current_context():
-            self._set_new_context(level)
+#        if level not in self._get_current_context():
+#            self._set_new_context(level)
+        
+        if not navigating:
+            self.Navigate(level, True)  # Go to the desired level
+            self.Navigate("parent", True)  # Return to the previous context
 
-        self.Navigate(level)  # Go to the desired level
         msg_number = len(self._get_current_context())
         formatted_message = self._format_message(level, message)
         self._get_current_context()[msg_number] = formatted_message
-        self.Navigate("parent")  # Return to the previous context
-
         return formatted_message
 
     ##
@@ -127,13 +128,13 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     #
     # @param message The debug message to log.
     #
-    def Debug(self, message):
+    def Debug(self, message, navigating = False):
         """
         Log a debug message.
 
         :param message: The debug message to log.
         """
-        self.Log(message, "DEBUG")
+        self.Log(message, "DEBUG", navigating)
 
     ##
     # @brief Log a warning message.
@@ -144,13 +145,13 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     #
     # @param message The warning message to log.
     #
-    def Warning(self, message):
+    def Warning(self, message, navigating = False):
         """
         Log a warning message.
 
         :param message: The warning message to log.
         """
-        self.Log(message, "WARNING")
+        self.Log(message, "WARNING", navigating)
 
     ##
     # @brief Log an error message.
@@ -160,13 +161,13 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     #
     # @param message The error message to log.
     #
-    def Error(self, message):
+    def Error(self, message, navigating = False):
         """
         Log an error message.
 
         :param message: The error message to log.
         """
-        self.Log(message, "ERROR")
+        self.Log(message, "ERROR", navigating)
 
     ##
     # @brief Add a new test to the current context.
