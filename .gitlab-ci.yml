@@ -17,7 +17,7 @@ lint:
   stage: lint
   script:
     - pip install flake8
-    - flake8 my_module tests
+    - flake8 MIDI_CHECK tests
   # Optional: You can use a specific image or environment for linting
 
 test:
