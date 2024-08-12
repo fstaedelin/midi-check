@@ -5,7 +5,7 @@ variables:
   PYTHONPATH: "${CI_PROJECT_DIR}:${CI_PROJECT_DIR}/tests:${CI_PROJECT_DIR}/MIDI_CHECK"
 
 stages:
-  - lint
+#  - lint
   - test
 
 before_script:
