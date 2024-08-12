@@ -1,4 +1,4 @@
-var namespacejarvis =
+var namespacemc =
 [
-    [ "JARVIS", "classjarvis_1_1JARVIS.html", "classjarvis_1_1JARVIS" ]
+    [ "MIDI_CHECK", "classmc_1_1MIDI_CHECK.html", "classmc_1_1MIDI_CHECK" ]
 ];

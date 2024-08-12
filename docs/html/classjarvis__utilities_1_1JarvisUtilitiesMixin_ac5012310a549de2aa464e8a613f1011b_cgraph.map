@@ -1,5 +1,5 @@
-<map id="jarvis_utilities.JarvisUtilitiesMixin._autoname" name="jarvis_utilities.JarvisUtilitiesMixin._autoname">
+<map id="mc_utilities.MidiCheckUtilitiesMixin._autoname" name="mc_utilities.MidiCheckUtilitiesMixin._autoname">
 <area shape="rect" id="Node000001" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="5,5,189,45"/>
-<area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title="Retrieves the current context based on the current path." alt="" coords="237,5,421,45"/>
+<area shape="rect" id="Node000002" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title="Retrieves the current context based on the current path." alt="" coords="237,5,421,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,223,23,223,28,190,28"/>
 </map>

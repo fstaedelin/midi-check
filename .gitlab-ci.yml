@@ -20,7 +20,7 @@ variables:
 test:
   stage: test
   script:
-    - python3 -m launch_tests  # This will discover and run tests in your project
+    - python3 -m tests/launch_tests  # This will discover and run tests in your project
 
 #deploy:
 #  stage: deploy

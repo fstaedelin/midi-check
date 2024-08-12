@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_0',['Log',['../classjarvis_1_1JARVIS.html#a24cb1572ef996dbbe06669780ac076cf',1,'jarvis::JARVIS']]]
+  ['mark_5fhandled_0',['mark_handled',['../classtest__helpers_1_1Event.html#a11c6695de8be9695c141f38b5004f7fb',1,'test_helpers::Event']]]
 ];

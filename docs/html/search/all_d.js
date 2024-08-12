@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['of_20tt_20minilab_20tt_0',['Workflow for Dual Versions of &lt;tt&gt;MiniLab&lt;/tt&gt;',['../md_chatgpt-workflow.html#autotoc_md0',1,'']]]
+  ['print_5flvl_0',['print_lvl',['../classmc_1_1MIDI__CHECK.html#aab81c7fb8d6dcee674ee8498809c09fb',1,'mc::MIDI_CHECK']]]
 ];

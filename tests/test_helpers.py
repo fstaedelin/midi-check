@@ -1,7 +1,7 @@
-from JARVIS.jarvis import JARVIS
+from MIDI_CHECK.mc import MIDI_CHECK
 
-# Initialize the JARVIS logger with an "INFO" level.
-jarvis = JARVIS("INFO")
+# Initialize the MIDI_CHECK logger with an "INFO" level.
+mc = MIDI_CHECK("INFO")
 
 ##
 # @brief Represents a MIDI event.
@@ -56,14 +56,14 @@ class Event:
 
 # Add a test to check if a given value is greater than 100.
 # This test returns True if the value exceeds 100, otherwise False.
-is_more_100 = jarvis.AddTest(
+is_more_100 = mc.AddTest(
     test_fn=lambda x: x > 100,
     name=">100"
 )
 
 # Add a test to check if a given value is greater than 150.
 # This test returns True if the value exceeds 150, otherwise False.
-is_more_150 = jarvis.AddTest(
+is_more_150 = mc.AddTest(
     test_fn=lambda x: x > 150,
     name=">150"
 )

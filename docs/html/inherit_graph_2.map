@@ -1,9 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,137,31"/>
-<<<<<<< HEAD
-<area shape="rect" id="Node000001" href="$classjarvis_1_1JARVIS.html" title="Main class for the JARVIS logging system." alt="" coords="185,5,291,31"/>
-=======
-<area shape="rect" id="Node000001" href="$classjarvis_1_1JARVIS.html" title=" " alt="" coords="185,5,291,31"/>
->>>>>>> e0156f478ad711bca498c7ddaf1e034dfa909d98
-<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="151,15,185,15,185,21,151,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000001" href="$classmc_1_1MIDI__CHECK.html" title="Main class for the MIDI_CHECK logging system." alt="" coords="212,5,340,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
 </map>

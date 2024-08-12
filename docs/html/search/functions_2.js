@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['cb_5ffalse_0',['Cb_False',['../classjarvis_1_1JARVIS.html#a3e7426a263dabc9aa3f62182afdb949d',1,'jarvis::JARVIS']]],
-  ['cb_5ftrue_1',['Cb_True',['../classjarvis_1_1JARVIS.html#a411998cc9fec9c144deb5d5ba96b931e',1,'jarvis::JARVIS']]]
+  ['cb_5ffalse_0',['Cb_False',['../classmc_1_1MIDI__CHECK.html#ad48d798464cd425bd83d794db9a27293',1,'mc::MIDI_CHECK']]],
+  ['cb_5ftrue_1',['Cb_True',['../classmc_1_1MIDI__CHECK.html#a865ea39f30fb18ef8329c7a67002c91f',1,'mc::MIDI_CHECK']]]
 ];

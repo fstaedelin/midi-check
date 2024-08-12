@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unnamed_5ftests_0',['unnamed_tests',['../classjarvis_1_1JARVIS.html#a18b5f817907450771336d91feb9787b5',1,'jarvis::JARVIS']]]
+  ['versions_20of_20tt_20minilab_20tt_0',['Workflow for Dual Versions of &lt;tt&gt;MiniLab&lt;/tt&gt;',['../md_chatgpt-workflow.html#autotoc_md0',1,'']]]
 ];

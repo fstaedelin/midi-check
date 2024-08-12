@@ -1,4 +1,4 @@
-var jarvis_8py =
+var mc_8py =
 [
-    [ "jarvis.JARVIS", "classjarvis_1_1JARVIS.html", "classjarvis_1_1JARVIS" ]
+    [ "mc.MIDI_CHECK", "classmc_1_1MIDI_CHECK.html", "classmc_1_1MIDI_CHECK" ]
 ];

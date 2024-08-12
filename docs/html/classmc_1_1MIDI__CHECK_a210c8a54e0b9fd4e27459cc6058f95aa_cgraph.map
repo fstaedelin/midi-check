@@ -1,0 +1,19 @@
+<map id="mc.MIDI_CHECK.Log" name="mc.MIDI_CHECK.Log">
+<area shape="rect" id="Node000001" title="Log a message at a specified level." alt="" coords="5,97,159,122"/>
+<area shape="rect" id="Node000002" href="$classmc__printing_1_1MidiCheckPrintingMixin.html#aceacf8dfdbad668b46948f22e76e17d3" title="Formats a log message based on its level and other parameters." alt="" coords="207,5,405,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,94,238,48,240,53,118,99"/>
+<area shape="rect" id="Node000003" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#a3ae627d70e8710f4343f477c0e17ca4f" title="Retrieves the current context based on the current path." alt="" coords="947,149,1145,189"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,96,298,83,483,74,586,74,691,78,796,89,899,105,951,121,997,141,995,146,949,126,898,111,796,94,691,84,585,79,483,79,299,88,159,102"/>
+<area shape="rect" id="Node000004" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#af1928ee8aaa945809a63092f0fd5a905" title="Sets a new context in the logger&#39;s hierarchy." alt="" coords="453,120,652,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,112,439,130,439,135,159,117"/>
+<area shape="rect" id="Node000006" href="$classmc_1_1MIDI__CHECK.html#a12a289df353dc6237552f682443b396e" title="Navigate to a different context within the logger." alt="" coords="214,178,398,203"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="117,120,208,153,256,171,254,176,206,159,115,125"/>
+<area shape="rect" id="Node000005" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#abb88123e593b4e9923622ed7d033aa69" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="700,120,899,160"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="652,137,686,137,686,143,652,143"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="899,149,933,153,933,159,899,154"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="398,185,933,170,933,175,398,191"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="368,175,441,160,442,165,369,180"/>
+<area shape="rect" id="Node000007" href="$classmc__printing_1_1MidiCheckPrintingMixin.html#af1113dd7ae156e38f3441c6c3070f572" title="Prints a debug message with the current indentation level." alt="" coords="700,235,899,275"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="376,201,454,213,686,241,686,246,453,219,375,206"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="857,232,974,191,976,196,859,237"/>
+</map>

@@ -1,10 +1,10 @@
-<map id="jarvis.JARVIS.Navigate" name="jarvis.JARVIS.Navigate">
+<map id="mc.MIDI_CHECK.Navigate" name="mc.MIDI_CHECK.Navigate">
 <area shape="rect" id="Node000001" title="Navigate to a different context within the logger." alt="" coords="5,13,167,38"/>
-<area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title="Retrieves the current context based on the current path." alt="" coords="679,5,863,45"/>
+<area shape="rect" id="Node000002" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title="Retrieves the current context based on the current path." alt="" coords="679,5,863,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,20,215,19,423,17,631,19,665,19,665,25,631,24,423,22,215,24,167,25"/>
-<area shape="rect" id="Node000003" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a6dace0d393d836d916e11b10bf70e7ae" title="Sets a new context in the logger&#39;s hierarchy." alt="" coords="215,33,399,73"/>
+<area shape="rect" id="Node000003" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#a6dace0d393d836d916e11b10bf70e7ae" title="Sets a new context in the logger&#39;s hierarchy." alt="" coords="215,33,399,73"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,33,201,37,201,43,167,38"/>
-<area shape="rect" id="Node000004" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#ac5012310a549de2aa464e8a613f1011b" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="447,33,631,73"/>
+<area shape="rect" id="Node000004" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#ac5012310a549de2aa464e8a613f1011b" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="447,33,631,73"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="399,51,433,51,433,56,399,56"/>
 <area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="631,40,664,35,665,41,632,45"/>
 </map>

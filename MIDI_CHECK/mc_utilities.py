@@ -1,21 +1,21 @@
 ##
-# @package JARVIS
-# JARVIS is a logging package designed to aid in debugging, formatting output, 
+# @package MIDI_CHECK
+# MIDI_CHECK is a logging package designed to aid in debugging, formatting output, 
 # and managing complex logging contexts. This module introduces the 
-# JarvisUtilitiesMixin class, which provides various utility functions to manage 
+# MidiCheckUtilitiesMixin class, which provides various utility functions to manage 
 # and manipulate logging contexts, handle naming conventions, and trigger 
 # appropriate log messages based on test results.
 
-from JARVIS.jarvis_printing import JarvisPrintingMixin
+from MIDI_CHECK.mc_printing import MidiCheckPrintingMixin
 
 ##
 # @brief Mixin class providing utility functions for the Logger class.
 #
-# The JarvisUtilitiesMixin class extends the JarvisPrintingMixin class and includes
+# The MidiCheckUtilitiesMixin class extends the MidiCheckPrintingMixin class and includes
 # several utility functions that manage logging contexts, handle automatic naming
 # of contexts and tests, and trigger messages based on the outcomes of tests.
-# These utilities are designed to work seamlessly with the logging system in JARVIS.
-class JarvisUtilitiesMixin(JarvisPrintingMixin):
+# These utilities are designed to work seamlessly with the logging system in MIDI_CHECK.
+class MidiCheckUtilitiesMixin(MidiCheckPrintingMixin):
     """
     Mixin class for various utility functions used by the Logger class.
     """

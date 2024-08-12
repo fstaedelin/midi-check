@@ -1,0 +1,9 @@
+<map id="mc.MIDI_CHECK.TriggerTest" name="mc.MIDI_CHECK.TriggerTest">
+<area shape="rect" id="Node000001" title="Trigger a specific test." alt="" coords="5,45,203,70"/>
+<area shape="rect" id="Node000002" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#a3ae627d70e8710f4343f477c0e17ca4f" title="Retrieves the current context based on the current path." alt="" coords="251,5,449,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,42,236,37,237,43,202,47"/>
+<area shape="rect" id="Node000003" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#aa66332ffac3160a28f1bf1cc7af32e70" title="Triggers success or failure messages based on the result of a test." alt="" coords="251,69,449,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,67,237,72,236,77,202,73"/>
+<area shape="rect" id="Node000004" href="$classmc__printing_1_1MidiCheckPrintingMixin.html#aceacf8dfdbad668b46948f22e76e17d3" title="Formats a log message based on its level and other parameters." alt="" coords="497,69,696,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="450,87,483,87,483,92,450,92"/>
+</map>

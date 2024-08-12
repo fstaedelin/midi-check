@@ -1,25 +1,25 @@
 ##
-# @package JARVIS
-# JARVIS is a logging package designed to help developers manage complex logging scenarios.
+# @package MIDI_CHECK
+# MIDI_CHECK is a logging package designed to help developers manage complex logging scenarios.
 # It provides various utilities for logging messages at different levels, managing contexts,
-# and testing functionality. This module defines the main JARVIS class, which integrates all
+# and testing functionality. This module defines the main MIDI_CHECK class, which integrates all
 # the utility functions and logging capabilities into a single, easy-to-use interface.
 
-from JARVIS.jarvis_utilities import JarvisUtilitiesMixin
+from MIDI_CHECK.mc_utilities import MidiCheckUtilitiesMixin
 
 ##
-# @brief Main class for the JARVIS logging system.
+# @brief Main class for the MIDI_CHECK logging system.
 #
-# The JARVIS class extends JarvisUtilitiesMixin, incorporating a variety of logging and
+# The MIDI_CHECK class extends MidiCheckUtilitiesMixin, incorporating a variety of logging and
 # utility functions. This class provides methods for logging messages at different levels,
 # navigating between contexts, adding and triggering tests, and generating callback messages.
-# The class is designed to be the central point of interaction for the JARVIS logging system.
-class JARVIS(JarvisUtilitiesMixin):
+# The class is designed to be the central point of interaction for the MIDI_CHECK logging system.
+class MIDI_CHECK(MidiCheckUtilitiesMixin):
     
     ##
-    # @brief Initializes the JARVIS logger with a default logging level.
+    # @brief Initializes the MIDI_CHECK logger with a default logging level.
     #
-    # This constructor sets up the initial state of the JARVIS logger, including
+    # This constructor sets up the initial state of the MIDI_CHECK logger, including
     # the logging level, context hierarchy, and test management. It also initializes
     # internal variables that track indentation levels, logging contexts, and the log itself.
     #

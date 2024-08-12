@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "JARVIS", "index.html", [
+  [ "MIDI_CHECK", "index.html", [
     [ "chatgpt-workflow", "md_chatgpt-workflow.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
@@ -52,7 +52,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"TEST__GPT__custom_8py.html"
+"TEST__nav__test__trigger_8py.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

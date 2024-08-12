@@ -2,14 +2,14 @@ import os
 import glob
 import importlib.util
 
-def _importHelp(folder):
+def _importHelp():
     # Helper function to import all modules from a specific folder whose names contain 'TEST'.
     #
     # @param folder The folder containing the modules you want to import.
     # @return A dictionary where keys are module names and values are the imported modules.
     
     # Ensure the folder path is absolute
-    folder_path = os.path.abspath(folder)
+    folder_path = os.path.abspath('tests/')
     
     # Find all .py files in the folder that which name starts with 'TEST_'
     pattern = os.path.join(folder_path, 'TEST_*.py')
@@ -38,7 +38,7 @@ def _importHelp(folder):
     return imported_modules
 
 # Imports all files starting with 'TEST_' in the 'tests' folder
-testLib = _importHelp("tests/")
+testLib = _importHelp()
 
 # Launches all tests by simply referencing them
 for _, test in testLib.items():

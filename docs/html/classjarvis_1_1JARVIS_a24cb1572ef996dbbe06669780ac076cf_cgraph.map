@@ -1,14 +1,14 @@
-<map id="jarvis.JARVIS.Log" name="jarvis.JARVIS.Log">
+<map id="mc.MIDI_CHECK.Log" name="mc.MIDI_CHECK.Log">
 <area shape="rect" id="Node000001" title="Log a message at a specified level." alt="" coords="5,95,136,121"/>
-<area shape="rect" id="Node000002" href="$classjarvis__printing_1_1JarvisPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f" title="Formats a log message based on its level and other parameters." alt="" coords="184,5,369,45"/>
+<area shape="rect" id="Node000002" href="$classmc__printing_1_1MidiCheckPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f" title="Formats a log message based on its level and other parameters." alt="" coords="184,5,369,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,93,212,48,214,53,104,98"/>
-<area shape="rect" id="Node000003" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title="Retrieves the current context based on the current path." alt="" coords="881,120,1065,160"/>
+<area shape="rect" id="Node000003" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title="Retrieves the current context based on the current path." alt="" coords="881,120,1065,160"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,100,265,93,438,88,635,91,735,96,834,105,886,114,885,120,833,111,735,101,635,96,438,93,265,98,137,106"/>
-<area shape="rect" id="Node000004" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a6dace0d393d836d916e11b10bf70e7ae" title="Sets a new context in the logger&#39;s hierarchy." alt="" coords="417,120,601,160"/>
+<area shape="rect" id="Node000004" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#a6dace0d393d836d916e11b10bf70e7ae" title="Sets a new context in the logger&#39;s hierarchy." alt="" coords="417,120,601,160"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,110,404,130,403,135,136,115"/>
-<area shape="rect" id="Node000006" href="$classjarvis_1_1JARVIS.html#a7bbd76a4fc37948be7e54aee4f1ec95a" title="Navigate to a different context within the logger." alt="" coords="196,171,357,197"/>
+<area shape="rect" id="Node000006" href="$classmc_1_1MIDI_CHECK.html#a7bbd76a4fc37948be7e54aee4f1ec95a" title="Navigate to a different context within the logger." alt="" coords="196,171,357,197"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="105,118,185,150,226,164,224,169,183,154,103,123"/>
-<area shape="rect" id="Node000005" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#ac5012310a549de2aa464e8a613f1011b" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="649,120,833,160"/>
+<area shape="rect" id="Node000005" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#ac5012310a549de2aa464e8a613f1011b" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="649,120,833,160"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="602,137,635,137,635,143,602,143"/>
 <area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="834,137,867,137,867,143,834,143"/>
 <area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="357,185,573,186,703,181,833,169,884,160,885,166,834,175,703,186,573,192,357,190"/>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['navigate_0',['Navigate',['../classjarvis_1_1JARVIS.html#a7bbd76a4fc37948be7e54aee4f1ec95a',1,'jarvis::JARVIS']]]
+  ['of_20tt_20minilab_20tt_0',['Workflow for Dual Versions of &lt;tt&gt;MiniLab&lt;/tt&gt;',['../md_chatgpt-workflow.html#autotoc_md0',1,'']]]
 ];

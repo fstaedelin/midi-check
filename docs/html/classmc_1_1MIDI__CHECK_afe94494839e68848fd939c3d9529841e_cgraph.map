@@ -1,0 +1,35 @@
+<map id="mc.MIDI_CHECK.AddTest" name="mc.MIDI_CHECK.AddTest">
+<area shape="rect" id="Node000001" title="Add a new test to the current context." alt="" coords="5,200,185,225"/>
+<area shape="rect" id="Node000002" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#acb1cf8e12843a4ea1e88635fc428b1f7" title="Automatically generates a unique name for a new test." alt="" coords="464,30,663,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,198,154,142,191,111,232,86,286,66,342,54,398,46,450,43,451,49,399,52,343,59,287,71,234,91,194,115,158,146,108,201"/>
+<area shape="rect" id="Node000003" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#a3ae627d70e8710f4343f477c0e17ca4f" title="Retrieves the current context based on the current path." alt="" coords="1451,231,1649,271"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="113,197,164,164,198,147,233,134,323,111,395,103,562,104,1058,104,1121,108,1185,117,1247,131,1307,148,1416,187,1498,223,1496,228,1414,192,1306,153,1246,136,1184,122,1121,113,1058,110,562,110,395,108,324,116,234,139,200,152,167,169,116,202"/>
+<area shape="rect" id="Node000004" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#af1928ee8aaa945809a63092f0fd5a905" title="Sets a new context in the logger&#39;s hierarchy." alt="" coords="957,259,1156,299"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="115,223,166,256,199,272,234,284,329,304,426,316,525,322,621,322,800,312,943,295,944,301,800,318,621,327,524,327,426,321,328,309,233,290,197,277,164,261,112,227"/>
+<area shape="rect" id="Node000006" href="$classmc_1_1MIDI__CHECK.html#ad48d798464cd425bd83d794db9a27293" title="Generate a failure callback message." alt="" coords="469,200,657,225"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="186,210,456,210,456,215,186,215"/>
+<area shape="rect" id="Node000008" href="$classmc_1_1MIDI__CHECK.html#a865ea39f30fb18ef8329c7a67002c91f" title="Generate a success callback message." alt="" coords="233,149,416,174"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="153,197,253,175,254,180,154,202"/>
+<area shape="rect" id="Node000009" href="$classmc_1_1MIDI__CHECK.html#a90e51a281f4ad05be2880a5694b73e17" title="Log a debug message." alt="" coords="239,250,410,276"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="154,222,254,245,253,250,153,228"/>
+<area shape="rect" id="Node000011" href="$classmc_1_1MIDI__CHECK.html#a12a289df353dc6237552f682443b396e" title="Navigate to a different context within the logger." alt="" coords="718,361,902,386"/>
+<area shape="poly" id="edge21_Node000001_Node000011" title=" " alt="" coords="108,224,127,250,156,282,193,314,234,339,295,361,358,377,423,387,487,392,609,393,712,385,712,391,609,398,487,398,422,392,357,382,293,366,232,344,189,319,152,286,123,253,103,227"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="662,28,812,10,904,4,1002,3,1104,9,1207,24,1308,49,1404,86,1446,113,1482,148,1511,185,1533,218,1529,221,1507,188,1478,151,1443,117,1401,91,1306,54,1206,29,1104,15,1002,9,904,9,813,15,663,33"/>
+<area shape="rect" id="Node000005" href="$classmc__utilities_1_1MidiCheckUtilitiesMixin.html#abb88123e593b4e9923622ed7d033aa69" title="Automatically generates a name for a new context to avoid conflicts." alt="" coords="1204,259,1403,299"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="1156,276,1190,276,1190,282,1156,282"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="1403,265,1437,261,1437,266,1403,270"/>
+<area shape="rect" id="Node000007" href="$classmc__printing_1_1MidiCheckPrintingMixin.html#aceacf8dfdbad668b46948f22e76e17d3" title="Formats a log message based on its level and other parameters." alt="" coords="711,144,909,184"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="629,197,696,184,697,189,630,202"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="416,159,697,161,697,166,416,165"/>
+<area shape="rect" id="Node000010" href="$classmc_1_1MIDI__CHECK.html#a210c8a54e0b9fd4e27459cc6058f95aa" title="Log a message at a specified level." alt="" coords="487,250,640,276"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="411,260,472,260,472,266,411,266"/>
+<area shape="poly" id="edge14_Node000010_Node000003" title=" " alt="" coords="640,254,711,250,905,242,1057,240,1403,244,1437,245,1437,250,1403,250,1057,245,905,247,711,255,640,259"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="640,263,944,273,944,278,640,268"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="623,248,661,234,685,218,709,201,737,187,739,192,712,205,688,222,664,239,625,253"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="594,273,769,353,767,358,592,278"/>
+<area shape="poly" id="edge17_Node000011_Node000003" title=" " alt="" coords="902,365,1171,341,1305,325,1402,308,1450,293,1495,274,1497,279,1452,298,1403,314,1306,331,1171,347,903,370"/>
+<area shape="poly" id="edge20_Node000011_Node000004" title=" " alt="" coords="854,358,908,339,956,315,988,302,991,306,958,320,910,344,856,363"/>
+<area shape="rect" id="Node000012" href="$classmc__printing_1_1MidiCheckPrintingMixin.html#af1113dd7ae156e38f3441c6c3070f572" title="Prints a debug message with the current indentation level." alt="" coords="1204,374,1403,414"/>
+<area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="903,375,1190,386,1190,392,902,380"/>
+<area shape="poly" id="edge19_Node000012_Node000003" title=" " alt="" coords="1361,371,1401,353,1461,315,1512,278,1515,282,1464,320,1404,357,1363,376"/>
+</map>

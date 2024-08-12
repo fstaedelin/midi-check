@@ -1,11 +1,11 @@
 ##
-# @package JARVIS
-# JARVIS is a logging package designed to aid in debugging and formatting output.
-# This segment of the package introduces the JarvisPrintingMixin class, which
+# @package MIDI_CHECK
+# MIDI_CHECK is a logging package designed to aid in debugging and formatting output.
+# This segment of the package introduces the MidiCheckPrintingMixin class, which
 # provides utility functions for formatting and printing output, as well as 
 # managing indentation levels during the logging process.
 
-class JarvisPrintingMixin:
+class MidiCheckPrintingMixin:
     ##
     # @brief Increases indentation level and prints entering/exiting messages.
     #

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['debug_0',['Debug',['../classjarvis_1_1JARVIS.html#a922459758e5ed3674a4aedfee450e1c5',1,'jarvis::JARVIS']]]
+  ['debug_0',['Debug',['../classmc_1_1MIDI__CHECK.html#a90e51a281f4ad05be2880a5694b73e17',1,'mc::MIDI_CHECK']]]
 ];
