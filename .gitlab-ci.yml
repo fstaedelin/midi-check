@@ -1,29 +1,39 @@
-stages:
-#  - lint
-  - test
-#  - deploy
+image: python:3.10
 
 variables:
-  PYTHON_VERSION: "3.8"
+  # Set the Python environment variable
+  PYTHONPATH: "${CI_PROJECT_DIR}"
+
+stages:
+  - lint
+  - test
 
 before_script:
-  - python -m venv venv
-  - source venv/bin/activate
+  # Install dependencies
+  - pip install --upgrade pip
   - pip install -r requirements.txt
 
-#lint:
-#  stage: lint
-#  script:
-#    - pip install pylint
-#    - pylint my_project  # Replace 'my_project' with your actual project directory or module
+lint:
+  stage: lint
+  script:
+    - pip install flake8
+    - flake8 my_module tests
+  # Optional: You can use a specific image or environment for linting
 
 test:
   stage: test
   script:
-    - pytest --maxfail=1 --disable-warnings -q  # Run tests and stop after the first failure, disable warnings, and be quiet
+    - pip install pytest
+    - pytest --maxfail=1 --disable-warnings -q
+  # Optional: You can use a specific image or environment for testing
 
-#deploy:
-#  stage: deploy
-#  script:
-#    - echo "Deploy stage - Customize as needed"  # Add deployment commands if necessary
+# Optional: Additional stages for build, deploy, etc.
+# build:
+#   stage: build
+#   script:
+#     - echo "Build stage"
 
+# deploy:
+#   stage: deploy
+#   script:
+#     - echo "Deploy stage"
