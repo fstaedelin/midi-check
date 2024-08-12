@@ -6,10 +6,10 @@ stages:
 variables:
   PYTHON_VERSION: "3.8"
 
-#before_script:
-#  - python -m venv venv
-#  - source venv/bin/activate
-#  - pip install -r requirements.txt
+before_script:
+  - python -m venv venv
+  - source venv/bin/activate
+  - pip install -r requirements.txt
 
 #lint:
 #  stage: lint
