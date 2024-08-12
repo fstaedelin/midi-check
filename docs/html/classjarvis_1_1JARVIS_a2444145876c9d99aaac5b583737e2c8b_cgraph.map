@@ -1,9 +1,0 @@
-<map id="jarvis.JARVIS.TriggerTest" name="jarvis.JARVIS.TriggerTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,180,70"/>
-<area shape="rect" id="Node000002" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a383b850245894c7aacdad6751105bbba" title=" " alt="" coords="228,5,412,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,42,214,38,215,43,181,48"/>
-<area shape="rect" id="Node000003" href="$classjarvis__utilities_1_1JarvisUtilitiesMixin.html#a1e933474919f97beb650adebf6ba5513" title=" " alt="" coords="228,69,412,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,67,215,72,214,77,180,72"/>
-<area shape="rect" id="Node000004" href="$classjarvis__printing_1_1JarvisPrintingMixin.html#ae018ddf1cbdc84c31fa2b97c61990a7f" title=" " alt="" coords="460,69,645,109"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="412,87,447,87,447,92,412,92"/>
-</map>
