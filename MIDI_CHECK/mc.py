@@ -7,6 +7,7 @@
 
 from MIDI_CHECK.mc_utilities import MidiCheckUtilitiesMixin
 
+
 ##
 # @class Main class for the MIDI_CHECK logging system.
 #
@@ -15,8 +16,6 @@ from MIDI_CHECK.mc_utilities import MidiCheckUtilitiesMixin
 # navigating between contexts, adding and triggering tests, and generating callback messages.
 # The class is designed to be the central point of interaction for the MIDI_CHECK logging system.
 class MIDI_CHECK(MidiCheckUtilitiesMixin):
-
-
     ##
     # @brief Initializes the MIDI_CHECK logger with a default logging level.
     #
@@ -184,11 +183,11 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     # @param name Name of the test (defaults to "test").
     # @return The newly added test object.
     #
-    def AddTest(self, 
+    def AddTest(self,
             test_fn=lambda: False,
-            result_key=True, 
+            result_key=True,
             callback_true=None,
-            callback_false=None, 
+            callback_false=None,
             name="test"):
         """
         Add a new test to the current context.
