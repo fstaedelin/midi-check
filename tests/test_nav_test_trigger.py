@@ -101,4 +101,3 @@ mc.TriggerTest(test_handled, event1.handled)
 
 # Write the log, printing all logged messages.
 mc.WriteLog()
-
