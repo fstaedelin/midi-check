@@ -29,6 +29,9 @@ class MidiCheckPrintingMixin:
 
         Args:
             fn_name (str): The name of the function being exited.
+            
+        Returns:
+            None
         """
         print(self.print_lvl * "  ", "Out: ", fn_name)
         self.print_lvl -= 1
