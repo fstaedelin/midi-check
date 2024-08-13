@@ -1,40 +1,49 @@
-##
-# @package MIDI_CHECK
-# @brief MIDI_CHECK is a logging package designed to help developers manage complex logging scenarios.
-# It provides various utilities for logging messages at different levels, managing contexts,
-# and testing functionality. This module defines the main MIDI_CHECK class, which integrates all
-# the utility functions and logging capabilities into a single, easy-to-use interface.
-# @ingroup MIDI_CHECK
-#
-# @{
-##
-
 from MIDI_CHECK.mc_utilities import MidiCheckUtilitiesMixin
 
 
-##
-# @class Main class for the MIDI_CHECK logging system.
-#
-# The MIDI_CHECK class extends MidiCheckUtilitiesMixin, incorporating a variety of logging and
-# utility functions. This class provides methods for logging messages at different levels,
-# navigating between contexts, adding and triggering tests, and generating callback messages.
-# The class is designed to be the central point of interaction for the MIDI_CHECK logging system.
 class MIDI_CHECK(MidiCheckUtilitiesMixin):
-    ##
-    # @brief Initializes the MIDI_CHECK logger with a default logging level.
-    #
-    # This constructor sets up the initial state of the MIDI_CHECK logger, including
-    # the logging level, context hierarchy, and test management. It also initializes
-    # internal variables that track indentation levels, logging contexts, and the log itself.
-    #
-    # @param level The default logging level (defaults to "WARNING").
-    #
-    def __init__(self, level="WARNING"):
-        """
-        Initialize the Logger with a default logging level.
+    """Class for managing MIDI checks and logging.
 
-        :param level: Default logging level, defaults to "WARNING".
+    This class provides functionality to create and manage tests, log messages,
+    and navigate through context structures for MIDI checks. It allows for
+    dynamic logging at various levels and facilitates the addition and triggering
+    of tests.
+
+    Args:
+        level (str): The default logging level. Defaults to "WARNING".
+
+    Attributes:
+        print_lvl (int): Tracks indentation in print statements.
+        level (str): The current logging level.
+        tests (list): A list to store all tests.
+        levels (dict): A dictionary defining logging levels with priorities.
+        msg_log (list): A log to store all messages.
+        contexts (dict): A dictionary to initialize the root context.
+        unnamed_tests (int): A counter for unnamed tests.
+        current_path (list): A list representing the path to the current context.
+
+    Examples:
+        midi_check = MIDI_CHECK()
+        midi_check.AddTest(lambda: True, name="Sample Test")
+        midi_check.TriggerTest(midi_check.tests[0], "test value")
+    """
+
+
+    def __init__(self, level="WARNING"):
+        """Initializes the MIDI_CHECK class with default settings.
+
+        This constructor sets up the initial state of the MIDI_CHECK instance,
+        including the logging level, message log, and context management. It
+        prepares the instance to manage tests and log messages at various levels.
+
+        Args:
+            level (str): The default logging level. Defaults to "WARNING".
+
+        Returns:
+            None
         """
+
+
         self.print_lvl = -1  # Used for tracking indentation in print statements
         self.level = level  # Set the default logging level
         self.tests = []  # List to store all tests
@@ -51,21 +60,22 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         self.unnamed_tests = 0  # Counter for unnamed tests
         self.current_path = []  # Path to the current context
 
-    ##
-    # @brief Navigate to a different context within the logger.
-    #
-    # This method allows the user to move between different contexts within the
-    # logging hierarchy. It can navigate to a child context or move up to the
-    # parent context. If the destination context does not exist, it creates a new one.
-    #
-    # @param destination The context to navigate to (defaults to "children").
-    #
-    def Navigate(self, destination="children", logging=False):
-        """
-        Navigate to a different context.
 
-        :param destination: The context to navigate to. Defaults to "children".
+    def Navigate(self, destination="children", logging=False):
+        """Navigates to a specified context within the MIDI check structure.
+
+        This method allows moving to a new context or back to the parent context,
+        creating a new context if it does not already exist. It also provides an
+        option to log the navigation actions.
+
+        Args:
+            destination (str): The name of the context to navigate to. Defaults to "children".
+            logging (bool): A flag indicating whether to log the navigation actions. Defaults to False.
+
+        Returns:
+            None
         """
+
         if destination == "parent":
             if len(self.current_path) > 0:  # Move to the parent context
                 if not logging: 
@@ -77,47 +87,46 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
             # Create a new context if the destination doesn't exist
             if destination not in self._get_current_context():
                 if not logging: 
-                    self.Warning("Destination does not exist, creating nested context: "+destination, True)
+                    self.Warning(f"Destination does not exist, creating nested context: {destination}", True)
                 self._set_new_context(destination)
             if not logging: 
-                self.Debug("Moving to: " + destination, True)
+                self.Debug(f"Moving to: {destination}", True)
             self.current_path.append(destination)  # Move to the new or existing context
 
-    ##
-    # @brief Print all the log entries stored in `msg_log`.
-    #
-    # This method iterates over all log entries stored in the `msg_log` list and
-    # prints them. This provides a simple way to output the entire log to the console.
-    #
     def WriteLog(self):
+        """Prints all log entries stored in the message log.
+
+        This method iterates through the message log and outputs each entry to
+        the console, allowing users to review all logged messages.
+
+        Args:
+            None
+
+        Returns:
+            None
+        """
         """
         Print all the log entries stored in `msg_log`.
         """
         for entry in self.msg_log:
             print(entry)
 
-    ##
-    # @brief Log a message at a specified level.
-    #
-    # This method logs a message at the given level by navigating to the appropriate
-    # context, formatting the message, and storing it in the current context. It also
-    # returns the formatted message.
-    #
-    # @param message The message to log.
-    # @param level The level at which to log the message.
-    # @return The formatted message.
-    #
-    def Log(self, message, level, navigating = False):
-        """
-        Log a message at the given level.
+    def Log(self, message, level, navigating=False):
+        """Logs a message at a specified logging level.
 
-        :param message: The message to log.
-        :param level: The level at which to log the message.
-        :return: The formatted message.
+        This method navigates to the appropriate context level, formats the message,
+        and stores it in the current context. It also allows for navigation to be
+        skipped if already in the desired context.
+
+        Args:
+            message (str): The message to be logged.
+            level (str): The logging level at which to log the message.
+            navigating (bool): A flag indicating whether to navigate to the desired level. Defaults to False.
+
+        Returns:
+            str: The formatted message that was logged.
         """
-#        if level not in self._get_current_context():
-#            self._set_new_context(level)
-        
+
         if not navigating:
             self.Navigate(level, True)  # Go to the desired level
             self.Navigate("parent", True)  # Return to the previous context
@@ -127,86 +136,80 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         self._get_current_context()[msg_number] = formatted_message
         return formatted_message
 
-    ##
-    # @brief Log a debug message.
-    #
-    # This method logs a message at the "DEBUG" level, which is typically used
-    # for detailed debugging information that may not be required during normal operation.
-    #
-    # @param message The debug message to log.
-    #
-    def Debug(self, message, navigating = False):
-        """
-        Log a debug message.
+    def Debug(self, message, navigating=False):
+        """Logs a debug message at the DEBUG logging level.
 
-        :param message: The debug message to log.
+        This method formats and logs a debug message, optionally navigating to the
+        desired context level before logging. It serves as a convenience method for
+        logging messages specifically at the DEBUG level.
+
+        Args:
+            message (str): The debug message to be logged.
+            navigating (bool): A flag indicating whether to navigate to the desired level. Defaults to False.
+
+        Returns:
+            str: The formatted debug message that was logged.
         """
+
         self.Log(message, "DEBUG", navigating)
 
-    ##
-    # @brief Log a warning message.
-    #
-    # This method logs a message at the "WARNING" level, which is typically used
-    # for logging potentially harmful situations or important notices that require
-    # attention.
-    #
-    # @param message The warning message to log.
-    #
-    def Warning(self, message, navigating = False):
-        """
-        Log a warning message.
+    def Warning(self, message, navigating=False):
+        """Logs a warning message at the WARNING logging level.
 
-        :param message: The warning message to log.
+        This method formats and logs a warning message, optionally navigating to the
+        desired context level before logging. It serves as a convenience method for
+        logging messages specifically at the WARNING level.
+
+        Args:
+            message (str): The warning message to be logged.
+            navigating (bool): A flag indicating whether to navigate to the desired level. Defaults to False.
+
+        Returns:
+            str: The formatted warning message that was logged.
         """
+
         self.Log(message, "WARNING", navigating)
 
-    ##
-    # @brief Log an error message.
-    #
-    # This method logs a message at the "ERROR" level, which is typically used
-    # for logging serious issues that might cause the application to behave unexpectedly.
-    #
-    # @param message The error message to log.
-    #
-    def Error(self, message, navigating = False):
-        """
-        Log an error message.
+    def Error(self, message, navigating=False):
+        """Logs an error message at the ERROR logging level.
 
-        :param message: The error message to log.
+        This method formats and logs an error message, optionally navigating to the
+        desired context level before logging. It serves as a convenience method for
+        logging messages specifically at the ERROR level.
+
+        Args:
+            message (str): The error message to be logged.
+            navigating (bool): A flag indicating whether to navigate to the desired level. Defaults to False.
+
+        Returns:
+            str: The formatted error message that was logged.
         """
+
         self.Log(message, "ERROR", navigating)
 
-    ##
-    # @brief Add a new test to the current context.
-    #
-    # This method adds a new test to the current context within the logging hierarchy.
-    # The test is defined by a test function, expected result, and optional callback
-    # functions for handling success and failure. The test is automatically named to
-    # avoid conflicts, and the method returns the test object.
-    #
-    # @param test_fn The test function to evaluate (defaults to a lambda returning False).
-    # @param result_key Expected result key for the test (defaults to True).
-    # @param callback_true Callback function if the test passes (defaults to a success message).
-    # @param callback_false Callback function if the test fails (defaults to a failure message).
-    # @param name Name of the test (defaults to "test").
-    # @return The newly added test object.
-    #
     def AddTest(self,
                 test_fn=lambda: False,
                 result_key=True,
                 callback_true=None,
                 callback_false=None,
                 name="test"):
-        """
-        Add a new test to the current context.
+        """Adds a new test to the MIDI check context.
 
-        :param test_fn: The test function to evaluate.
-        :param result_key: Expected result key for the test.
-        :param callback_true: Callback function if the test passes.
-        :param callback_false: Callback function if the test fails.
-        :param name: Name of the test.
-        :return: The newly added test object.
+        This method allows for the registration of a test function along with its
+        associated callbacks and name. It ensures that the test is properly named
+        and added to the current context for later execution.
+
+        Args:
+            test_fn (function): The function to be executed as the test. Defaults to a function that returns False.
+            result_key (bool): A key indicating the expected result of the test. Defaults to True.
+            callback_true (function): A callback function to be executed if the test passes. Defaults to None.
+            callback_false (function): A callback function to be executed if the test fails. Defaults to None.
+            name (str): The name of the test. Defaults to "test".
+
+        Returns:
+            dict: The newly created test object containing its details.
         """
+
         if "TESTS" not in self._get_current_context():
             self._set_new_context("TESTS")
         self.Navigate("TESTS")
@@ -235,28 +238,24 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         self._get_current_context()[name] = newTest
         self.tests.append(newTest)
         self.Navigate("parent")  # Return to the previous context
-        self.Debug("Created test: "+name)
+        self.Debug(f"Created test: {name}")
         return newTest  # Optionally return the test object if needed elsewhere
 
-    ##
-    # @brief Trigger a specific test.
-    #
-    # This method triggers a specific test by executing the test function with the
-    # provided value. It then logs appropriate success or failure messages based
-    # on the test result and updates the test's status.
-    #
-    # @param test The test object to trigger.
-    # @param val The value to pass to the test function.
-    # @return The test object after execution.
-    #
     def TriggerTest(self, test, val):
-        """
-        Trigger a specific test.
+        """Triggers the execution of a specified test with a given value.
 
-        :param test: The test object to trigger.
-        :param val: The value to pass to the test function.
-        :return: The test object after execution.
+        This method executes the test function associated with the provided test
+        object, using the specified value as input. It updates the test's status
+        based on the result of the execution and logs the appropriate messages.
+
+        Args:
+            test (dict): The test object containing the test function and its details.
+            val: The value to be passed to the test function during execution.
+
+        Returns:
+            dict: The updated test object after execution.
         """
+
         if ("TESTS" not in self._get_current_context()) or test["name"] not in self._get_current_context()["TESTS"]:
             print("Not in the correct context to trigger the test")
 
@@ -266,47 +265,35 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
         test["triggered"] = True
         return test
 
-    ##
-    # @brief Generate a success callback message.
-    #
-    # This method generates a callback message indicating that a test has passed.
-    # The message is formatted with a "SUCCESS" level by default.
-    #
-    # @param message The message to format.
-    # @param level The logging level (defaults to "SUCCESS").
-    # @return The formatted message.
-    #
     def Cb_True(self, message, level="SUCCESS"):
-        """
-        Generate a success callback message.
+        """Formats a success callback message.
 
-        :param message: The message to format.
-        :param level: The logging level, defaults to "SUCCESS".
-        :return: The formatted message.
-        """
-        formatted_message = self._format_message(level, message, ignore=True)
-        return formatted_message
+        This method creates a formatted message indicating a successful outcome,
+        using the specified level for logging. It is intended to be used as a
+        callback when a test passes.
 
-    ##
-    # @brief Generate a failure callback message.
-    #
-    # This method generates a callback message indicating that a test has failed.
-    # The message is formatted with a "FAIL" level by default.
-    #
-    # @param message The message to format.
-    # @param level The logging level (defaults to "FAIL").
-    # @return The formatted message.
-    #
+        Args:
+            message (str): The message to be formatted for the success callback.
+            level (str): The logging level for the message. Defaults to "SUCCESS".
+
+        Returns:
+            str: The formatted success message.
+        """
+
+        return self._format_message(level, message, ignore=True)
+
     def Cb_False(self, message, level="FAIL"):
-        """
-        Generate a failure callback message.
+        """Formats a failure callback message.
 
-        :param message: The message to format.
-        :param level: The logging level, defaults to "FAIL".
-        :return: The formatted message.
+        This method creates a formatted message indicating a failure outcome,
+        using the specified level for logging. It is intended to be used as a
+        callback when a test fails.
+
+        Args:
+            message (str): The message to be formatted for the failure callback.
+            level (str): The logging level for the message. Defaults to "FAIL".
+
+        Returns:
+            str: The formatted failure message.
         """
-        formatted_message = self._format_message(level, message, ignore=True)
-        return formatted_message
-##
-# @}
-##
+        return self._format_message(level, message, ignore=True)
