@@ -9,9 +9,6 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
     dynamic logging at various levels and facilitates the addition and triggering
     of tests.
 
-    Args:
-        level (str): The default logging level. Defaults to "WARNING".
-
     Attributes:
         print_lvl (int): Tracks indentation in print statements.
         level (str): The current logging level.
@@ -38,9 +35,6 @@ class MIDI_CHECK(MidiCheckUtilitiesMixin):
 
         Args:
             level (str): The default logging level. Defaults to "WARNING".
-
-        Returns:
-            None
         """
 
 
