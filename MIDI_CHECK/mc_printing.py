@@ -1,113 +1,91 @@
-##
-# @package MIDI_CHECK
-# @ingroup MIDI_CHECK
-# @{
-##
-
-##
-# @class MidiCheckPrintingMixin
-# A mixer class to handle functions helpful to print messages
 class MidiCheckPrintingMixin:
-    ##
-    # @brief Increases indentation level and prints entering/exiting messages.
-    #
-    # This method increments the indentation level and prints a message indicating
-    # the entry into a specific function. This is useful for tracking the flow of
-    # execution and understanding the nested structure of function calls.
-    #
-    # @param fn_name The name of the function being entered.
-    # @return None
-    #
-    def _printIn(self, fn_name):
-        """
-        Increase indentation level and print entering message.
+    """Mixin class for printing MIDI check information.
 
-        :param fn_name: The name of the function being entered.
+    This class provides methods to print debug information related to MIDI checks, including 
+    entering and exiting functions, printing context details, and formatting messages based on 
+    their severity level.
+    """
+    
+    def _printIn(self, fn_name):
+        """Prints the entry of a function with an increasing indentation level.
+        
+        This method increments the print level and outputs the function name
+        being entered, formatted with the current indentation level.
+
+        Args:
+            fn_name (str): The name of the function being entered.
+
+        Returns:
+            None
         """
         self.print_lvl += 1
         print(self.print_lvl * "  ", "In : ", fn_name)
 
-    ##
-    # @brief Decreases indentation level and prints an exiting message.
-    #
-    # This method decreases the indentation level and prints a message indicating
-    # the exit from a specific function. This helps in tracking when functions are
-    # completed and the flow of control is returning to a higher level.
-    #
-    # @param fn_name The name of the function being exited.
-    # @return None
-    #
     def _printOut(self, fn_name):
-        """
-        Decrease indentation level and print exiting message.
+        """Prints the exit of a function with decreased indentation.
 
-        :param fn_name: The name of the function being exited.
+        This method outputs the function name being exited and decrements the print level to 
+        reflect the exit from the function.
+
+        Args:
+            fn_name (str): The name of the function being exited.
         """
         print(self.print_lvl * "  ", "Out: ", fn_name)
         self.print_lvl -= 1
 
-    ##
-    # @brief Prints a debug message with the current indentation level.
-    #
-    # This method outputs a debug message that is formatted according to the current
-    # level of indentation. It is useful for providing contextual information during
-    # the execution of the program.
-    #
-    # @param name The name of the debug message.
-    # @param val The value or content of the debug message.
-    # @return None
-    #
     def _print(self, name, val=""):
-        """
-        Print a debug message with the current indentation.
+        """Prints a name-value pair with the current context indentation.
 
-        :param name: The name of the debug message.
-        :param val: The value or content of the debug message.
+        This method outputs a formatted string that includes the current context's indentation 
+        along with the provided name and value, allowing for structured logging of information.
+
+        Args:
+            name (str): The name to print.
+            val (str, optional): The value to print. Defaults to an empty string.
+
+        Returns:
+            None
         """
+
         print('|   ' * (len(self._get_current_context()) + 1), name, ":  ", val)
 
-    ##
-    # @brief Prints the current state of contexts for debugging purposes.
-    #
-    # This method outputs the current state of various contexts, which can be
-    # helpful for understanding the internal state of the program at a particular
-    # point in time.
-    #
-    # @return None
-    #
     def _print_contexts(self):
+        """Prints the current contexts and path information.
+
+        This method outputs a formatted display of the current contexts, the
+        current path, and the context being accessed. It provides a clear
+        visual separation of the information for better readability.
+
+        Args:
+            None
+
+        Returns:
+            None
         """
-        Print the current state of contexts for debugging.
-        """
+
         self._print("----------------------------------------------------------")
         self._print("self.contexts              ", self.contexts)
         self._print("self.current_path          ", self.current_path)
         self._print("self.get_current_context   ", self._get_current_context())
         self._print("----------------------------------------------------------")
 
-    ##
-    # @brief Formats a log message based on its level and other parameters.
-    #
-    # This method creates a formatted log message that includes information such as
-    # the logging level, an optional name, and the message content. It can also decide
-    # whether to append the message to the log based on the ignore parameter.
-    #
-    # @param level The logging level (e.g., SUCCESS, DEBUG, ERROR).
-    # @param message The message to format.
-    # @param name Optional name to include in the message.
-    # @param ignore Whether to ignore adding the message to the log.
-    # @return The formatted message.
-    #
     def _format_message(self, level, message, name="", ignore=False):
-        """
-        Format the log message based on its level.
+        """Formats a message for output with a specified level and optional name.
 
-        :param level: The logging level.
-        :param message: The message to format.
-        :param name: Optional name to include in the message.
-        :param ignore: Whether to ignore adding the message to the log.
-        :return: The formatted message.
+        This method prepares a message for display, allowing for customization
+        based on the provided level and name. It can also be configured to ignore
+        certain conditions based on the ignore flag.
+
+        Args:
+            level (int): The severity level of the message.
+            message (str): The message content to format.
+            name (str, optional): An optional name to include in the message. Defaults to an empty string.
+            ignore (bool, optional): A flag indicating whether to ignore the message. Defaults to False.
+
+        Returns:
+            str: The formatted message.
         """
+
         if level == "SUCCESS":
             indent = '====' * (len(self.current_path))
         elif level == "FAIL":
@@ -138,7 +116,3 @@ class MidiCheckPrintingMixin:
             self.msg_log.append(formatted_message)
 
         return formatted_message
-
-##
-# @}
-##
