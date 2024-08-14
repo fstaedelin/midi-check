@@ -4,7 +4,7 @@
 # @{
 ##
 
-from MIDI_CHECK.mc_printing import MidiCheckPrintingMixin
+from .mc_printing import MidiCheckPrintingMixin
 
 
 ##

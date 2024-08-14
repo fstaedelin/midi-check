@@ -9,7 +9,7 @@
 # @{
 ##
 
-from MIDI_CHECK.mc_utilities import MidiCheckUtilitiesMixin
+from .mc_utilities import MidiCheckUtilitiesMixin
 
 
 ##
